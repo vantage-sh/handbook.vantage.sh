@@ -1,0 +1,30 @@
+site_name: Cloud Cost Handbook
+site_url: http://handbook.vantage.sh
+theme:
+  name: material
+  features:
+    - navigation.sections
+extra:
+  generator: false
+
+nav:
+  - 'Overview' : 'index.md'
+  - 'General Concepts': 
+    - 'Your Monthly Bill': 'connecting.md'
+    - 'Regions' : 'permissions.md'
+    - 'Credits': 'syncing.md'
+    - 'Budgets': 'supported_services.md'
+    - 'Savings Plans' : 'aws/concepts/savings-plans.md'
+    - 'Reserved Instances' : 'security.md'
+
+  - 'AWS Services':
+    - 'EC2': 'aws/services/ec2-pricing.md'
+    - 'RDS': 'aws/services/rds-pricing.md'
+    - 'S3': 'aws/services/s3-pricing.md'
+    - 'EBS': 'aws/services/ebs-pricing.md'
+    - 'EC2-Other': 'aws/services/ec2-other-pricing.md'
+    - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
+    - 'CloudFront': 'aws/services/cloudfront-pricing.md'
+    - 'Elasticache': 'aws/services/elasticache-pricing.md'
+    - 'ECR': 'aws/services/ecr-pricing.md'
+  
