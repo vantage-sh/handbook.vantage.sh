@@ -1,3 +1,5 @@
+title: EC2 Pricing | Vantage Cloud Cost Handbook
+
 [Amazon EC2 Pricing Page](https://aws.amazon.com/ec2/pricing/)
 
 ## Summary
