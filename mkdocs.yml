@@ -15,7 +15,7 @@ nav:
     - 'Credits': 'syncing.md'
     - 'Budgets': 'supported_services.md'
     - 'Savings Plans' : 'aws/concepts/savings-plans.md'
-    - 'Reserved Instances' : 'security.md'
+    - 'Reserved Instances' : 'aws/concepts/reserved-instances.md'
 
   - 'AWS Services':
     - 'EC2': 'aws/services/ec2-pricing.md'
