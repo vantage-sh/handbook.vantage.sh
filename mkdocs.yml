@@ -28,7 +28,7 @@ nav:
     - 'Fargate': 'aws/services/fargate-pricing.md'
     - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
     - 'CloudFront': 'aws/services/cloudfront-pricing.md'
-    - 'Elasticache': 'aws/services/elasticache-pricing.md'
+    - 'ElastiCache': 'aws/services/elasticache-pricing.md'
     - 'ECR': 'aws/services/ecr-pricing.md'
   
 google_analytics:

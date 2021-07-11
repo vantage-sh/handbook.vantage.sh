@@ -1,6 +1,6 @@
 title: ECR Pricing | Vantage Cloud Cost Handbook
 
-[Amazon EC2 Pricing Page](https://aws.amazon.com/ecr/pricing/)
+[Amazon ECR Pricing Page](https://aws.amazon.com/ecr/pricing/)
 
 ## Summary
 
