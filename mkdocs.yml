@@ -9,11 +9,13 @@ extra:
 
 nav:
   - 'Overview' : 'index.md'
+  - 'Leaderboard': 'leaderboard.md'
   - 'General Concepts': 
-    - 'Your Monthly Bill': 'connecting.md'
-    - 'Regions' : 'permissions.md'
-    - 'Credits': 'syncing.md'
-    - 'Budgets': 'supported_services.md'
+    - 'Your Monthly Bill': 'aws/concepts/bill.md'
+    - 'Regions' : 'aws/concepts/regions.md'
+    - 'Credits': 'aws/concepts/credits.md'
+    - 'Budgets': 'aws/concepts/budgets.md'
+    - 'Rightsizing': 'aws/concepts/rightsizing.md'
     - 'Savings Plans' : 'aws/concepts/savings-plans.md'
     - 'Reserved Instances' : 'aws/concepts/reserved-instances.md'
 
@@ -23,8 +25,12 @@ nav:
     - 'S3': 'aws/services/s3-pricing.md'
     - 'EBS': 'aws/services/ebs-pricing.md'
     - 'EC2-Other': 'aws/services/ec2-other-pricing.md'
+    - 'Fargate': 'aws/services/fargate-pricing.md'
     - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
     - 'CloudFront': 'aws/services/cloudfront-pricing.md'
     - 'Elasticache': 'aws/services/elasticache-pricing.md'
     - 'ECR': 'aws/services/ecr-pricing.md'
   
+google_analytics:
+  - G-TEYTN5V029
+  - auto
