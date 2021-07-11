@@ -42,3 +42,24 @@ Intelligent Tiering - Infrequent Access (IntelligentTieringIAStorage): Objects i
 * **S3 Reduced Redundancy Storage**: Reduced Redundancy Storage is an Amazon S3 storage option that enables customers to store noncritical, reproducible data at lower levels of redundancy than Amazon S3’s standard storage. It provides a highly available solution for distributing or sharing content that is durably stored elsewhere, or for storing thumbnails, transcoded media, or other processed data that can be easily reproduced. The Reduced Redundancy option stores objects on multiple devices across multiple facilities, providing 400 times the durability of a typical disk drive, but does not replicate objects as many times as standard Amazon S3 storage.
 
 
+## S3 Bucket Request Metrics
+
+S3 does not have ingress, egress or request metrics turned on by default, leaving many users unsure of what their costs will be until they receive their [Monthly AWS Bill](../concepts/bill.md). That being said, it's relatively easy to enable these metrics. 
+
+Below is an example of how to enable these metrics for a S3 Bucket via the AWS CLI. Just be sure to replace `YOUR_BUCKET_NAME` with your actual bucket name and `YOUR_BUCKET_REGION` with the appropriate bucket region.
+
+
+```
+aws s3api put-bucket-metrics-configuration 
+  --bucket YOUR_BUCKET_NAME
+  --metrics-configuration Id=EntireBucket 
+  --id EntireBucket 
+  --region YOUR_BUCKET_REGION
+```
+
+**Note**: it takes roughly 15 minutes for AWS to begin delivering these metrics after being enabled.
+
+### Vantage Request Metrics Visualization 
+In the event you are a Vantage user, Vantage will graph your S3 Bucket request metrics automatically. When clicking through to an S3 Bucket resource page under the "Active Resources" section, you can click the "Request Metrics & Egress" tab to get visualizations like the one below:
+
+![S3 Bucket Request Metrics](/img/aws/s3/request_metrics.png)
