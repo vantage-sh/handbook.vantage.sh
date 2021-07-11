@@ -31,7 +31,7 @@ This data is provided for information purposes only and may be biased based off 
 | 21   | AWS CloudTrail        |
 | 22   | AWS Direct Connect        |
 | 23   | Amazon Route 53       |
-| 24   | Amazon Elastic Container Service for Kubernetes        |
+| 24   | Amazon Elastic Container Service for Kubernetes (EKS)        |
 | 25   | AWS Lambda        |
 | 26   | AWS Transfer Family        |
 | 27   | Amazon Kinesis        |
