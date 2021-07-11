@@ -8,11 +8,11 @@ Fargate is a serverless compute engine for containers that works with both Amazo
 
 ## Pricing Dimensions
 
-* **vCPU Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charge a corresponding per-hour VCPU rate. 
-* **GB Memory Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount GB of Memory and are charge a corresponding per-hour GB of Memory rate. 
+* **vCPU Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charged a corresponding per-hour VCPU rate. 
+* **GB Memory Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount GB of Memory and are charged a corresponding per-hour GB of Memory rate. 
 
 ### Fargate vs self-managed EC2 on ECS or EKS
 
-Fargate charges a significant premium for managing the underlying nodes. Additionally, Fargate has varying degress of vCPU performance that different depending on the Task. As a result, Fargate can have pitfalls relative to self-managed ECS or EKS on EC2 beyond just the additional costs. 
+Fargate charges a significant premium for managing the underlying nodes. Additionally, Fargate has varying degress of vCPU performance that differ depending on the Task. As a result, Fargate can have pitfalls relative to self-managed ECS or EKS on EC2 beyond just the additional costs. 
 
 For a more in-depth article for seeing how Fargate is priced relative to self-managed EC2, please read the following blog post for [understanding Fargate pricing](https://www.vantage.sh/blog/fargate-pricing).

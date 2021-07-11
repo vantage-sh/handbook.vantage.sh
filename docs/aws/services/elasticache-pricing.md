@@ -4,7 +4,7 @@ title: ElastiCache Pricing | Vantage Cloud Cost Handbook
 
 ## Summary
 
-Amazon ElastiCache allows you to set up, run, and scale popular open-source compatible in-memory data stores like Redis or Memcached. ElastiCache ultimately runs atop EC2 instances with pre-configured software and are prefixed with `"cache."` and are referred to as Nodes. You are charged for 
+Amazon ElastiCache allows you to set up, run, and scale popular open-source compatible in-memory data stores like Redis or Memcached. ElastiCache ultimately runs atop EC2 instances with pre-configured software and are prefixed with `"cache."` and are referred to as Nodes.
 
 ## Pricing Dimensions
 
@@ -14,7 +14,7 @@ Amazon ElastiCache allows you to set up, run, and scale popular open-source comp
 ## Reserved Instances
 ElastiCache Nodes do have Reserved Instances that can give you significant savings. Reserved Instances are covered as a general concept found [here](../concepts/reserved-instances.md). 
 
-Typically as ElastiCache nodes tend to remain on for longer durations and aren't typically members of auto-scaling groups, they are good candidates for cost savings via Reserved Instances. 
+Typically, as ElastiCache nodes remain on for longer durations and aren't members of auto-scaling groups, they are good candidates for cost savings via Reserved Instances. 
 
 
 ## Savings Plans
