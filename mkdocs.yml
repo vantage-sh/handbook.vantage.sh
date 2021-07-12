@@ -9,7 +9,7 @@ extra:
 
 nav:
   - 'Overview' : 'index.md'
-  - 'Leaderboard': 'leaderboard.md'
+  - 'Cost Leaderboard': 'https://leaderboard.vantage.sh/'
   - 'General Concepts': 
     - 'Your Monthly Bill': 'aws/concepts/bill.md'
     - 'Regions' : 'aws/concepts/regions.md'
