@@ -32,7 +32,7 @@ EC2 Instances are covered by AWS Reserved Instances. Reserved Instances are cove
 
 EC2 Instance Types are organized into "Families" and each family can have multiple "Generations". By looking at each instance type you can infer its Family and Generation from the instance type name. For example, a `c5.4xlarge` is the `c` Family and `5th` Generation. Below is a table of EC2 Instance Families and simple descriptions
 
-| Leaderboard Position      | AWS Service |
+| Family      | Description |
 | ----------- | ----------- |
 | a   | ARM Processors        |
 | c   | Compute-optimized        |
