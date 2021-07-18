@@ -27,7 +27,7 @@ nav:
     - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
     - 'CloudFront': 'aws/services/cloudfront-pricing.md'
     - 'EBS': 'aws/services/ebs-pricing.md'
-    - 'Fargate': 'aws/services/fargate-pricing.md'
+    - 'ECS & Fargate': 'aws/services/ecs-and-fargate-pricing.md'
     - 'Lambda': 'aws/services/lambda-pricing.md'
     - 'RDS': 'aws/services/rds-pricing.md'
     - 'Route 53': 'aws/services/route-53-pricing.md'

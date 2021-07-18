@@ -1,12 +1,15 @@
-title: Fargate Pricing | Vantage Cloud Cost Handbook
+title: ECS & Fargate Pricing | Vantage Cloud Cost Handbook
 
-[Fargate Pricing Page](https://aws.amazon.com/fargate/pricing/)
+* [ECS Pricing Page](https://aws.amazon.com/ecs/pricing/)
+* [Fargate Pricing Page](https://aws.amazon.com/fargate/pricing/)
 
 ## Summary
 
-Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS). Fargate charges you for the vCPU and Memory for a ECS Task or EKS Pod. Alternatively you can run your own EC2 instances for either EKS or ECS on EC2 which can be significantly cheaper. 
+Elastic Container Service (ECS) allows you to run docker containers through a primitive named a "Task". Tasks ultimately run on EC2 instances which are either managed by you (ECS on EC2) or fully managed by AWS (Fargate).
 
-## Pricing Dimensions
+There is no additional charge to you when using ECS on self-managed EC2 as you're just paying for EC2 instances that you create and manage. Fargate charges you for the vCPU and Memory for a ECS Task or EKS Pod and you pay a premium for managing the underlying EC2 instances. 
+
+## Fargate Pricing Dimensions
 
 * **vCPU Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charged a corresponding per-hour VCPU rate. 
 * **GB Memory Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount GB of Memory and are charged a corresponding per-hour GB of Memory rate. 
