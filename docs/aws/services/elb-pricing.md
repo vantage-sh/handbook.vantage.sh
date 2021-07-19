@@ -12,7 +12,7 @@ Amazon Elastic Load Balancer (ELB) is a service which distributes traffic from a
 * **Load Balancer Data Processed**: Each type of load balancer has a formula for how the data processed by the load balancer is turned into an additional hourly charged.
 
 ## Application Load Balancer
-Application Load Balancers are useful for distributing layer 7 (HTTP, HTTPS gRPC) traffic to application servers or other backends. ALBs have a standard hourly rate per region and a formula for calculating "LCU"-hours. The dimensions for calculating LCU are:
+Application Load Balancers are useful for distributing layer 7 (HTTP, HTTPS, gRPC) traffic to application servers or other backends. ALBs have a standard hourly rate per region and a formula for calculating "LCU"-hours. The dimensions for calculating LCU are:
 
 * **New Connections**: a single LCU is 25 new connections per second
 * **Active connections**: a single LCU is 3,000 active connections per minute
