@@ -35,6 +35,7 @@ nav:
     - 'S3': 'aws/services/s3-pricing.md'
     - 'ELB': 'aws/services/elb-pricing.md'
     - 'VPC': 'aws/services/vpc-pricing.md'
+    - 'CloudFront': 'aws/services/cloudfront-pricing.md'
 
 google_analytics:
   - G-TEYTN5V029
