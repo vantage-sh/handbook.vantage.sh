@@ -12,8 +12,6 @@ EC2-Other is a category of AWS costs that typically causes the greatest amount o
 
 Unused or stranded EBS Volumes and IP Addresses can add up over time especially if these resources are created automatically as part of an autoscaling service where they're spun up but not down. You should consider occasionally auditing your unattached EBS Volumes and IP addresses to see if you can clean them up to save costs.
 
-[Vantage](https://vantage.sh/) will automatically profile your AWS account for stranded resources and inform you when there is an opportunity for potential savings. 
-
 
 ## What are t2/t3/T4g CPU credit charges?
 

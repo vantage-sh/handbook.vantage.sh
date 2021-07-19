@@ -58,8 +58,3 @@ aws s3api put-bucket-metrics-configuration
 ```
 
 **Note**: it takes roughly 15 minutes for AWS to begin delivering these metrics after being enabled.
-
-### Vantage Request Metrics Visualization 
-In the event you are a Vantage user, Vantage will graph your S3 Bucket request metrics automatically. When clicking through to an S3 Bucket resource page under the "Active Resources" section, you can click the "Request Metrics & Egress" tab to get visualizations like the one below:
-
-![S3 Bucket Request Metrics](/img/aws/s3/request_metrics.png)

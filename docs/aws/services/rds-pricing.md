@@ -22,7 +22,5 @@ As RDS instances are **not** covered by [AWS Savings Plans](http://localhost:800
 
 In order to see costs per RDS Instance you'll want to describe all of your RDS Instances across all regions, determine what database software they're running, determine if they are Single AZ or Multi AZ and then find the accompanying rate on the AWS pricing page.
 
-Alternatively, [Vantage](https://www.vantage.sh/) does this automatically on your behalf when you sign up and connect your AWS accounts. Vantage will also be able to make recommendations to you for what Reserved Instances to purchase to maximize savings. 
-
 
 
