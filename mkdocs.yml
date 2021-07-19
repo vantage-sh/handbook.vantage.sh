@@ -33,7 +33,8 @@ nav:
     - 'RDS': 'aws/services/rds-pricing.md'
     - 'Route 53': 'aws/services/route-53-pricing.md'
     - 'S3': 'aws/services/s3-pricing.md'
-  
+    - 'VPC': 'aws/services/vpc-pricing.md'
+
 google_analytics:
   - G-TEYTN5V029
   - auto
