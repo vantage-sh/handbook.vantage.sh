@@ -21,21 +21,22 @@ nav:
     - 'Tags': 'aws/concepts/tags.md'
 
   - 'AWS Services':
-    - 'EC2': 'aws/services/ec2-pricing.md'
-    - 'EC2-Other': 'aws/services/ec2-other-pricing.md'
-    - 'ECR': 'aws/services/ecr-pricing.md'
-    - 'ElastiCache': 'aws/services/elasticache-pricing.md'
     - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
     - 'CloudFront': 'aws/services/cloudfront-pricing.md'
     - 'EBS': 'aws/services/ebs-pricing.md'
+    - 'EC2': 'aws/services/ec2-pricing.md'
+    - 'EC2-Other': 'aws/services/ec2-other-pricing.md'
     - 'ECS & Fargate': 'aws/services/ecs-and-fargate-pricing.md'
+    - 'ECR': 'aws/services/ecr-pricing.md'
+    - 'ELB': 'aws/services/elb-pricing.md'
+    - 'ElastiCache': 'aws/services/elasticache-pricing.md'
+    - 'ElasticSearch': 'aws/services/elasticsearch-pricing.md'
     - 'Lambda': 'aws/services/lambda-pricing.md'
     - 'RDS': 'aws/services/rds-pricing.md'
     - 'Route 53': 'aws/services/route-53-pricing.md'
     - 'S3': 'aws/services/s3-pricing.md'
-    - 'ELB': 'aws/services/elb-pricing.md'
     - 'VPC': 'aws/services/vpc-pricing.md'
-    - 'CloudFront': 'aws/services/cloudfront-pricing.md'
+    
 
 google_analytics:
   - G-TEYTN5V029
