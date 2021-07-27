@@ -1,6 +1,6 @@
 title: S3 Pricing | Vantage Cloud Cost Handbook
 
-[Amazon S3 Pricing Page](https://aws.amazon.com/s3/pricing/)
+[Amazon S3 Pricing Page](https://aws.amazon.com/s3/pricing/){ .md-button }
 
 ## Summary
 
@@ -58,3 +58,8 @@ aws s3api put-bucket-metrics-configuration
 ```
 
 **Note**: it takes roughly 15 minutes for AWS to begin delivering these metrics after being enabled.
+
+<br/>
+
+!!! Contribute
+    Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

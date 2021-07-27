@@ -1,6 +1,6 @@
 title: Elasticsearch Service Pricing | Vantage Cloud Cost Handbook
 
-[Amazon Elasticsearch Service Pricing Page](https://aws.amazon.com/elasticsearch-service/pricing/)
+[Amazon Elasticsearch Service Pricing Page](https://aws.amazon.com/elasticsearch-service/pricing/){ .md-button }
 
 ## Summary
 
@@ -18,3 +18,8 @@ If better storage performance, above EBS, is needed you can select Storage Optmi
 ## Reserved Instances
 
 As ElasticSearch instances are **not** covered by [AWS Savings Plans](/aws/concepts/savings-plans/), you must rely on procuring [Reserved Instances](/aws/concepts/reserved-instances/) specifically for ElasticSearch. Reserved Instances are covered in depth under General Concepts and we encourage you to read up more on them there for the most up-to-date information.
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

@@ -1,6 +1,6 @@
 title: Elastic Load Balancer Pricing | Vantage Cloud Cost Handbook
 
-[Amazon ELB Pricing Page](https://aws.amazon.com/elasticloadbalancing/pricing/)
+[Amazon ELB Pricing Page](https://aws.amazon.com/elasticloadbalancing/pricing/){ .md-button }
 
 ## Summary
 
@@ -40,3 +40,8 @@ Gateway Load Balancers are used to proxy traffic through third-party virtual app
 
 ## Classic Load Balancer
 Classic load balancers are the original type of load balancer which has since been superceded by ALB and NLB. CLBs support both layer 7 and layer 4 traffic. CLBs have a standard hourly rate per region and a standard per GB rate per region for traffic processed. 
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

@@ -1,6 +1,6 @@
 title: VPC Pricing | Vantage Cloud Cost Handbook
 
-[Amazon VPC Pricing Page](https://aws.amazon.com/vpc/pricing/)
+[Amazon VPC Pricing Page](https://aws.amazon.com/vpc/pricing/){ .md-button }
 
 ## Summary
 
@@ -16,3 +16,8 @@ NAT (Network Address Translation) Gateways enable resources running inside of VP
 
 ## Amazon VPC Endpoints
 VPC Endpoints allow resources to connect to other AWS services outside of a VPC, such as S3, without the need for a NAT Gateway. This is a good way to prevent NAT Gateway usage and transfer charges.
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

@@ -1,6 +1,6 @@
 title: Cloudfront Pricing | Vantage Cloud Cost Handbook
 
-[Amazon CloudFront Pricing Page](https://aws.amazon.com/cloudfront/pricing/)
+[Amazon CloudFront Pricing Page](https://aws.amazon.com/cloudfront/pricing/){ .md-button }
 
 ## Summary
 Amazon CloudFront is a CDN service used to distribute and cache traffic from one region to multiple geographic endpoints globally. Every CloudFront distribution includes an origin which is used to pull the original data from. An origin will typically be an S3 bucket or Load Balancer Endpoint. The traffic is distributed globally to speed up the access to an application which recieves visitors from across the globe. CloudFront Distributions are billed based on the amount of traffic they request from the origin, distribute out to the internet as well as per request processed. Distribution out to the internet is priced differently depending on the region which it is accessed. Regions are grouped into geographic regions. When creating a distribution it is possible to select which regions CloudFront will serve traffic from.
@@ -18,3 +18,8 @@ Origin Shield can be enabled in order to reduce the amount of traffic being serv
 
 ## Custom Pricing
 For customers who are willing to make certain minimum traffic commits (typically 10 TB/month or higher) they can contact AWS and negotiate custom discounted rates.
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

@@ -1,3 +1,27 @@
-.md-header {
+.md-header, .md-footer {
 	background-color: #181E61;
+}
+
+.md-typeset h1 {
+	color: var(--md-typeset-color);
+}
+
+.md-typeset h1, .md-typeset h2 {
+	font-weight:  600;
+}
+
+.md-content__inner {
+	margin-bottom: 4rem;
+}
+
+.md-sidebar__inner {
+	padding-bottom:  4rem;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.md-sidebar__scrollwrap:hover::-webkit-scrollbar-thumb {
+    background-color: var(--md-default-fg-color--lighter);
 }

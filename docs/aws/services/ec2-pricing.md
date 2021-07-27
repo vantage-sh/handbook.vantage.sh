@@ -1,6 +1,6 @@
 title: EC2 Pricing | Vantage Cloud Cost Handbook
 
-[Amazon EC2 Pricing Page](https://aws.amazon.com/ec2/pricing/)
+[Amazon EC2 Pricing Page](https://aws.amazon.com/ec2/pricing/){ .md-button }
 
 ## Summary
 
@@ -49,3 +49,8 @@ EC2 Instance Types are organized into "Families" and each family can have multip
 | t   | Burstable instances        |
 | x   | Lowest price-per-GB RAM instances        |
 | z   | Highest core frequency        |
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

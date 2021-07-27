@@ -1,6 +1,6 @@
 title: ECR Pricing | Vantage Cloud Cost Handbook
 
-[Amazon ECR Pricing Page](https://aws.amazon.com/ecr/pricing/)
+[Amazon ECR Pricing Page](https://aws.amazon.com/ecr/pricing/){ .md-button }
 
 ## Summary
 
@@ -98,3 +98,8 @@ Where the content of the file for policy.json is the following:
 }
 
 ```
+
+<br/>
+
+!!! Contribute
+    Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

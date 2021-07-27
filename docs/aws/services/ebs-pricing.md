@@ -1,6 +1,6 @@
 title: EBS Pricing | Vantage Cloud Cost Handbook
 
-[Amazon EBS Pricing Page](https://aws.amazon.com/ebs/pricing/)
+[Amazon EBS Pricing Page](https://aws.amazon.com/ebs/pricing/){ .md-button }
 
 ## Summary
 
@@ -29,4 +29,9 @@ Amazon EBS offers a few diffrent Volume Types that have different pricing rates 
 
 Oftentimes, EBS Volumes are created in conjunction with other AWS resources such as EC2 instances but are de-coupled from the lifecycle of those other resources. One common pattern we see is that developers will create EC2 instances with EBS Volumes attached but when they delete the EC2 instance, they assume that the EBS Volume is destroyed accordingly. In larger-scale environments with autoscaling this problem can grow significantly as a part of an AWS bill.
 
-We recommend that you periodically profile for unattached or stranded EBS Volumes. 
+We recommend that you periodically profile for unattached or stranded EBS Volumes.
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

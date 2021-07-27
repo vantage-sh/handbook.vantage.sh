@@ -1,6 +1,6 @@
 title: CloudWatch Pricing | Vantage Cloud Cost Handbook
 
-[Amazon EBS Pricing Page](https://aws.amazon.com/cloudwatch/pricing/)
+[Amazon EBS Pricing Page](https://aws.amazon.com/cloudwatch/pricing/){ .md-button }
 
 ## Summary
 
@@ -17,5 +17,7 @@ Amazon CloudWatch is a logging, monitoring and observability service. Oftentimes
 * **CloudWatch Contributor Insights**: 
 * **CloudWatch Canaries**: 
 
+<br/>
 
-Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

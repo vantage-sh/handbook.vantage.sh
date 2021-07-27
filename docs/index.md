@@ -12,13 +12,18 @@ These are general concepts that don't necessarily map directly to a particular s
 
 ### Provider Services
 
-Provider Services are meant to be the source of truth for explaining not only the pricing mechanics of the service but also to explain potentially nuanced concepts related to costs for that service. The focus of these pages is meant to be for the _pricing_ of these services and not related to the actual management or orchestration of the service itself. 
+Provider Services are meant to be the source of truth for explaining not only the pricing mechanics of the service but also to explain potentially nuanced concepts related to costs for that service. The focus of these pages is meant to be for the _pricing_ of these services and not related to the actual management or orchestration of the service itself.
+
 
 ## Contributing
 
-Anyone is welcome to contribute to the Vantage Cloud Cost Handbook by issuing a pull request on the Github repo. 
+Anyone is welcome to contribute to the Vantage Cloud Cost Handbook by issuing a pull request on the GitHub repo. 
 
+
+[:material-github: Contribute](https://github.com/vantage-sh){ .md-button }
 
 ## Slack Community
 
-Generally interested in cloud and associated costs? Join us in our public [Slack Community](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw). 
+Generally interested in cloud and associated costs? Join us in our public Slack community.
+
+[:material-slack: Slack Community](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw){ .md-button }
