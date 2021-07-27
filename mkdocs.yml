@@ -5,6 +5,7 @@ theme:
   features:
     - navigation.sections
   logo: assets/logo.svg
+  favicon: assets/logo.svg
 
 extra:
   generator: false
