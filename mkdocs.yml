@@ -4,8 +4,13 @@ theme:
   name: material
   features:
     - navigation.sections
+  logo: assets/logo.svg
+
 extra:
   generator: false
+
+extra_css:
+    - stylesheets/extra.css
 
 nav:
   - 'Overview' : 'index.md'
