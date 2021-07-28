@@ -4,8 +4,25 @@ theme:
   name: material
   features:
     - navigation.sections
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+
 extra:
   generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: "#"
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
   - 'Overview' : 'index.md'

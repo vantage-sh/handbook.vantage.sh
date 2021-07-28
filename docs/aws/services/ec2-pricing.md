@@ -1,6 +1,6 @@
 title: EC2 Pricing | Vantage Cloud Cost Handbook
 
-[Amazon EC2 Pricing Page](https://aws.amazon.com/ec2/pricing/)
+[Amazon EC2 Pricing Page](https://aws.amazon.com/ec2/pricing/){ .md-button }
 
 ## Summary
 
@@ -8,9 +8,11 @@ Amazon EC2 (Elastic Cloud Compute) is Amazon’s most popular service and usuall
 
 ## Pricing Dimensions
 
-* **Instance Type Usage**: EC2 instance types are billed on one second increments, with a minimum of 60 seconds. For certain instance types with pre-installed software, you are billed in increments of hours. 
-* **Instance Type Lifecycle**: EC2 has different lifecycle types - the two most often used are on-demand and spot. These concepts are discussed more in-depth below. 
-* **AMI**: AMI stands for Amazon Machine Images. Depending on the AMI you use (i.e., Linux vs Windows) you potentially pay an additional amount of money on top of the instance type base usage. 
+|Dimension|Description|
+|------|-------|
+| Instance Type Usage | EC2 instance types are billed on one second increments, with a minimum of 60 seconds. For certain instance types with pre-installed software, you are billed in increments of hours. |
+| Instance Type Lifecycle | EC2 has different lifecycle types - the two most often used are on-demand and spot. These concepts are discussed more in-depth below. |
+| AMI | AMI stands for Amazon Machine Images. Depending on the AMI you use (i.e., Linux vs Windows) you potentially pay an additional amount of money on top of the instance type base usage. |
 
 ## On-Demand vs Spot
 
@@ -52,3 +54,8 @@ EC2 Instance Types are organized into "Families" and each family can have multip
 | t   | Burstable instances        |
 | x   | Lowest price-per-GB RAM instances        |
 | z   | Highest core frequency        |
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

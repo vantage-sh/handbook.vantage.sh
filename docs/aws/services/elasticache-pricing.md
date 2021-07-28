@@ -1,6 +1,6 @@
 title: ElastiCache Pricing | Vantage Cloud Cost Handbook
 
-[Amazon ElastiCache Pricing Page](https://aws.amazon.com/elasticache/pricing/)
+[Amazon ElastiCache Pricing Page](https://aws.amazon.com/elasticache/pricing/){ .md-button }
 
 ## Summary
 
@@ -8,7 +8,9 @@ Amazon ElastiCache allows you to set up, run, and scale popular open-source comp
 
 ## Pricing Dimensions
 
-* **Node Usage**: You are charged for the amount of hours your ElastiCache nodes run.
+|Dimension|Description|
+|---|---|
+|Node Usage|You are charged for the amount of hours your ElastiCache nodes run.|
 
 
 ## Reserved Instances
@@ -18,4 +20,9 @@ Typically, as ElastiCache nodes remain on for longer durations and aren't member
 
 
 ## Savings Plans
-ElastiCache Nodes are **not** covered under AWS Savings Plans. 
+ElastiCache Nodes are **not** covered under AWS Savings Plans.
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
