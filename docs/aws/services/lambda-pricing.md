@@ -1,5 +1,7 @@
 title: Lambda Pricing | Vantage Cloud Cost Handbook
 
+## Summary
+
 [Lambda Pricing Page](https://aws.amazon.com/lambda/pricing/)
 
 AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. You are charged based on the number of requests for your functions and the duration, the time it takes for your code to execute.

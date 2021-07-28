@@ -2,6 +2,8 @@ title: Route53 Pricing | Vantage Cloud Cost Handbook
 
 [Route53 Pricing Page](https://aws.amazon.com/route53/pricing/)
 
+## Summary
+
 Amazon Route 53 is a Domain Name System (DNS) web service. Typically Route 53 doesn't tend to be a large cost center for the vast majority of companies. 
 
 ## Pricing Dimensions

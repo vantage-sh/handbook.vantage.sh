@@ -1,3 +1,5 @@
+## Summary
+
 EC2-Other is a category of AWS costs that typically causes the greatest amount of confusion for customers as it doesn't necessary map to a single AWS service. EC2-Other encompasses the following costs:
 
 * **EBS Volume Usage**: Usage for [EBS Volumes](ebs-pricing.md).
