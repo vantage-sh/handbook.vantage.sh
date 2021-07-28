@@ -18,3 +18,8 @@ Amazon WorkSpaces is a fully managed, persistent desktop virtualization service.
 ## Monitoring Unused WorkSpaces
 
 WorkSpaces have an attribute named `last_known_user_connection_timestamp` that maintains a timestamp of when was the last time a user has accessed this WorkSpace. You should periodically audit WorkSpaces to ensure that they're being used as otherwise it can be wasteful and a contributor to costs. In the event that this timestamp isn't present, it means that a user has never actually connected to this instance. Additionally, you can look for a certain amount of time that has progressed since a user has accessed it - in the event that a user hasn't accessed a WorkSpace in over a few weeks, it may be a good candidate for clean up and cost savings. 
+
+<br />
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
