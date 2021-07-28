@@ -28,9 +28,7 @@ nav:
   - 'Overview' : 'index.md'
   - 'Cost Leaderboard': 'https://leaderboard.vantage.sh/'
   - 'General Concepts': 
-    - 'Your Monthly Bill': 'aws/concepts/bill.md'
     - 'Regions' : 'aws/concepts/regions.md'
-    - 'Budgets': 'aws/concepts/budgets.md'
     - 'Credits': 'aws/concepts/credits.md'
     - 'Rightsizing': 'aws/concepts/rightsizing.md'
     - 'Savings Plans' : 'aws/concepts/savings-plans.md'
@@ -53,6 +51,7 @@ nav:
     - 'Route 53': 'aws/services/route-53-pricing.md'
     - 'S3': 'aws/services/s3-pricing.md'
     - 'VPC': 'aws/services/vpc-pricing.md'
+    - 'WorkSpaces': 'aws/services/workspaces-pricing.md'
     
 
 google_analytics:
