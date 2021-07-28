@@ -8,9 +8,10 @@ Amazon Elasticsearch Service is a full-managed service which runs [ElasticSearch
 
 ## Pricing Dimensions
 
-* **Instance Type Usage**: ElasticSearch instance types are billed at an hourly rate and charged that hourly rate on a per-second basis for your usage. 
-
-* **Attached Storage**: ElasticSearch allows you to attach storage to the instances either as General Purpose Storage or Provisioned IOPS storage. Behind the scenes these are just managed EBS Volumes that ElasticSearch orchestrates on your behalf. However, on your monthly AWS bill these charges will show up under the ElasticSearch service and not under the EBS service. There are also options for high performance local SSD disks for storage optimized instances.
+|Dimension|Description|
+|----|----|
+|Instance Type Usage|ElasticSearch instance types are billed at an hourly rate and charged that hourly rate on a per-second basis for your usage.|
+|Attached Storage|ElasticSearch allows you to attach storage to the instances either as General Purpose Storage or Provisioned IOPS storage. Behind the scenes these are just managed EBS Volumes that ElasticSearch orchestrates on your behalf. However, on your monthly AWS bill these charges will show up under the ElasticSearch service and not under the EBS service. There are also options for high performance local SSD disks for storage optimized instances.|
 
 ## Storage Optimized Instances
 If better storage performance, above EBS, is needed you can select Storage Optmized instances which include local NVMe SSD disks.

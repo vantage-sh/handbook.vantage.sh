@@ -7,11 +7,11 @@ Amazon CloudFront is a CDN service used to distribute and cache traffic from one
 
 ## Pricing Dimensions
 
-* **Transfer Out to Internet**: Distributions are billed per GB of data transfered out of a geographic area to the internet. The prices are tiered and are lower the more traffic is transferred.
-
-* **Regional Data Transfer Out to Origin**: Distributions are billed per GB of data transfer from the distribution back to the origin. The prices are a flat rate and dependent on their geographic area.
-
-* **Per Request**: Distributions are billed per 10,000 requests and are different rates based on whether the request is HTTP or HTTPS. If origin shield is configured there is an additional charge per 10,000 requests and are a standard rate regardless of protocol. Both are priced differently depending on geographic area. 
+| Dimension | Description |
+| -- | -- |
+| Transfer Out to Internet | Distributions are billed per GB of data transfered out of a geographic area to the internet. The prices are tiered and are lower the more traffic is transferred. |
+| Regional Data Transfer Out to Origin | Distributions are billed per GB of data transfer from the distribution back to the origin. The prices are a flat rate and dependent on their geographic area. |
+| Per Request | Distributions are billed per 10,000 requests and are different rates based on whether the request is HTTP or HTTPS. If origin shield is configured there is an additional charge per 10,000 requests and are a standard rate regardless of protocol. Both are priced differently depending on geographic area. |
 
 ## Origin Shield
 Origin Shield can be enabled in order to reduce the amount of traffic being served directly from the origin. Origin shields are not available in every region.

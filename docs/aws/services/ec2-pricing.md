@@ -8,9 +8,11 @@ Amazon EC2 (Elastic Cloud Compute) is Amazon’s most popular service and usuall
 
 ## Pricing Dimensions
 
-* **Instance Type Usage**: EC2 instance types are billed on one second increments, with a minimum of 60 seconds. For certain instance types with pre-installed software, you are billed in increments of hours. 
-* **Instance Type Lifecycle**: EC2 has different lifecycle types - the two most often used are on-demand and spot. These concepts are discussed more in-depth below. 
-* **AMI**: AMI stands for Amazon Machine Images. Depending on the AMI you use (i.e., Linux vs Windows) you potentially pay an additional amount of money on top of the instance type base usage. 
+|Dimension|Description|
+|------|-------|
+| Instance Type Usage | EC2 instance types are billed on one second increments, with a minimum of 60 seconds. For certain instance types with pre-installed software, you are billed in increments of hours. |
+| Instance Type Lifecycle | EC2 has different lifecycle types - the two most often used are on-demand and spot. These concepts are discussed more in-depth below. |
+| AMI | AMI stands for Amazon Machine Images. Depending on the AMI you use (i.e., Linux vs Windows) you potentially pay an additional amount of money on top of the instance type base usage. |
 
 ## On-Demand vs Spot
 

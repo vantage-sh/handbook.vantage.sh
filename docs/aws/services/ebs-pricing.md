@@ -10,19 +10,23 @@ It is important to note that you are charged for the amount of _provisioned_ sto
 
 ## Pricing Dimensions
 
-* **Volume Storage Hours**: When you create an EBS Volume you allocate a certain amount of storage to it. Ultimately the main cost of an EBS Volume is the result of the amount of hours you're using an EBS Volume and the size you allocate. 
-* **Volume Type**: EBS has different types of Volume Types which are documented below. Each Volume Type has different rates. 
-* **Provisioned IOPS**: Certain EBS Volume types (io2, io2) allow you to specific an amount of provisioned input/output operations per second which is abbreviated as IOPS and pronounced as "eye-ops". When using these volume types you are charged for the amount of provisioned iops even if you don't fully utilize them.
-* **Amazon EBS Snapshots**: Amazon EBS Snapshots are a point in time copy of your block volume data. EBS Snapshots are stored incrementally, which means you are billed only for the changed blocks stored.
-* **EBS Snapshot API Requests**: EBS charges you for the amount of API calls you make for snapshots. These are charged in increments of thousands of API requests. 
+| Dimension | Description |
+|--------|--------|
+| Volume Storage Hours | When you create an EBS Volume you allocate a certain amount of storage to it. Ultimately the main cost of an EBS Volume is the result of the amount of hours you're using an EBS Volume and the size you allocate. |
+| Volume Type | EBS has different types of Volume Types which are documented below. Each Volume Type has different rates. |
+| Provisioned IOPS | Certain EBS Volume types (io2, io2) allow you to specific an amount of provisioned input/output operations per second which is abbreviated as IOPS and pronounced as "eye-ops". When using these volume types you are charged for the amount of provisioned iops even if you don't fully utilize them. |
+| Amazon EBS Snapshots | Amazon EBS Snapshots are a point in time copy of your block volume data. EBS Snapshots are stored incrementally, which means you are billed only for the changed blocks stored. |
+| EBS Snapshot API Requests | EBS charges you for the amount of API calls you make for snapshots. These are charged in increments of thousands of API requests. | 
 
 
 ## Volume Types
 
-Amazon EBS offers a few diffrent Volume Types that have different pricing rates and functionality. Each EBS Volume Type is described below:
+Amazon EBS offers a few different Volume Types that have different pricing rates and functionality. Each EBS Volume Type is described below:
 
-* ** General Purpose SSD (gp2, gp3)**: General Purpose SSD (gp3) volumes offer cost-effective storage that is ideal for a broad range of workloads.
-* ** Provisioned IOPS (io1, io2)**: Provisioned IOPS SSD (io1 and io2) volumes are designed to meet the needs of I/O-intensive workloads, particularly database workloads, that are sensitive to storage performance and consistency. Provisioned IOPS SSD volumes use a consistent IOPS rate, which you specify when you create the volume, and Amazon EBS delivers the provisioned performance 99.9 percent of the time.
+| Volume Type | Description |
+|------|-----|
+| General Purpose SSD (gp2, gp3) | General Purpose SSD (gp3) volumes offer cost-effective storage that is ideal for a broad range of workloads. |
+| Provisioned IOPS (io1, io2) | Provisioned IOPS SSD (io1 and io2) volumes are designed to meet the needs of I/O-intensive workloads, particularly database workloads, that are sensitive to storage performance and consistency. Provisioned IOPS SSD volumes use a consistent IOPS rate, which you specify when you create the volume, and Amazon EBS delivers the provisioned performance 99.9 percent of the time. |
 
 
 ## Stranded Volumes

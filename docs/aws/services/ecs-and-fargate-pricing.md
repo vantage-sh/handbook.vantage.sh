@@ -11,8 +11,10 @@ There is no additional charge to you when using ECS on self-managed EC2 as you'r
 
 ## Fargate Pricing Dimensions
 
-* **vCPU Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charged a corresponding per-hour VCPU rate. 
-* **GB Memory Hours**: When configuring a Fargate Task or EKS Pod you assign a certain amount GB of Memory and are charged a corresponding per-hour GB of Memory rate. 
+|Dimension|Description|
+|---|---|
+|vCPU Hours|When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charged a corresponding per-hour VCPU rate.|
+|GB Memory Hours|When configuring a Fargate Task or EKS Pod you assign a certain amount GB of Memory and are charged a corresponding per-hour GB of Memory rate.|
 
 ### Fargate vs self-managed EC2 on ECS or EKS
 

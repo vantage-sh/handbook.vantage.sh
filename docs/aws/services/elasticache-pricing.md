@@ -8,7 +8,9 @@ Amazon ElastiCache allows you to set up, run, and scale popular open-source comp
 
 ## Pricing Dimensions
 
-* **Node Usage**: You are charged for the amount of hours your ElastiCache nodes run.
+|Dimension|Description|
+|---|---|
+|Node Usage|You are charged for the amount of hours your ElastiCache nodes run.|
 
 
 ## Reserved Instances

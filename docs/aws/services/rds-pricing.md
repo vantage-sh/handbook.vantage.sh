@@ -8,11 +8,13 @@ Amazon Relational Database Service (RDS) provides you with the ability to create
 
 ## Pricing Dimensions
 
-* **Instance Type Usage**: RDS instance types are billed at an hourly rate and charged that hourly rate on a per-second basis for your usage. 
-* **Database Software**: As RDS allows you to run different types of database software there are varying costs depending on which database software you choose to use. For example you can run Oracle and MySQL database on the same RDS instance types but they have different pricing as Oracle licensing contributes a higher cost than MySQL. 
-* **Availability**: RDS allows you to run RDS instances in either "Single AZ" or "Multi AZ" deployments. "Multi AZ" deployments are more highly available but carry a larger cost. 
-* **Attached Storage**: RDS allows you to attach storage to RDS instances either as General Purpose Storage or Provisioned IOPS storage. Behind the scenes these are just managed EBS Volumes that RDS orchestrates on your behalf. However, on your monthly AWS bill these charges will show up under the RDS service and not under the EBS service. 
-* **Backup Storage**: You have the ability to turn on backups for your RDS instances and are charged an accompanying storage rate for backups. 
+|Dimension|Description|
+|----|----|
+|Instance Type Usage|RDS instance types are billed at an hourly rate and charged that hourly rate on a per-second basis for your usage.|
+|Database Software|As RDS allows you to run different types of database software there are varying costs depending on which database software you choose to use. For example you can run Oracle and MySQL database on the same RDS instance types but they have different pricing as Oracle licensing contributes a higher cost than MySQL.| 
+|Availability|RDS allows you to run RDS instances in either "Single AZ" or "Multi AZ" deployments. "Multi AZ" deployments are more highly available but carry a larger cost.| 
+|Attached Storage|RDS allows you to attach storage to RDS instances either as General Purpose Storage or Provisioned IOPS storage. Behind the scenes these are just managed EBS Volumes that RDS orchestrates on your behalf. However, on your monthly AWS bill these charges will show up under the RDS service and not under the EBS service.| 
+|Backup Storage|You have the ability to turn on backups for your RDS instances and are charged an accompanying storage rate for backups.| 
 
 ## Reserved Instances
 
