@@ -28,9 +28,12 @@ EC2 Instances are covered by AWS Savings Plans. Savings Plans are covered more i
 ## Reserved Instances
 EC2 Instances are covered by AWS Reserved Instances. Reserved Instances are covered more in depth as a general concept [here](/aws/concepts/reserved-instances/). As it relates to EC2, Reserved Instances aren't preferred as they present the same savings as Savings Plans but are constrained to a single instance type where as Savings Plans give greater flexibility. 
 
-## Instance Type Families
+## Generational Upgrades
+EC2 instance types are grouped into families (discussed below) with multiple generations. For example a `m4.4xlarge` is of family type `m` and generation `4`. The next generation for the same instance type would be `m5.4xlarge`. Typically, as cloud infrastructure providers release new families it's cheaper and more performant to run the later generation instance types. Upgrade instances from one generation to another can be a major area of cost savings. Generation upgrades usually result in between 5% and 10% cost savings per generation and varies per family. 
 
-EC2 Instance Types are organized into "Families" and each family can have multiple "Generations". By looking at each instance type you can infer its Family and Generation from the instance type name. For example, a `c5.4xlarge` is the `c` Family and `5th` Generation. Below is a table of EC2 Instance Families and simple descriptions
+## Instance Type Families
+EC2 Instance Types are organized into "Families" and each family can have multiple "Generations". By looking at each instance type you can infer its Family and Generation from the instance type name. For example, a `c5.4xlarge` is the `c` Family and `5th` Generation. Below is a table of EC2 Instance Families and simple descriptions:
+
 
 | Family      | Description |
 | ----------- | ----------- |

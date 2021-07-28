@@ -11,9 +11,7 @@ nav:
   - 'Overview' : 'index.md'
   - 'Cost Leaderboard': 'https://leaderboard.vantage.sh/'
   - 'General Concepts': 
-    - 'Your Monthly Bill': 'aws/concepts/bill.md'
     - 'Regions' : 'aws/concepts/regions.md'
-    - 'Budgets': 'aws/concepts/budgets.md'
     - 'Credits': 'aws/concepts/credits.md'
     - 'Rightsizing': 'aws/concepts/rightsizing.md'
     - 'Savings Plans' : 'aws/concepts/savings-plans.md'
