@@ -20,7 +20,7 @@ Provider Services are meant to be the source of truth for explaining not only th
 Anyone is welcome to contribute to the Vantage Cloud Cost Handbook by issuing a pull request on the GitHub repo. 
 
 
-[:material-github: Contribute](https://github.com/vantage-sh){ .md-button }
+[:material-github: Contribute](https://github.com/vantage-sh/handbook){ .md-button }
 
 ## Slack Community
 
