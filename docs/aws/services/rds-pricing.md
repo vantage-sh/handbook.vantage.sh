@@ -1,4 +1,4 @@
-title: RDS Pricing | Vantage Cloud Cost Handbook
+title: RDS Pricing | Cloud Cost Handbook
 
 [Amazon EC2 Pricing Page](https://aws.amazon.com/rds/pricing/){ .md-button }
 

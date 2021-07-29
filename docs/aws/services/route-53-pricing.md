@@ -1,4 +1,4 @@
-title: Route53 Pricing | Vantage Cloud Cost Handbook
+title: Route53 Pricing | Cloud Cost Handbook
 
 [Route53 Pricing Page](https://aws.amazon.com/route53/pricing/){ .md-button }
 

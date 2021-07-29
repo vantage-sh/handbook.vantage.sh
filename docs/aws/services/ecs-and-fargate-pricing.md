@@ -1,4 +1,4 @@
-title: ECS & Fargate Pricing | Vantage Cloud Cost Handbook
+title: ECS & Fargate Pricing | Cloud Cost Handbook
 
 [ECS Pricing Page](https://aws.amazon.com/ecs/pricing/){ .md-button }
 [Fargate Pricing Page](https://aws.amazon.com/fargate/pricing/){ .md-button }

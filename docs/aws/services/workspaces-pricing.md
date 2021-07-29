@@ -1,4 +1,4 @@
-title: WorkSpaces Pricing | Vantage Cloud Cost Handbook
+title: WorkSpaces Pricing | Cloud Cost Handbook
 
 [Amazon WorkSpaces Pricing Page](https://aws.amazon.com/workspaces/pricing){ .md-button }
 

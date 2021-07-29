@@ -1,4 +1,4 @@
-title: EBS Pricing | Vantage Cloud Cost Handbook
+title: EBS Pricing | Cloud Cost Handbook
 
 [Amazon EBS Pricing Page](https://aws.amazon.com/ebs/pricing/){ .md-button }
 

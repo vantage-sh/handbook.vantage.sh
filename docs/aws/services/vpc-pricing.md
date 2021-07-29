@@ -1,4 +1,4 @@
-title: VPC Pricing | Vantage Cloud Cost Handbook
+title: VPC Pricing | Cloud Cost Handbook
 
 [Amazon VPC Pricing Page](https://aws.amazon.com/vpc/pricing/){ .md-button }
 

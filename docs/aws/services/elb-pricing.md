@@ -1,4 +1,4 @@
-title: Elastic Load Balancer Pricing | Vantage Cloud Cost Handbook
+title: Elastic Load Balancer Pricing | Cloud Cost Handbook
 
 [Amazon ELB Pricing Page](https://aws.amazon.com/elasticloadbalancing/pricing/){ .md-button }
 

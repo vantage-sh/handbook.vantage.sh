@@ -1,4 +1,4 @@
-title: CloudWatch Pricing | Vantage Cloud Cost Handbook
+title: CloudWatch Pricing | Cloud Cost Handbook
 
 [Amazon EBS Pricing Page](https://aws.amazon.com/cloudwatch/pricing/){ .md-button }
 

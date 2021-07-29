@@ -1,4 +1,4 @@
-title: ElastiCache Pricing | Vantage Cloud Cost Handbook
+title: ElastiCache Pricing | Cloud Cost Handbook
 
 [Amazon ElastiCache Pricing Page](https://aws.amazon.com/elasticache/pricing/){ .md-button }
 

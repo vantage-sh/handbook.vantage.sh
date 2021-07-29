@@ -1,4 +1,4 @@
-title: Lambda Pricing | Vantage Cloud Cost Handbook
+title: Lambda Pricing | Cloud Cost Handbook
 
 [Lambda Pricing Page](https://aws.amazon.com/lambda/pricing/){ .md-button }
 

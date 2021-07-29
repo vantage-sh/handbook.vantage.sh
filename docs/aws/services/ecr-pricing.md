@@ -1,4 +1,4 @@
-title: ECR Pricing | Vantage Cloud Cost Handbook
+title: ECR Pricing | Cloud Cost Handbook
 
 [Amazon ECR Pricing Page](https://aws.amazon.com/ecr/pricing/){ .md-button }
 

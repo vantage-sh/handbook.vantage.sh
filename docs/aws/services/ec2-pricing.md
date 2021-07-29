@@ -1,4 +1,4 @@
-title: EC2 Pricing | Vantage Cloud Cost Handbook
+title: EC2 Pricing | Cloud Cost Handbook
 
 [Amazon EC2 Pricing Page](https://aws.amazon.com/ec2/pricing/){ .md-button }
 

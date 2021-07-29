@@ -1,4 +1,4 @@
-title: Cloudfront Pricing | Vantage Cloud Cost Handbook
+title: Cloudfront Pricing | Cloud Cost Handbook
 
 [Amazon CloudFront Pricing Page](https://aws.amazon.com/cloudfront/pricing/){ .md-button }
 

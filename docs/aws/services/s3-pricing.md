@@ -1,4 +1,4 @@
-title: S3 Pricing | Vantage Cloud Cost Handbook
+title: S3 Pricing | Cloud Cost Handbook
 
 [Amazon S3 Pricing Page](https://aws.amazon.com/s3/pricing/){ .md-button }
 

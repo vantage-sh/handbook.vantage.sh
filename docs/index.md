@@ -1,6 +1,6 @@
-# Vantage Cloud Cost Handbook
+# Cloud Cost Handbook
 
-The Vantage Cloud Cost Handbook is a free, open-source, community-supported set of guides meant to help explain often-times complex pricing of public cloud infrastructure and service providers in easy-to-understand terms. This guide is [hosted on Github](https://github.com/vantage-sh/handbook) and is open to anyone to contribute their knowledge to the community. [Vantage](https://www.vantage.sh/) employees will maintain hosting the guide for everyone and ensure that content is relevant and adheres to styleguides.
+The Cloud Cost Handbook is a free, open-source, community-supported set of guides meant to help explain often-times complex pricing of public cloud infrastructure and service providers in easy-to-understand terms. This guide is [hosted on Github](https://github.com/vantage-sh/handbook) and is open to anyone to contribute their knowledge to the community. [Vantage](https://www.vantage.sh/) employees will maintain hosting the guide for everyone and ensure that content is relevant and adheres to styleguides.
 
 ## Structure
 
@@ -17,7 +17,7 @@ Provider Services are meant to be the source of truth for explaining not only th
 
 ## Contributing
 
-Anyone is welcome to contribute to the Vantage Cloud Cost Handbook by issuing a pull request on the GitHub repo. 
+Anyone is welcome to contribute to the Cloud Cost Handbook by issuing a pull request on the GitHub repo. 
 
 
 [:material-github: Contribute](https://github.com/vantage-sh/handbook){ .md-button }

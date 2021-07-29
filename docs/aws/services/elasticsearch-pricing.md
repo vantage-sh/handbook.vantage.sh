@@ -1,4 +1,4 @@
-title: Elasticsearch Service Pricing | Vantage Cloud Cost Handbook
+title: Elasticsearch Service Pricing | Cloud Cost Handbook
 
 [Amazon Elasticsearch Service Pricing Page](https://aws.amazon.com/elasticsearch-service/pricing/){ .md-button }
 
