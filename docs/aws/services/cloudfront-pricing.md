@@ -27,7 +27,7 @@ For customers who are willing to make certain minimum traffic commits (typically
 
 Cloudflare is an edge network that offers a number of different performance, availability and security services. One of those services is an edge caching service that offer effectively the same service as Amazon CloudFront. The most important distinction between CloudFront and Cloudflare is not a technical differentiation but a business model differentiation. CloudFront utilizes a metered pricing model whereby you pay based on the amount of traffic that is served via the CloudFront service.[^cloudfrontpricing] Cloudflare, on the otherhand, offers flat-rate pricing for its service without any bandwidth caps.[^cloudflaretos] 
 
-What this means is that as a customer of Cloudflare's Business plan, you can pay $200 per month and delivery unlimited traffic via the Cloudflare CDN. Seems too good to be true? Feel free to browse the official Cloudflare community where this question is [asked](https://community.cloudflare.com/t/to-support-about-cdn-plan/166219) and [answered](https://community.cloudflare.com/t/cloudflare-doesnt-mention-in-plans-that-how-much-monthly-bandwidth-will-provides/161097) multiple times.
+What this means is that as a customer of [Cloudflare's Business plan](https://www.cloudflare.com/plans/business/), you can pay $200 per month and delivery unlimited traffic via the Cloudflare CDN. Seems too good to be true? Feel free to browse the official Cloudflare community where this question is [asked](https://community.cloudflare.com/t/to-support-about-cdn-plan/166219) and [answered](https://community.cloudflare.com/t/cloudflare-doesnt-mention-in-plans-that-how-much-monthly-bandwidth-will-provides/161097) multiple times.
 
 ### Considerations
 
@@ -45,14 +45,14 @@ Another side effect of subscribing to a self-serve plan from Cloudflare is that 
 
 The important thing to remember is that, as long as you aren't breaking the Cloudflare Terms of Service (ToS) they cannot force you to purchase any additional services. They can however annoy, bother and even threaten you (even if the threat is empty) endlessly. Sales teams are incentivized by commission, this is part of their job. You've been warned.
 
-<br/>
 
-!!! Contribute
-	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
-
-
-[^whynoothervendors]: This guide is naming Cloudflare and no other vendors in this space due to the unique offerings that Cloudflare has that no other provider offers. Specifically, that they offer self-serve plans with flat-rate pricing and no bandwidth caps. If you are aware of any other services with a similar offering, please submit an issue or pull request and we will update the guide.
+[^whynoothervendors]: This guide is calling special attention to Cloudflare and no other vendors in this space due to the unique offerings that Cloudflare has that no other provider offers. Specifically, that they offer self-serve plans with flat-rate pricing and no bandwidth caps. If you are aware of any other services with a similar offering, please submit an issue or pull request and we will update the guide.
 
 [^cloudfrontpricing]: Direct link to CloudFront pricing that details metered pricing model: https://aws.amazon.com/cloudfront/pricing/
 
 [^cloudflaretos]: Direct link to the Cloudflare Terms of Service for the self-serve plans (i.e. the Free, Pro and Business plans):https://www.cloudflare.com/terms/
+
+<br/>
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
