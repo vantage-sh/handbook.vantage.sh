@@ -31,7 +31,7 @@ What this means is that as a customer of Cloudflare's Business plan, you can pay
 
 ### Considerations
 
-Price is obviously not the only consideration that goes into making a decision about whether to utilize CloudFront or a competing CDN service. Performance, availability, user experience, support and legal compliance are other factors that will factor into the decision to utilize one service over another.
+Price is not the only consideration that goes into making a decision about whether to utilize CloudFront or a competing CDN service. Performance, availability, user experience, support and legal compliance are other factors that will factor into the decision to utilize one service over another.
 
 #### Availability
 
