@@ -31,6 +31,13 @@ Provisioned Throughput includes optional Auto-Scaling if throughput thresholds a
 
 [AWS Free Tier](https://aws.amazon.com/free) includes 25 reads/writes-per-second of Provisioned Throughput (across any # of tables), but *does not* include any On Demand mode usage.
 
+| Billing Mode           | Unit                          | Unit Definition                                            |
+|------------------------|-------------------------------|------------------------------------------------------------|
+| On Demand              | **Read Request Unit (RRU)**   | read two <4KB items, eventually consistent                 |
+| On Demand              | **Write Request Unit (WRU)**  | write one <1KB item                                        |
+| Provisioned Throughput | **Read Capacity Unit (RCU)**  | two reads *per second* (<4KB items), eventually consistent |
+| Provisioned Throughput | **Write Capacity Unit (WCU)** | one write *per second* (<1KB item)                         |
+
 
 ## Write Type
 
@@ -50,7 +57,7 @@ For a given write of an item up to *1 KB* in size:
 
 ## Read Type
 
-Part of what makes DynamoDB a compelling offering is its hybrid approach to the CAP theorem - it can adjust between eventually and strongly Consistent as needed.
+Part of what makes DynamoDB a compelling offering is its hybrid approach to the CAP theorem[^1] - it can adjust between eventually and strongly consistent as needed.
 
 Wherever acceptable to the business needs and current data modeling, it is faster and cheaper to use eventually consistent reads.
 
@@ -91,13 +98,13 @@ Indexes can help control costs in two primary ways:
 
 1. Queries on a new index return less unnecessary items (than the alternative/existing query) and thus cost less RRUs.
 
-2. Each Index optionally allows a subset of item attributes to be **Projected** to that index. Projecting a subset can save on read costs if items are regularly >4 KB, but the projected attribute names+values sum to <4KB
+2. Each index optionally allows a subset of item attributes to be **projected** to that index. Projecting a subset can save on read costs if items are regularly >4 KB, but the projected attribute names+values sum to <4KB.[^2]
 
-| Type       | Primary Key Attributes                       |
-|------------|----------------------------------------------|
-| Base table | Initial `pk` + optional `sk`                 |
-| **LSI**    | Initial `pk` + *different* `sk`              |
-| **GSI**    | *Different* `pk` + optional *different* `sk` |
+| Type                             | Primary Key Attributes                       |
+|----------------------------------|----------------------------------------------|
+| Base table                       | Initial `pk` + optional `sk`                 |
+| **Local Secondary Index (LSI)**  | Initial `pk` + *different* `sk`              |
+| **Global Secondary Index (GSI)** | *Different* `pk` + optional *different* `sk` |
 
 !!! info
     The provisioned throughput settings of a global secondary index are separate from those of its base table
@@ -106,7 +113,7 @@ Indexes can help control costs in two primary ways:
 
 DynamoDB tables can optionally enforce a **Time To Live (TTL)** on items in the table, such that they expire after that amount of time (guaranteed within +48 hours).
 
-Dynamo exposes the time-ordered sequence of item-level changes on a given table via **DynamoDB Streams**. Reading change-data from Streams is slightly cheaper per request than reading the table (on pay per use BillingMode). The first 2.5M reads per month are free.
+Dynamo exposes the time-ordered sequence of item-level changes on a given table via **DynamoDB Streams**. Reading change-data from Streams is slightly cheaper per request than reading the table itself (on pay per use BillingMode). The first 2.5M reads per month are free.
 
 ## Further Reading
 
@@ -116,6 +123,10 @@ Dynamo exposes the time-ordered sequence of item-level changes on a given table 
 
 <br/>
 
+
+[^1]: The [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a computer science theorem that observes that a distributed datastore cannot guarantee all three of Consistency, Availability, and Partition Tolerance.
+
+[^2]: If a query to an index with projection requests attribute values not in the projected values, it will incur twice the normal read cost, as the remaining attribute values must be fetched from the base table
 
 !!! Contribute
 	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
