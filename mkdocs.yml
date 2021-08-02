@@ -38,6 +38,7 @@ nav:
   - 'AWS Services':
     - 'CloudFront': 'aws/services/cloudfront-pricing.md'
     - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
+    - 'DynamoDB': 'aws/services/dynamodb-pricing.md'
     - 'EBS': 'aws/services/ebs-pricing.md'
     - 'EC2': 'aws/services/ec2-pricing.md'
     - 'EC2-Other': 'aws/services/ec2-other-pricing.md'
