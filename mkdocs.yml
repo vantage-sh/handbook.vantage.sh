@@ -8,7 +8,6 @@ theme:
   icon:
     repo: fontawesome/brands/github-square
   favicon: assets/logo.svg
-  custom_dir: overrides
 
 extra:
   generator: false
