@@ -5,13 +5,19 @@ theme:
   features:
     - navigation.sections
   logo: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github-square
   favicon: assets/logo.svg
+  custom_dir: overrides
 
 extra:
   generator: false
 
 extra_css:
   - stylesheets/extra.css
+
+repo_name: vantage-sh/handbook
+repo_url: https://github.com/vantage-sh/handbook
 
 markdown_extensions:
   - attr_list
