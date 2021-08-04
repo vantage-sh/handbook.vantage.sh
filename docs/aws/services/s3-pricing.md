@@ -63,6 +63,28 @@ aws s3api put-bucket-metrics-configuration
 
 **Note**: it takes roughly 15 minutes for AWS to begin delivering these metrics after being enabled.
 
+
+## S3 Versus CLoudflare Bandwidth Alliance Partner
+
+The [Cloudflare Bandwidth Alliance](https://www.cloudflare.com/bandwidth-alliance/) is a group of infrastructure providers that have decided to either completely waive or massively discount egress fees for shared customers. This can be a huge source of savings for customers that have an AWS bill where S3 egress costs make up a large portion of the aforementioned bill.
+
+By utilizing Cloudflare's content delivery network (CDN) service in tandem with a Bandwidth Alliance provider, customer can get no-cost content transit from their origin server to Cloudflare servers distributed around the world. This effectively reproduces the cost benefit that users get for pairing CloudFront with an AWS service like S3.[^noegressfees] Utilizing one of Cloudflare's self-serve plans, customer can also cap their cost to deliver content via flat-rate pricing. Further details can be found at in the [CloudFront service article](https://handbook.vantage.sh/aws/services/cloudfront-pricing/#cloudfront-versus-cloudflare) of the Cloud Cost Handbook.
+
+### Considerations
+
+Price is not the only consideration that goes into making a decision about whether to utilize S3 or a competing storage service. Performance, availability, user experience, support and legal compliance are other factors that will factor into the decision to utilize one service over another.
+
+#### Complexity
+
+AWS had made it exceedingly easy for customer to utilize other AWS service in tandem. There is a non-trivial cost for an organization to decide to split their infrastructure over multiple service providers. Developers will need to learn and understand both systems and when to choose one design pattern over the other. There will be two sets of documentation that will need to be addressed when designing or troubleshooting systems.
+
+#### Use-cases
+
+The primary use-case in favor of utilizing this cost efficiency architecture strategy is if a user has a large amount of static content that is stored on S3 and being served to end-users via the internet.
+
+[^noegressfees]: "If you are using an AWS origin, effective December 1, 2014, data transferred from origin to edge locations (Amazon CloudFront "origin fetches") will be free of charge." https://aws.amazon.com/cloudfront/pricing/
+
+
 <br/>
 
 !!! Contribute
