@@ -64,7 +64,7 @@ aws s3api put-bucket-metrics-configuration
 **Note**: it takes roughly 15 minutes for AWS to begin delivering these metrics after being enabled.
 
 
-## S3 Versus CLoudflare Bandwidth Alliance Partner
+## S3 Versus Cloudflare Bandwidth Alliance Partner
 
 The [Cloudflare Bandwidth Alliance](https://www.cloudflare.com/bandwidth-alliance/) is a group of infrastructure providers that have decided to either completely waive or massively discount egress fees for shared customers. This can be a huge source of savings for customers that have an AWS bill where S3 egress costs make up a large portion of the aforementioned bill.
 
