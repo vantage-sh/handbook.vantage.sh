@@ -53,7 +53,7 @@ On top of this, you can also consider moving your content off of an AWS service 
 
 Another side effect of subscribing to a self-serve plan from Cloudflare is that users of these plans are used as part of the sales funnel for the Cloudflare sales team. What this means is that by signing up for Cloudflare you are giving your contact information that can be utilized by the sales team in order for them to contact you about other Cloudflare services and offerings. 
 
-The important thing to remember is that, as long as you aren't breaking the Cloudflare Terms of Service (ToS) they cannot force you to purchase any additional services. They can however annoy, bother and even threaten you (even if the threat is empty) endlessly. Sales teams are incentivized by commission, this is part of their job.
+The important thing to remember is that, as long as you aren't breaking the Cloudflare Terms of Service (ToS) they cannot force you to purchase any additional services.
 
 
 [^whynoothervendors]: This guide is calling special attention to Cloudflare and no other vendors in this space due to the unique offerings that Cloudflare has that no other provider offers. Specifically, that they offer self-serve plans with flat-rate pricing and no bandwidth caps. If you are aware of any other services with a similar offering, please submit an issue or pull request and we will update the guide.
