@@ -18,7 +18,7 @@ Amazon Relational Database Service (RDS) provides you with the ability to create
 
 ## Reserved Instances
 
-As RDS instances are **not** covered by [AWS Savings Plans](http://localhost:8000/aws/concepts/savings-plans/), you must rely on procuring [Reserved Instances](http://localhost:8000/aws/concepts/reserved-instances/) specifically for RDS. Reserved Instances are covered in depth under General Concepts and we encourage you to read up more on them there for the most up-to-date information.
+As RDS instances are **not** covered by [AWS Savings Plans](/aws/concepts/savings-plans/), you must rely on procuring [Reserved Instances](/aws/concepts/reserved-instances/) specifically for RDS. Reserved Instances are covered in depth under General Concepts and we encourage you to read up more on them there for the most up-to-date information.
 
 ## Tracking Costs per RDS Instance
 
