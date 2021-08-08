@@ -7,3 +7,6 @@ Rightsizing is a term used for identifying and augmenting certain resources for 
 
 
 The first step in rightsizing is to have monitoring and observability in place to even know what your utilization is for these various services. Assuming you feel confident in your usage patterns and how they relate to utilization, your organization can begin to make some decision for potential area to rightsize. 
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

@@ -11,3 +11,7 @@ Typically this is advised against because the operational overhead of running wo
 ## Credit Expiration
 
 It's important to note that credits typically have a lifecycle tied to them that causes them to expire. Oftentimes this catches customers by surprise. Usually credits are granted on a 1 year basis which means if you have remaining credits that aren't utilized by the expiration term, they're automatically removed from your account. It's important to keep track of your credit expiration dates as to not be caught off-guard.
+
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

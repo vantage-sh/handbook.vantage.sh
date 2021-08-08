@@ -7,3 +7,6 @@ It's important to note that Reserved Instances aren't actually separate instance
 ## Reserved Instance Term
 
 AWS gives different discounts depending on the term that you pay upfront for. You can yield greater savings for paying upfront for longer terms but lose flexibility as a result. We find that smaller customers just getting started in their infrastructure journey tend to prefer 1-Year Reserved Instances whereas more mature organizations will leverage 3-Year Reserved Instances for the greatest savings as they can more accurately model and predict their usage. 
+
+!!! Contribute
+	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).

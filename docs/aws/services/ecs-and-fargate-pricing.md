@@ -16,6 +16,12 @@ There is no additional charge to you when using ECS on self-managed EC2 as you'r
 |vCPU Hours|When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charged a corresponding per-hour VCPU rate.|
 |GB Memory Hours|When configuring a Fargate Task or EKS Pod you assign a certain amount GB of Memory and are charged a corresponding per-hour GB of Memory rate.|
 
+### Fargate Spot
+
+Fargate has the ability to run in a Spot capacity which is conceptually the same premise as [EC2 Spot](/aws/services/ec2-pricing/#on-demand-vs-spot) - allowing you to run Tasks at up to a 70% discount off the Fargate on-demand price. 
+
+When the capacity for Fargate Spot is available, you will be able to launch tasks based on your specified request. When AWS needs the capacity back, tasks running on Fargate Spot will be interrupted with two minutes of notification. If the capacity for Fargate Spot stops being available, Fargate will scale down tasks running on Fargate Spot while maintaining any regular tasks you are running.
+
 ### Fargate vs self-managed EC2 on ECS or EKS
 
 Fargate charges a significant premium for managing the underlying nodes. Additionally, Fargate has varying degress of vCPU performance that differ depending on the Task. As a result, Fargate can have pitfalls relative to self-managed ECS or EKS on EC2 beyond just the additional costs. 
