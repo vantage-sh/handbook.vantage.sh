@@ -18,6 +18,12 @@ Amazon CloudFront is a content delivery network (CDN) service used to distribute
 
 Origin Shield can be enabled in order to reduce the amount of traffic being served directly from the origin. Origin shields are not available in every region.
 
+## CloudFront Security Savings Bundle
+
+The CloudFront Security Savings Bundle is a simple way to save up to 30% on the CloudFront charges on your AWS bill when you make a 1-year upfront commitment with no service-level configuration changes needed. You're billed in equal installments over the 12 months, starting from the time you purcahse the security savings bundle. Once you purchase the CloudFront Security Savings Bundle, the savings are automatically applied to your bill. If you're familiar with [Savings Plans](/aws/concepts/savings-plans) or [Reserved Instances](/aws/concepts/reserved-instances), this is essentially the CloudFront equivalent to those conceptually speaking. 
+
+The reason for this being named a "bundle" is that by making this purchase you also get credits towards the AWS Web Application Firewall (WAF) service. Ten percent of the amount you pay in committed use for a CloudFront Security Savings Bundle will be granted toward AWS WAF. So for example if you pay $500 for a CloudFront Security Savings Bundle, $50 will also be applied towards AWS WAF. 
+
 ## Custom Pricing
 
 For customers who are willing to make certain minimum traffic commits (typically 10 TB/month or higher) they can contact AWS and negotiate custom discounted rates.
