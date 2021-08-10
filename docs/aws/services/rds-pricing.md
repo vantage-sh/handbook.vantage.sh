@@ -20,9 +20,11 @@ Amazon Relational Database Service (RDS) provides you with the ability to create
 
 As RDS instances are **not** covered by [AWS Savings Plans](/aws/concepts/savings-plans/), you must rely on procuring [Reserved Instances](/aws/concepts/reserved-instances/) specifically for RDS. Reserved Instances are covered in depth under General Concepts and we encourage you to read up more on them there for the most up-to-date information.
 
-## Tracking Costs per RDS Instance
+## Single vs Multi Availability Zones
 
-In order to see costs per RDS Instance you'll want to describe all of your RDS Instances across all regions, determine what database software they're running, determine if they are Single AZ or Multi AZ and then find the accompanying rate on the AWS pricing page.
+RDS allows you to deploy instances in either a single availability zone or across multiple availability zones. Shorthand, this is referenced as either "single-AZ" or "multi-AZ". The benefit of being multi-AZ is that you're provided with enhanced availability and durability for your database as Amazon provisions and maintains a standby in a different availability zone for automatic failover in the event of a scheduled or unplanned outage. 
+
+From a cost consideration perspective, multi-AZ rates are double what single-AZ rates are for the added durability that you're provided. 
 
 <br/>
 
