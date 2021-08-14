@@ -20,6 +20,9 @@ By default, EC2 instances are launched in "on-demand" mode and charged accompany
 
 Depending on your application's needs, you can consider using Spot instances for significant cost savings in the event you are comfortable with these instances being terminated. In general, your application's architecture should be comfortable with either 1) there being no spot instances available or 2) these instances being terminated. 
 
+## Autoscaling
+EC2 [autoscaling](../../concepts/autoscaling/) is provided by a primitive named [Autoscaling Groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html). Autoscaling Groups have [lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) to accommodate complex workflows regarding instance creation or termination and can support multiple instance types or spot instances using a [Mixed Instance Policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-purchase-options.html). New instances are added based on a launch template (or launch config). This can be a challenge for organizations without good practices around creating machine images or automation for standing up applications.
+
 
 ## Rightsizing
 Rightsizing refers to the process of ensuring that you're using the proper instance type suited for your application or workload. For example if you're using the largest instance type in a particular family but not using the CPU, Storage and Memory allocated to it fully you may be overpaying for what you need. Rightsizing is usually a manual process that involves engineering time for looking at a combination of application-level performance metrics like application CPU and Memory consumption and infrastructure-related attributes like what kind of underlying CPU powers an instance type. 
