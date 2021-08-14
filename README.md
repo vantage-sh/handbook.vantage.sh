@@ -12,6 +12,8 @@ The Cloud Cost Handbook is organized into two sections: (1) general concepts and
 
 Issues and pull requests are welcome for requesting or contributing content. Vantage employees will review all issues and PRs to ensure we're keeping content relevant and up to standard. You're welcome to get in contact with us on our [Slack Community](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw) as well where we have a devoted #cloud-cost-handbook channel for discussion as it relates to the handbook. 
 
+This site leverages [mkdocs](https://www.mkdocs.org/). Prior to opening a pull request, please review your changes locally by running `mkdocs serve` which will allow you to access and review your changes locally at `http://localhost:8000/`. 
+
 ## Keep Up To Date
 
 Feel free to watch/star this repo as we're looking to update the site regularly with additional services and concepts. Vantage also works on the following relevant projects:
