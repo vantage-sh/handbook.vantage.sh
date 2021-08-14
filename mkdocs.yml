@@ -37,6 +37,7 @@ nav:
     - 'Regions' : 'aws/concepts/regions.md'
     - 'Reserved Instances' : 'aws/concepts/reserved-instances.md'
     - 'Rightsizing': 'aws/concepts/rightsizing.md'
+    - 'Autoscaling': 'aws/concepts/autoscaling.md'
     - 'Savings Plans' : 'aws/concepts/savings-plans.md'
     - 'Tags': 'aws/concepts/tags.md'
 
