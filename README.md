@@ -6,7 +6,10 @@ This is the repository backing the site hosted at [handbook.vantage.sh](http://h
 
 The Cloud Cost Handbook is a free, open-source, community-supported set of guides meant to help explain often-times complex pricing of public cloud infrastructure and service providers in "plain english". This guide is is open for anyone to contribute their knowledge to the community. [Vantage](http://vantage.sh/) employees will maintain hosting the guide for everyone and ensure that content is relevant and adheres to styleguides.
 
-The Cloud Cost Handbook is organized into two sections: (1) general concepts and (2) per-service pages. **General concepts** are meant to cover topics which apply across multiple different infrastructure service. **Per-service pages** are meant to give a brief summary of the service, the pricing dimensions of the service and optionally a list of cost concepts as it relates to that service. 
+The Cloud Cost Handbook is organized into two sections: general concepts and per-service pages. 
+
+* **General concepts** are meant to cover topics which apply across multiple different infrastructure service. 
+* **Per-service pages** are meant to give a brief summary of the service, the pricing dimensions of the service and optionally a list of cost concepts as it relates to that service. 
 
 ## Contributing Guidelines
 
