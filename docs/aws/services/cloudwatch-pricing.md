@@ -29,7 +29,7 @@ CloudWatch stores and process data from an umbrella of different AWS services wh
 
 [^2]: Or at least this is what the [CloudWatch pricing page](https://aws.amazon.com/cloudwatch/pricing/) states. If you click through all of the regions the prices are all the same for custom metric storage as of July 28, 2021.
 
-[^3]: Pircing is fairly uniform across regions. Special regions like Sao Paulo and GovCloud diverge from the standard pricing.
+[^3]: Pricing is fairly uniform across regions. Special regions like Sao Paulo and GovCloud diverge from the standard pricing.
 
 !!! Contribute
 	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
