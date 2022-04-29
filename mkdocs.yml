@@ -4,10 +4,10 @@ theme:
   name: material
   features:
     - navigation.sections
-  logo: assets/logo.svg
+  logo: https://www.vantage.sh/logo.svg
   icon:
     repo: fontawesome/brands/github-square
-  favicon: assets/logo.svg
+  favicon: https://assets.vantage.sh/www/favicon-32x32.png
 
 extra:
   generator: false
@@ -64,3 +64,8 @@ nav:
 google_analytics:
   - G-TEYTN5V029
   - auto
+
+extra:
+  analytics:
+    provider: google
+    property: G-TEYTN5V029
