@@ -1,5 +1,26 @@
-.md-header, .md-footer {
-	background-color: #181E61;
+:root {
+	--md-primary-fg-color:        #9C25C7;
+	--md-primary-fg-color:        #9C25C7;
+	--md-primary-fg-color--light: #F9E6FF;
+	--md-primary-fg-color--dark:  #5A0A76;
+	--md-accent-fg-color: #9C25C7;
+}
+
+.md-footer {
+	background-color: #5A0A76;
+}
+
+.md-typeset :is(.admonition) {
+	border-left: solid #5A0A76;
+}
+
+.md-typeset :is(.admonition-title,summary) {
+	background-color: #F9E6FF;
+	border-left: solid #5A0A76;
+}
+
+.md-typeset :is(.admonition-title,details):before {
+	background-color: #5A0A76;
 }
 
 .md-typeset h1 {
