@@ -61,11 +61,8 @@ nav:
     - 'WorkSpaces': 'aws/services/workspaces-pricing.md'
     
 
-google_analytics:
-  - G-TEYTN5V029
-  - auto
-
 extra:
   analytics:
     provider: google
-    property: G-TEYTN5V029
+    property: UA-166045679-1
+
