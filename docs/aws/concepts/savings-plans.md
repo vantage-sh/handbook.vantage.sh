@@ -3,4 +3,4 @@ Savings Plans are a flexible pricing model offering discounted prices compared t
 After purchasing a Savings Plan, AWS Billing will automatically apply savings as corresponding on-demand resources match the conditions of your Savings Plans. Savings Plans are only applicable to usage across Amazon EC2, AWS Lambda, and AWS Fargate. Typically, customers will use Savings Plans for these services and Reserved Instances for other services that aren't covered such as RDS and ElastiCache. 
 
 !!! Contribute
-    Help us improve this page by contributing on [GitHub](https://github.com/vantage-sh/handbook) or discuss the handbook in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).
