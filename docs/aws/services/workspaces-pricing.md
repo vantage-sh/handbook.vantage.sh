@@ -22,4 +22,4 @@ WorkSpaces have an attribute named `last_known_user_connection_timestamp` that m
 <br />
 
 !!! Contribute
-	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
+    Help us improve this page by contributing on [GitHub](https://github.com/vantage-sh/handbook) or discuss the handbook in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).

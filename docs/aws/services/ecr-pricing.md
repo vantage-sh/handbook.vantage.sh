@@ -106,4 +106,4 @@ Where the content of the file for policy.json is the following:
 <br/>
 
 !!! Contribute
-    Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
+    Help us improve this page by contributing on [GitHub](https://github.com/vantage-sh/handbook) or discuss the handbook in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).

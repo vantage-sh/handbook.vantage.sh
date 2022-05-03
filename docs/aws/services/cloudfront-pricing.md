@@ -73,4 +73,4 @@ The important thing to remember is that, as long as you aren't breaking the Clou
 <br/>
 
 !!! Contribute
-	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
+    Help us improve this page by contributing on [GitHub](https://github.com/vantage-sh/handbook) or discuss the handbook in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).

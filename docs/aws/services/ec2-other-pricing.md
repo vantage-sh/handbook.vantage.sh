@@ -24,4 +24,4 @@ T2, T3 and T4g instances have a concept of "Unlimited mode" whereby you are char
 <br/>
 
 !!! Contribute
-	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
+    Help us improve this page by contributing on [GitHub](https://github.com/vantage-sh/handbook) or discuss the handbook in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).

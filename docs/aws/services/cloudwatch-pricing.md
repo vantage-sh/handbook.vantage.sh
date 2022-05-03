@@ -32,4 +32,4 @@ CloudWatch stores and process data from an umbrella of different AWS services wh
 [^3]: Pricing is fairly uniform across regions. Special regions like Sao Paulo and GovCloud diverge from the standard pricing.
 
 !!! Contribute
-	Help us improve this page by making a contribution on our [Github repository](https://github.com/vantage-sh/handbook).
+    Help us improve this page by contributing on [GitHub](https://github.com/vantage-sh/handbook) or discuss the handbook in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).
