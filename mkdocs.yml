@@ -31,7 +31,13 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - 'Overview' : 'index.md'
+  - 'Overview': 'index.md'
+  - 'Tools': 
+    - 'Cost Reports': 'tools/cost-reports.md'
+    - 'Cost Explorer': 'tools/cost-explorer.md'
+    - 'Instance Pricing': 'tools/instance-pricing.md'   
+    - 'Tagging': 'tools/tagging.md'
+
   - 'General Concepts': 
     - 'Autoscaling': 'aws/concepts/autoscaling.md'
     - 'Credits': 'aws/concepts/credits.md'
