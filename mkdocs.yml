@@ -35,8 +35,7 @@ nav:
   - 'Tools': 
     - 'Cost Reports': 'tools/cost-reports.md'
     - 'Cost Explorer': 'tools/cost-explorer.md'
-    - 'Instance Pricing': 'tools/instance-pricing.md'   
-    - 'Tagging': 'tools/tagging.md'
+    - 'Instance Pricing': 'tools/instance-pricing.md' 
 
   - 'General Concepts': 
     - 'Autoscaling': 'aws/concepts/autoscaling.md'
