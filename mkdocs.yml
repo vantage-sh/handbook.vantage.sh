@@ -31,10 +31,16 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - 'Overview' : 'index.md'
+  - 'Overview': 'index.md'
+  - 'Tools': 
+    - 'Cost Reports': 'tools/cost-reports.md'
+    # - 'Cost Explorer': 'tools/cost-explorer.md'
+    - 'Instances Pricing': 'tools/instance-pricing.md' 
+
   - 'General Concepts': 
     - 'Autoscaling': 'aws/concepts/autoscaling.md'
     - 'Credits': 'aws/concepts/credits.md'
+    - 'IOPS': 'aws/concepts/io-operations.md'
     - 'Regions' : 'aws/concepts/regions.md'
     - 'Reserved Instances' : 'aws/concepts/reserved-instances.md'
     - 'Rightsizing': 'aws/concepts/rightsizing.md'
@@ -53,6 +59,7 @@ nav:
     - 'ELB': 'aws/services/elb-pricing.md'
     - 'ElastiCache': 'aws/services/elasticache-pricing.md'
     - 'ElasticSearch': 'aws/services/elasticsearch-pricing.md'
+    - 'EMR': 'aws/services/emr-pricing.md'
     - 'Lambda': 'aws/services/lambda-pricing.md'
     - 'RDS': 'aws/services/rds-pricing.md'
     - 'Route 53': 'aws/services/route-53-pricing.md'
