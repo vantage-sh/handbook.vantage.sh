@@ -34,13 +34,12 @@ nav:
   - 'Overview': 'index.md'
   - 'Tools': 
     - 'Cost Reports': 'tools/cost-reports.md'
-    - 'Cost Explorer': 'tools/cost-explorer.md'
+    # - 'Cost Explorer': 'tools/cost-explorer.md'
     - 'Instances Pricing': 'tools/instance-pricing.md' 
 
   - 'General Concepts': 
     - 'Autoscaling': 'aws/concepts/autoscaling.md'
     - 'Credits': 'aws/concepts/credits.md'
-    - 'ECU': 'aws/concepts/elastic-compute-units.md'
     - 'IOPS': 'aws/concepts/io-operations.md'
     - 'Regions' : 'aws/concepts/regions.md'
     - 'Reserved Instances' : 'aws/concepts/reserved-instances.md'
