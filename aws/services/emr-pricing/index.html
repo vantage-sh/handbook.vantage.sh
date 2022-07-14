@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="http://handbook.vantage.sh/aws/services/cloudwatch-pricing/">
+        <link rel="canonical" href="http://handbook.vantage.sh/aws/services/emr-pricing/">
       
       <link rel="icon" href="https://assets.vantage.sh/www/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
-        <title>CloudWatch Pricing | Cloud Cost Handbook - Cloud Cost Handbook</title>
+        <title>EMR Pricing | Cloud Cost Handbook - Cloud Cost Handbook</title>
       
     
     
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CloudWatch Pricing | Cloud Cost Handbook
+              EMR Pricing | Cloud Cost Handbook
             
           </span>
         </div>
@@ -483,55 +483,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          CloudWatch
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../cloudwatch-pricing/" class="md-nav__link">
         CloudWatch
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pricing-dimensions" class="md-nav__link">
-    Pricing Dimensions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -667,11 +623,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../emr-pricing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          EMR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         EMR
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pricing-dimensions" class="md-nav__link">
+    Pricing Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emr-optimization" class="md-nav__link">
+    EMR Optimization
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -805,6 +812,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#emr-optimization" class="md-nav__link">
+    EMR Optimization
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -817,20 +831,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/vantage-sh/handbook/edit/master/docs/aws/services/cloudwatch-pricing.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/vantage-sh/handbook/edit/master/docs/aws/services/emr-pricing.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>CloudWatch</h1>
+  <h1>EMR</h1>
 
-<p><a class="md-button" href="https://aws.amazon.com/cloudwatch/pricing/">Amazon CloudWatch Pricing Page</a></p>
+<p><a class="md-button" href="https://aws.amazon.com/emr/pricing/">Amazon EMR Pricing Page</a></p>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">#</a></h2>
-<p>Amazon CloudWatch is a logging, monitoring and observability service. As with most monitoring/observibility tools the cost of service is based on the amount of data that is collected and stored as well as a number of other factors. CloudWatch is no different. For most use-cases, the largest CloudWatch costs are made up of the number of metrics and logs that a user is ingesting and storing. </p>
-<p>Oftentimes CloudWatch is leveraged automatically by other AWS services for metric and log storage. Users are sometimes surprised when they spin up a number of unrelated services which they accounted for during planning but are then greeted with an accompanying spike in CloudWatch costs that they didn't account for.</p>
-<p>CloudWatch stores and process data from an umbrella of different AWS services which means that sometimes it isn't obvious why the overall CloudWatch bill has increased. Diving into subcategory costs can help shed light on which other AWS services are causing CloudWatch costs to increase.</p>
+<p>Amazon Elastic Map Reduce (EMR) is software infrastructure for running map reduce and other big data workloads. It supports open-source frameworks like Apache Spark, projects like Hadoop, and SQL tools like Presto.</p>
+<p>EMR runs on top of EC2 or EKS instances and also has a serverless option. EMR is available for a wide variety of instances which allows for tight optimization of workloads, for example choosing a compute optimized vs. a memory optimized instance for Spark vs. Hive.</p>
+<p>To see which EC2 instances are available for EMR, you can add the <code>On EMR</code> and <code>EMR Cost</code> columns on <a href="https://instances.vantage.sh">ec2instances.info</a>.</p>
 <h2 id="pricing-dimensions">Pricing Dimensions<a class="headerlink" href="#pricing-dimensions" title="Permanent link">#</a></h2>
+<p>EMR is billed differently based on the underlying compute service.</p>
 <table>
 <thead>
 <tr>
@@ -840,58 +855,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Custom Metric Storage</td>
-<td>AWS charges you for the number of custom metrics you store with them per month. CloudWatch's unit pricing is progressive; the first 10,000 metrics tracked is $0.30 per metric per month, the next 240,000 costs $0.10 and so on.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> This gives users with large number of metrics automatic economies of scale as they grow the number of metrics tracked. Note: Pricing is dependant on the region where you store your metrics.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+<td>Running on EC2</td>
+<td>EMR is billed as an additional cost per hour for the instance. For example, a <a href="https://instances.vantage.sh/aws/ec2/m6g.16xlarge.html">m6g.16xlarge</a> has an EMR cost of ~$0.60 per hour.</td>
 </tr>
 <tr>
-<td>CloudWatch API Requests</td>
-<td>AWS charges you for the following API requests: <code>GetMetricData</code>, <code>GetInsightRuleReport</code>, <code>GetMetricWidgetImage</code>, <code>GetMetricStatistics</code>, <code>ListMetrics</code>, <code>PutMetricData</code>, <code>GetDashboard</code>, <code>ListDashboards</code>, <code>PutDashboard</code> and <code>DeleteDashboards</code>. For most AWS services there is no API charge for sending metrics. A user would normally be charged by the CloudWatch API for ingesting metrics from a non-AWS service or for a third-party infrastructure monitoring/observibility tool reading from the API to collect metrics. Pricing is dependant on the region where CloudWatch is deployed.<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
+<td>Running on EKS</td>
+<td>Running on EKS involves 2 dimensions: vCPUs and GiB of memory, with a minimum charge of 1 minute.</td>
 </tr>
 <tr>
-<td>CloudWatch Dashboards</td>
-<td>AWS charges $3.00 per month per CloudWatch dashboard.</td>
-</tr>
-<tr>
-<td>CloudWatch Alarms</td>
-<td>CloudWatch alarms are priced based on the resolution of the alarm (60 seconds versus 10 seconds) and if you need to combine multiple alarms together into a more complex alarm like anomoly detection or a composite alarm. Pricing is dependant on the region where CloudWatch is deployed.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
-</tr>
-<tr>
-<td>CloudWatch Logs</td>
-<td>AWS charges you for two components as it relates to CloudWatch Logs: (1) ingestion and (2) storage.</td>
-</tr>
-<tr>
-<td>CloudWatch Events</td>
-<td>AWS charges you for CloudWatch Events which are changes in your AWS environment. For example, you can trigger an event whenever an EC2 instance is created. You are charged a rate per one million events.</td>
-</tr>
-<tr>
-<td>CloudWatch Contributor Insights</td>
-<td>Contributor Insights are only available for CloudWatch Logs and DynamoDB. For CloudWatch Logs, Contributor Insights are priced per-rule per-month, and for every million log events per month that match your rule. For DynamoDB, Contributor Insights are priced per-rule per-month and for every million DynamoDB Events, which occur when items are read from or written to your DynamoDB table.</td>
-</tr>
-<tr>
-<td>CloudWatch Canaries</td>
-<td>Canaries are priced based on the number of runs. Pricing is very specific to region. Be sure to check where you are running your CloudWatch Canaries to be aware of the price for that region.</td>
+<td>Serverless</td>
+<td>Serverless has Compute, Memory, and Storage dimensions.</td>
 </tr>
 </tbody>
 </table>
-<p><br /></p>
+<h2 id="emr-optimization">EMR Optimization<a class="headerlink" href="#emr-optimization" title="Permanent link">#</a></h2>
+<p>Every EMR instance above can also be run as a spot instance, which is likely to be appropriate for "fault tolerant" workloads on EMR. As of 2020, it is also possible to use Spot Fleets with the <a href="https://aws.amazon.com/blogs/big-data/optimizing-amazon-emr-for-resilience-and-cost-with-capacity-optimized-spot-instances/">capacity-optimized allocation strategy</a> for running EMR workloads. Lastly, data transfer charges are likely accumulating from the movement of your big data through the EMR system. You can dramatically reduce these charges, or even eliminate them, by connecting to EMR using <a href="https://docs.aws.amazon.com/emr/latest/ManagementGuide/interface-vpc-endpoint.html">interface VPC endpoints</a>.</p>
 <div class="admonition contribute">
 <p class="admonition-title">Contribute</p>
+</div>
 <p>Contribute to this page on <a href="https://github.com/vantage-sh/handbook">GitHub</a> or join the <code>#cloud-costs-handbook</code> channel in the <a href="https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw">Vantage Community Slack</a>.</p>
-</div>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Price is based on US East (Ohio) region as of July 28, 2021. See footnote below for comment about pricing per region.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>Or at least this is what the <a href="https://aws.amazon.com/cloudwatch/pricing/">CloudWatch pricing page</a> states. If you click through all of the regions the prices are all the same for custom metric storage as of July 28, 2021.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<p>Pricing is fairly uniform across regions. Special regions like Sao Paulo and GovCloud diverge from the standard pricing.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
 
               
             </article>
@@ -905,7 +887,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../cloudfront-pricing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CloudFront" rel="prev">
+        <a href="../elasticsearch-pricing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ElasticSearch" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -914,20 +896,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              CloudFront
+              ElasticSearch
             </div>
           </div>
         </a>
       
       
         
-        <a href="../dynamodb-pricing/" class="md-footer__link md-footer__link--next" aria-label="Next: DynamoDB" rel="next">
+        <a href="../lambda-pricing/" class="md-footer__link md-footer__link--next" aria-label="Next: Lambda" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              DynamoDB
+              Lambda
             </div>
           </div>
           <div class="md-footer__button md-icon">

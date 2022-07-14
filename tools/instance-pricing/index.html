@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="http://handbook.vantage.sh/aws/services/cloudwatch-pricing/">
+        <link rel="canonical" href="http://handbook.vantage.sh/tools/instance-pricing/">
       
       <link rel="icon" href="https://assets.vantage.sh/www/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
-        <title>CloudWatch Pricing | Cloud Cost Handbook - Cloud Cost Handbook</title>
+        <title>Instances Pricing Docmentation | Cloud Cost Handbook - Cloud Cost Handbook</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c5ef100.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c5ef100.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
         
       
     
@@ -37,9 +37,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#summary" class="md-skip">
+        <a href="#columns-and-filters" class="md-skip">
           Skip to content
         </a>
       
@@ -87,7 +87,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Cloud Cost Handbook" class="md-header__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
+    <a href="../.." title="Cloud Cost Handbook" class="md-header__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
       
   <img src="https://www.vantage.sh/logo.svg" alt="logo">
 
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CloudWatch Pricing | Cloud Cost Handbook
+              Instances Pricing Docmentation | Cloud Cost Handbook
             
           </span>
         </div>
@@ -184,7 +184,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Cloud Cost Handbook" class="md-nav__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
+    <a href="../.." title="Cloud Cost Handbook" class="md-nav__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
       
   <img src="https://www.vantage.sh/logo.svg" alt="logo">
 
@@ -214,7 +214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Overview
       </a>
     </li>
@@ -227,14 +227,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -257,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tools/cost-reports/" class="md-nav__link">
+      <a href="../cost-reports/" class="md-nav__link">
         Cost Reports
       </a>
     </li>
@@ -269,11 +271,103 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../tools/instance-pricing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Instances Pricing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Instances Pricing
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#columns-and-filters" class="md-nav__link">
+    Columns and Filters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-instances" class="md-nav__link">
+    Comparing Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detail-pages" class="md-nav__link">
+    Detail Pages
+  </a>
+  
+    <nav class="md-nav" aria-label="Detail Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pricing-widget" class="md-nav__link">
+    Pricing Widget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-attributes" class="md-nav__link">
+    Instance Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitting-a-link" class="md-nav__link">
+    Submitting a Link
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-and-clearing-filters" class="md-nav__link">
+    Saving and Clearing Filters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-data" class="md-nav__link">
+    Export Data
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -321,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/autoscaling/" class="md-nav__link">
+      <a href="../../aws/concepts/autoscaling/" class="md-nav__link">
         Autoscaling
       </a>
     </li>
@@ -335,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/credits/" class="md-nav__link">
+      <a href="../../aws/concepts/credits/" class="md-nav__link">
         Credits
       </a>
     </li>
@@ -349,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/io-operations/" class="md-nav__link">
+      <a href="../../aws/concepts/io-operations/" class="md-nav__link">
         IOPS
       </a>
     </li>
@@ -363,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/regions/" class="md-nav__link">
+      <a href="../../aws/concepts/regions/" class="md-nav__link">
         Regions
       </a>
     </li>
@@ -377,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/reserved-instances/" class="md-nav__link">
+      <a href="../../aws/concepts/reserved-instances/" class="md-nav__link">
         Reserved Instances
       </a>
     </li>
@@ -391,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/rightsizing/" class="md-nav__link">
+      <a href="../../aws/concepts/rightsizing/" class="md-nav__link">
         Rightsizing
       </a>
     </li>
@@ -405,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/savings-plans/" class="md-nav__link">
+      <a href="../../aws/concepts/savings-plans/" class="md-nav__link">
         Savings Plans
       </a>
     </li>
@@ -419,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/tags/" class="md-nav__link">
+      <a href="../../aws/concepts/tags/" class="md-nav__link">
         Tags
       </a>
     </li>
@@ -439,16 +533,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -471,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloudfront-pricing/" class="md-nav__link">
+      <a href="../../aws/services/cloudfront-pricing/" class="md-nav__link">
         CloudFront
       </a>
     </li>
@@ -483,55 +575,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          CloudWatch
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../aws/services/cloudwatch-pricing/" class="md-nav__link">
         CloudWatch
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pricing-dimensions" class="md-nav__link">
-    Pricing Dimensions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -543,7 +591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dynamodb-pricing/" class="md-nav__link">
+      <a href="../../aws/services/dynamodb-pricing/" class="md-nav__link">
         DynamoDB
       </a>
     </li>
@@ -557,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ebs-pricing/" class="md-nav__link">
+      <a href="../../aws/services/ebs-pricing/" class="md-nav__link">
         EBS
       </a>
     </li>
@@ -571,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ec2-pricing/" class="md-nav__link">
+      <a href="../../aws/services/ec2-pricing/" class="md-nav__link">
         EC2
       </a>
     </li>
@@ -585,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ec2-other-pricing/" class="md-nav__link">
+      <a href="../../aws/services/ec2-other-pricing/" class="md-nav__link">
         EC2-Other
       </a>
     </li>
@@ -599,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ecs-and-fargate-pricing/" class="md-nav__link">
+      <a href="../../aws/services/ecs-and-fargate-pricing/" class="md-nav__link">
         ECS & Fargate
       </a>
     </li>
@@ -613,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ecr-pricing/" class="md-nav__link">
+      <a href="../../aws/services/ecr-pricing/" class="md-nav__link">
         ECR
       </a>
     </li>
@@ -627,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elb-pricing/" class="md-nav__link">
+      <a href="../../aws/services/elb-pricing/" class="md-nav__link">
         ELB
       </a>
     </li>
@@ -641,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elasticache-pricing/" class="md-nav__link">
+      <a href="../../aws/services/elasticache-pricing/" class="md-nav__link">
         ElastiCache
       </a>
     </li>
@@ -655,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elasticsearch-pricing/" class="md-nav__link">
+      <a href="../../aws/services/elasticsearch-pricing/" class="md-nav__link">
         ElasticSearch
       </a>
     </li>
@@ -669,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../emr-pricing/" class="md-nav__link">
+      <a href="../../aws/services/emr-pricing/" class="md-nav__link">
         EMR
       </a>
     </li>
@@ -683,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lambda-pricing/" class="md-nav__link">
+      <a href="../../aws/services/lambda-pricing/" class="md-nav__link">
         Lambda
       </a>
     </li>
@@ -697,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rds-pricing/" class="md-nav__link">
+      <a href="../../aws/services/rds-pricing/" class="md-nav__link">
         RDS
       </a>
     </li>
@@ -711,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../route-53-pricing/" class="md-nav__link">
+      <a href="../../aws/services/route-53-pricing/" class="md-nav__link">
         Route 53
       </a>
     </li>
@@ -725,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s3-pricing/" class="md-nav__link">
+      <a href="../../aws/services/s3-pricing/" class="md-nav__link">
         S3
       </a>
     </li>
@@ -739,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vpc-pricing/" class="md-nav__link">
+      <a href="../../aws/services/vpc-pricing/" class="md-nav__link">
         VPC
       </a>
     </li>
@@ -753,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workspaces-pricing/" class="md-nav__link">
+      <a href="../../aws/services/workspaces-pricing/" class="md-nav__link">
         WorkSpaces
       </a>
     </li>
@@ -792,15 +840,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    Summary
+  <a href="#columns-and-filters" class="md-nav__link">
+    Columns and Filters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pricing-dimensions" class="md-nav__link">
-    Pricing Dimensions
+  <a href="#comparing-instances" class="md-nav__link">
+    Comparing Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detail-pages" class="md-nav__link">
+    Detail Pages
+  </a>
+  
+    <nav class="md-nav" aria-label="Detail Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pricing-widget" class="md-nav__link">
+    Pricing Widget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-attributes" class="md-nav__link">
+    Instance Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitting-a-link" class="md-nav__link">
+    Submitting a Link
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-and-clearing-filters" class="md-nav__link">
+    Saving and Clearing Filters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-data" class="md-nav__link">
+    Export Data
   </a>
   
 </li>
@@ -817,81 +913,41 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/vantage-sh/handbook/edit/master/docs/aws/services/cloudwatch-pricing.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/vantage-sh/handbook/edit/master/docs/tools/instance-pricing.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>CloudWatch</h1>
+  <h1>Instances Pricing</h1>
 
-<p><a class="md-button" href="https://aws.amazon.com/cloudwatch/pricing/">Amazon CloudWatch Pricing Page</a></p>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">#</a></h2>
-<p>Amazon CloudWatch is a logging, monitoring and observability service. As with most monitoring/observibility tools the cost of service is based on the amount of data that is collected and stored as well as a number of other factors. CloudWatch is no different. For most use-cases, the largest CloudWatch costs are made up of the number of metrics and logs that a user is ingesting and storing. </p>
-<p>Oftentimes CloudWatch is leveraged automatically by other AWS services for metric and log storage. Users are sometimes surprised when they spin up a number of unrelated services which they accounted for during planning but are then greeted with an accompanying spike in CloudWatch costs that they didn't account for.</p>
-<p>CloudWatch stores and process data from an umbrella of different AWS services which means that sometimes it isn't obvious why the overall CloudWatch bill has increased. Diving into subcategory costs can help shed light on which other AWS services are causing CloudWatch costs to increase.</p>
-<h2 id="pricing-dimensions">Pricing Dimensions<a class="headerlink" href="#pricing-dimensions" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Dimension</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Custom Metric Storage</td>
-<td>AWS charges you for the number of custom metrics you store with them per month. CloudWatch's unit pricing is progressive; the first 10,000 metrics tracked is $0.30 per metric per month, the next 240,000 costs $0.10 and so on.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> This gives users with large number of metrics automatic economies of scale as they grow the number of metrics tracked. Note: Pricing is dependant on the region where you store your metrics.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
-</tr>
-<tr>
-<td>CloudWatch API Requests</td>
-<td>AWS charges you for the following API requests: <code>GetMetricData</code>, <code>GetInsightRuleReport</code>, <code>GetMetricWidgetImage</code>, <code>GetMetricStatistics</code>, <code>ListMetrics</code>, <code>PutMetricData</code>, <code>GetDashboard</code>, <code>ListDashboards</code>, <code>PutDashboard</code> and <code>DeleteDashboards</code>. For most AWS services there is no API charge for sending metrics. A user would normally be charged by the CloudWatch API for ingesting metrics from a non-AWS service or for a third-party infrastructure monitoring/observibility tool reading from the API to collect metrics. Pricing is dependant on the region where CloudWatch is deployed.<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
-</tr>
-<tr>
-<td>CloudWatch Dashboards</td>
-<td>AWS charges $3.00 per month per CloudWatch dashboard.</td>
-</tr>
-<tr>
-<td>CloudWatch Alarms</td>
-<td>CloudWatch alarms are priced based on the resolution of the alarm (60 seconds versus 10 seconds) and if you need to combine multiple alarms together into a more complex alarm like anomoly detection or a composite alarm. Pricing is dependant on the region where CloudWatch is deployed.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
-</tr>
-<tr>
-<td>CloudWatch Logs</td>
-<td>AWS charges you for two components as it relates to CloudWatch Logs: (1) ingestion and (2) storage.</td>
-</tr>
-<tr>
-<td>CloudWatch Events</td>
-<td>AWS charges you for CloudWatch Events which are changes in your AWS environment. For example, you can trigger an event whenever an EC2 instance is created. You are charged a rate per one million events.</td>
-</tr>
-<tr>
-<td>CloudWatch Contributor Insights</td>
-<td>Contributor Insights are only available for CloudWatch Logs and DynamoDB. For CloudWatch Logs, Contributor Insights are priced per-rule per-month, and for every million log events per month that match your rule. For DynamoDB, Contributor Insights are priced per-rule per-month and for every million DynamoDB Events, which occur when items are read from or written to your DynamoDB table.</td>
-</tr>
-<tr>
-<td>CloudWatch Canaries</td>
-<td>Canaries are priced based on the number of runs. Pricing is very specific to region. Be sure to check where you are running your CloudWatch Canaries to be aware of the price for that region.</td>
-</tr>
-</tbody>
-</table>
-<p><br /></p>
+<p>The <a href="https://instances.vantage.sh">Instances</a> pricing tool shows current pricing for AWS EC2, RDS, and ElastiCache instances. The tool is completely <a href="https://github.com/vantage-sh/ec2instances.info">open source</a> and uses the same Amazon APIs available to everyone. Development for Instances is coordinated through <a href="https://instances.vantage.sh/">Slack</a> as well as on Github.</p>
+<p>Instances has a small number of tools for comparing cloud instance pricing and making the best choice for your workload.</p>
+<h2 id="columns-and-filters">Columns and Filters<a class="headerlink" href="#columns-and-filters" title="Permanent link">#</a></h2>
+<p><img alt="Columns and Filters" src="/img/tools/instances/extra-columns.png" /></p>
+<p>Nearly every service attribute available for a specific instance is available, although most are hidden by default. You can add more attributes, for example GPUs, in by clicking the <code>Columns</code> dropdown. Other dropdowns allow for selecting the <code>Region</code>, changing the per-unit basis of calculation (e.g. for vCPUs), and changing the term of the <code>Reserved</code> instance purchase.</p>
+<p>For each column that is shown, it can be further filtered using simple glob matching, and the entire table can be searched using the top right search box.</p>
+<h2 id="comparing-instances">Comparing Instances<a class="headerlink" href="#comparing-instances" title="Permanent link">#</a></h2>
+<p><img alt="Compare instances" src="/img/tools/instances/instances-compare.png" /></p>
+<p>By clicking on an individual row in the table, you can select it to be compared with other rows. You can do this while filtering as well. Click <code>Compare Selected</code> and only the selected rows will be shown. The URL is also changed so this specific comparison can be shared with others.</p>
+<h2 id="detail-pages">Detail Pages<a class="headerlink" href="#detail-pages" title="Permanent link">#</a></h2>
+<p><img alt="Detail Pages" src="/img/tools/instances/detail-pages.png" /></p>
+<p>For EC2 and RDS, the "API Name" column contains clickable links to each instance type. The Detail Page for the instance is essentially a pivot of the main table, with some additional tools to make the information more digestible.</p>
+<h3 id="pricing-widget">Pricing Widget<a class="headerlink" href="#pricing-widget" title="Permanent link">#</a></h3>
+<p>In the upper left, a pricing widget has selectors for calculating the estimated cost of the instance in different regions, over different amounts of time, or for different software that runs on the instance. When the price is shown as "N/A" that indicates that the instance is not available to purchase with the combination of selectors.</p>
+<h3 id="instance-attributes">Instance Attributes<a class="headerlink" href="#instance-attributes" title="Permanent link">#</a></h3>
+<p>In the middle of each Detail Page are the major categories of attributes and their values. These attributes are all selectable as columns in the main Instances pages. To request more attributes, click "Open a ticket" in the bottom right.</p>
+<h3 id="submitting-a-link">Submitting a Link<a class="headerlink" href="#submitting-a-link" title="Permanent link">#</a></h3>
+<p>Each Detail Page is a static, but living page. Anyone can submit a link to be listed on the page by editing <code>community_contributions.yaml</code> and opening a PR on Github. This can be done entirely in the browser.</p>
+<h2 id="saving-and-clearing-filters">Saving and Clearing Filters<a class="headerlink" href="#saving-and-clearing-filters" title="Permanent link">#</a></h2>
+<p>Instances automatically saves the filters and selections that are applied to local storage. This means that when you open a new session you will be greeted with the most recent set of filters and columns. This can be helpful for working on services which mostly use the same types of instances.</p>
+<p>To reset the table, click <code>Clear Filters</code>.</p>
+<h2 id="export-data">Export Data<a class="headerlink" href="#export-data" title="Permanent link">#</a></h2>
+<p>The table, with its filters applied, sorted, and with columns shown and hidden, can be exported exactly as a CSV. Data for EC2 is also available for free from the <a href="https://vantage.readme.io/reference/general">Vantage API</a>.</p>
 <div class="admonition contribute">
 <p class="admonition-title">Contribute</p>
+</div>
 <p>Contribute to this page on <a href="https://github.com/vantage-sh/handbook">GitHub</a> or join the <code>#cloud-costs-handbook</code> channel in the <a href="https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw">Vantage Community Slack</a>.</p>
-</div>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Price is based on US East (Ohio) region as of July 28, 2021. See footnote below for comment about pricing per region.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>Or at least this is what the <a href="https://aws.amazon.com/cloudwatch/pricing/">CloudWatch pricing page</a> states. If you click through all of the regions the prices are all the same for custom metric storage as of July 28, 2021.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<p>Pricing is fairly uniform across regions. Special regions like Sao Paulo and GovCloud diverge from the standard pricing.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
 
               
             </article>
@@ -905,7 +961,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../cloudfront-pricing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CloudFront" rel="prev">
+        <a href="../cost-reports/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cost Reports" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -914,20 +970,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              CloudFront
+              Cost Reports
             </div>
           </div>
         </a>
       
       
         
-        <a href="../dynamodb-pricing/" class="md-footer__link md-footer__link--next" aria-label="Next: DynamoDB" rel="next">
+        <a href="../../aws/concepts/autoscaling/" class="md-footer__link md-footer__link--next" aria-label="Next: Autoscaling" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              DynamoDB
+              Autoscaling
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -957,10 +1013,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.748e2769.min.js"></script>
+      <script src="../../assets/javascripts/bundle.748e2769.min.js"></script>
       
     
   </body>

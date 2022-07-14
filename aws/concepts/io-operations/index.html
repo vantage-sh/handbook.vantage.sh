@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="http://handbook.vantage.sh/aws/services/cloudwatch-pricing/">
+        <link rel="canonical" href="http://handbook.vantage.sh/aws/concepts/io-operations/">
       
       <link rel="icon" href="https://assets.vantage.sh/www/favicon-32x32.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
     
     
       
-        <title>CloudWatch Pricing | Cloud Cost Handbook - Cloud Cost Handbook</title>
+        <title>I/O Operations (IOPS) on AWS | Cloud Cost Handbook - Cloud Cost Handbook</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#summary" class="md-skip">
+        <a href="#io-operations" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CloudWatch Pricing | Cloud Cost Handbook
+              I/O Operations (IOPS) on AWS | Cloud Cost Handbook
             
           </span>
         </div>
@@ -291,14 +291,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -321,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/autoscaling/" class="md-nav__link">
+      <a href="../autoscaling/" class="md-nav__link">
         Autoscaling
       </a>
     </li>
@@ -335,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/credits/" class="md-nav__link">
+      <a href="../credits/" class="md-nav__link">
         Credits
       </a>
     </li>
@@ -347,11 +349,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../concepts/io-operations/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          IOPS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         IOPS
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#io-operations" class="md-nav__link">
+    I/O Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iops-considerations" class="md-nav__link">
+    IOPS Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimal-provisioned-iops" class="md-nav__link">
+    Optimal Provisioned IOPS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -363,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/regions/" class="md-nav__link">
+      <a href="../regions/" class="md-nav__link">
         Regions
       </a>
     </li>
@@ -377,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/reserved-instances/" class="md-nav__link">
+      <a href="../reserved-instances/" class="md-nav__link">
         Reserved Instances
       </a>
     </li>
@@ -391,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/rightsizing/" class="md-nav__link">
+      <a href="../rightsizing/" class="md-nav__link">
         Rightsizing
       </a>
     </li>
@@ -405,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/savings-plans/" class="md-nav__link">
+      <a href="../savings-plans/" class="md-nav__link">
         Savings Plans
       </a>
     </li>
@@ -419,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../concepts/tags/" class="md-nav__link">
+      <a href="../tags/" class="md-nav__link">
         Tags
       </a>
     </li>
@@ -439,16 +492,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -471,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloudfront-pricing/" class="md-nav__link">
+      <a href="../../services/cloudfront-pricing/" class="md-nav__link">
         CloudFront
       </a>
     </li>
@@ -483,55 +534,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          CloudWatch
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../services/cloudwatch-pricing/" class="md-nav__link">
         CloudWatch
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pricing-dimensions" class="md-nav__link">
-    Pricing Dimensions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -543,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dynamodb-pricing/" class="md-nav__link">
+      <a href="../../services/dynamodb-pricing/" class="md-nav__link">
         DynamoDB
       </a>
     </li>
@@ -557,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ebs-pricing/" class="md-nav__link">
+      <a href="../../services/ebs-pricing/" class="md-nav__link">
         EBS
       </a>
     </li>
@@ -571,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ec2-pricing/" class="md-nav__link">
+      <a href="../../services/ec2-pricing/" class="md-nav__link">
         EC2
       </a>
     </li>
@@ -585,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ec2-other-pricing/" class="md-nav__link">
+      <a href="../../services/ec2-other-pricing/" class="md-nav__link">
         EC2-Other
       </a>
     </li>
@@ -599,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ecs-and-fargate-pricing/" class="md-nav__link">
+      <a href="../../services/ecs-and-fargate-pricing/" class="md-nav__link">
         ECS & Fargate
       </a>
     </li>
@@ -613,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ecr-pricing/" class="md-nav__link">
+      <a href="../../services/ecr-pricing/" class="md-nav__link">
         ECR
       </a>
     </li>
@@ -627,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elb-pricing/" class="md-nav__link">
+      <a href="../../services/elb-pricing/" class="md-nav__link">
         ELB
       </a>
     </li>
@@ -641,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elasticache-pricing/" class="md-nav__link">
+      <a href="../../services/elasticache-pricing/" class="md-nav__link">
         ElastiCache
       </a>
     </li>
@@ -655,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elasticsearch-pricing/" class="md-nav__link">
+      <a href="../../services/elasticsearch-pricing/" class="md-nav__link">
         ElasticSearch
       </a>
     </li>
@@ -669,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../emr-pricing/" class="md-nav__link">
+      <a href="../../services/emr-pricing/" class="md-nav__link">
         EMR
       </a>
     </li>
@@ -683,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lambda-pricing/" class="md-nav__link">
+      <a href="../../services/lambda-pricing/" class="md-nav__link">
         Lambda
       </a>
     </li>
@@ -697,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rds-pricing/" class="md-nav__link">
+      <a href="../../services/rds-pricing/" class="md-nav__link">
         RDS
       </a>
     </li>
@@ -711,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../route-53-pricing/" class="md-nav__link">
+      <a href="../../services/route-53-pricing/" class="md-nav__link">
         Route 53
       </a>
     </li>
@@ -725,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../s3-pricing/" class="md-nav__link">
+      <a href="../../services/s3-pricing/" class="md-nav__link">
         S3
       </a>
     </li>
@@ -739,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vpc-pricing/" class="md-nav__link">
+      <a href="../../services/vpc-pricing/" class="md-nav__link">
         VPC
       </a>
     </li>
@@ -753,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workspaces-pricing/" class="md-nav__link">
+      <a href="../../services/workspaces-pricing/" class="md-nav__link">
         WorkSpaces
       </a>
     </li>
@@ -792,15 +799,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    Summary
+  <a href="#io-operations" class="md-nav__link">
+    I/O Operations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pricing-dimensions" class="md-nav__link">
-    Pricing Dimensions
+  <a href="#iops-considerations" class="md-nav__link">
+    IOPS Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimal-provisioned-iops" class="md-nav__link">
+    Optimal Provisioned IOPS
   </a>
   
 </li>
@@ -817,81 +831,34 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/vantage-sh/handbook/edit/master/docs/aws/services/cloudwatch-pricing.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/vantage-sh/handbook/edit/master/docs/aws/concepts/io-operations.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>CloudWatch</h1>
+  <h1>IOPS</h1>
 
-<p><a class="md-button" href="https://aws.amazon.com/cloudwatch/pricing/">Amazon CloudWatch Pricing Page</a></p>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">#</a></h2>
-<p>Amazon CloudWatch is a logging, monitoring and observability service. As with most monitoring/observibility tools the cost of service is based on the amount of data that is collected and stored as well as a number of other factors. CloudWatch is no different. For most use-cases, the largest CloudWatch costs are made up of the number of metrics and logs that a user is ingesting and storing. </p>
-<p>Oftentimes CloudWatch is leveraged automatically by other AWS services for metric and log storage. Users are sometimes surprised when they spin up a number of unrelated services which they accounted for during planning but are then greeted with an accompanying spike in CloudWatch costs that they didn't account for.</p>
-<p>CloudWatch stores and process data from an umbrella of different AWS services which means that sometimes it isn't obvious why the overall CloudWatch bill has increased. Diving into subcategory costs can help shed light on which other AWS services are causing CloudWatch costs to increase.</p>
-<h2 id="pricing-dimensions">Pricing Dimensions<a class="headerlink" href="#pricing-dimensions" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Dimension</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Custom Metric Storage</td>
-<td>AWS charges you for the number of custom metrics you store with them per month. CloudWatch's unit pricing is progressive; the first 10,000 metrics tracked is $0.30 per metric per month, the next 240,000 costs $0.10 and so on.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> This gives users with large number of metrics automatic economies of scale as they grow the number of metrics tracked. Note: Pricing is dependant on the region where you store your metrics.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
-</tr>
-<tr>
-<td>CloudWatch API Requests</td>
-<td>AWS charges you for the following API requests: <code>GetMetricData</code>, <code>GetInsightRuleReport</code>, <code>GetMetricWidgetImage</code>, <code>GetMetricStatistics</code>, <code>ListMetrics</code>, <code>PutMetricData</code>, <code>GetDashboard</code>, <code>ListDashboards</code>, <code>PutDashboard</code> and <code>DeleteDashboards</code>. For most AWS services there is no API charge for sending metrics. A user would normally be charged by the CloudWatch API for ingesting metrics from a non-AWS service or for a third-party infrastructure monitoring/observibility tool reading from the API to collect metrics. Pricing is dependant on the region where CloudWatch is deployed.<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
-</tr>
-<tr>
-<td>CloudWatch Dashboards</td>
-<td>AWS charges $3.00 per month per CloudWatch dashboard.</td>
-</tr>
-<tr>
-<td>CloudWatch Alarms</td>
-<td>CloudWatch alarms are priced based on the resolution of the alarm (60 seconds versus 10 seconds) and if you need to combine multiple alarms together into a more complex alarm like anomoly detection or a composite alarm. Pricing is dependant on the region where CloudWatch is deployed.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
-</tr>
-<tr>
-<td>CloudWatch Logs</td>
-<td>AWS charges you for two components as it relates to CloudWatch Logs: (1) ingestion and (2) storage.</td>
-</tr>
-<tr>
-<td>CloudWatch Events</td>
-<td>AWS charges you for CloudWatch Events which are changes in your AWS environment. For example, you can trigger an event whenever an EC2 instance is created. You are charged a rate per one million events.</td>
-</tr>
-<tr>
-<td>CloudWatch Contributor Insights</td>
-<td>Contributor Insights are only available for CloudWatch Logs and DynamoDB. For CloudWatch Logs, Contributor Insights are priced per-rule per-month, and for every million log events per month that match your rule. For DynamoDB, Contributor Insights are priced per-rule per-month and for every million DynamoDB Events, which occur when items are read from or written to your DynamoDB table.</td>
-</tr>
-<tr>
-<td>CloudWatch Canaries</td>
-<td>Canaries are priced based on the number of runs. Pricing is very specific to region. Be sure to check where you are running your CloudWatch Canaries to be aware of the price for that region.</td>
-</tr>
-</tbody>
-</table>
-<p><br /></p>
+<h2 id="io-operations">I/O Operations<a class="headerlink" href="#io-operations" title="Permanent link">#</a></h2>
+<p>I/O Operations (IOPS) are a relatively low level unit in AWS for measuring disk performance. The maximum size of an IOP is 256 KiB for SSD volumes and 1 GiB for HDD volumes. 1 GiB of storage is worth 3 IOPS so a 1,000 GiB EBS Volume has 3,000 IOPS available. When using these volume types you are charged for the amount of provisioned iops even if you don't fully utilize them.</p>
+<p>As indidicated on the <a href="/aws/services/ebs-pricing">EBS</a> page:</p>
+<blockquote>
+<p>Provisioned IOPS SSD volumes use a consistent IOPS rate, which you specify when you create the volume, and Amazon EBS delivers the provisioned performance 99.9 percent of the time.</p>
+</blockquote>
+<p>The <a href="https://blog.maskalik.com/blog/2020/05/31/aws-rds-you-may-not-need-provisioned-iops/">"performance consistency"</a> between a Provisioned IOPS volume and a general prupose (<code>gp2</code>, <code>gp3</code>), throughput optimized (<code>st1</code>), or cold HDD (<code>sc1</code>) is going to be better for both random and sequential disk access. Note that for operations with "large and sequential" accesses, provisioned iops are likely less efficient than an <code>st1</code> volume.</p>
+<h2 id="iops-considerations">IOPS Considerations<a class="headerlink" href="#iops-considerations" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Volume Type</strong> There are multiple volume types with different impacts on IOPS.</li>
+<li><strong>I/O Demand</strong> Most likely the workload has a bursty demand pattern, where consistently high throughput is not as important as meeting spikes of demand. As the workload deviates from this, provisioned IOPS become more important.</li>
+<li><strong>Throughput Limits</strong> The instance will have an upper limit of throughput it can support. For example, an <a href="https://instnaces.vantage.sh/aws/ec2/i2.xlarge.html">i2.xlarge</a> can support up to 62,500 IOPS. If the number of Provisioned IOPS is even higher than this limit, it is a waste because the instance cannot use them all up.</li>
+</ul>
+<h2 id="optimal-provisioned-iops">Optimal Provisioned IOPS<a class="headerlink" href="#optimal-provisioned-iops" title="Permanent link">#</a></h2>
+<p>The most common cost waste with IOPS is having too many of them. It is commonly believed that the key to <a href="/aws/services/rds-pricing/">RDS</a> is to have some amount of Provisioned IOPS. Happily, we do not have to guess.</p>
+<p>AWS <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html">suggests</a> inspecting the <code>VolumeQueueLength</code> metric for <a href="/aws/services/cloudwatch-pricing/">CloudWatch</a>. This metric is reported as IOPS, which means the formula is simple: if <code>VolumeQueueLength</code> is greater than the number of provisioned IOPS and latency is an issue, then you should consider increasing the number of provisioned IOPS.</p>
 <div class="admonition contribute">
 <p class="admonition-title">Contribute</p>
+</div>
 <p>Contribute to this page on <a href="https://github.com/vantage-sh/handbook">GitHub</a> or join the <code>#cloud-costs-handbook</code> channel in the <a href="https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw">Vantage Community Slack</a>.</p>
-</div>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Price is based on US East (Ohio) region as of July 28, 2021. See footnote below for comment about pricing per region.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>Or at least this is what the <a href="https://aws.amazon.com/cloudwatch/pricing/">CloudWatch pricing page</a> states. If you click through all of the regions the prices are all the same for custom metric storage as of July 28, 2021.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<p>Pricing is fairly uniform across regions. Special regions like Sao Paulo and GovCloud diverge from the standard pricing.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
 
               
             </article>
@@ -905,7 +872,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../cloudfront-pricing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CloudFront" rel="prev">
+        <a href="../credits/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Credits" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -914,20 +881,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              CloudFront
+              Credits
             </div>
           </div>
         </a>
       
       
         
-        <a href="../dynamodb-pricing/" class="md-footer__link md-footer__link--next" aria-label="Next: DynamoDB" rel="next">
+        <a href="../regions/" class="md-footer__link md-footer__link--next" aria-label="Next: Regions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              DynamoDB
+              Regions
             </div>
           </div>
           <div class="md-footer__button md-icon">
