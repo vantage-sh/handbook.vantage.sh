@@ -14,7 +14,7 @@ The ["performance consistency"](https://blog.maskalik.com/blog/2020/05/31/aws-rd
 
 - **Volume Type** There are multiple volume types with different impacts on IOPS.
 - **I/O Demand** Most likely the workload has a bursty demand pattern, where consistently high throughput is not as important as meeting spikes of demand. As the workload deviates from this, provisioned IOPS become more important.
-- **Throughput Limits** The instance will have an upper limit of throughput it can support. For example, an [i2.xlarge](https://instnaces.vantage.sh/aws/ec2/i2.xlarge.html) can support up to 62,500 IOPS. If the number of Provisioned IOPS is even higher than this limit, it is a waste because the instance cannot use them all up.
+- **Throughput Limits** The instance will have an upper limit of throughput it can support. For example, an [i2.xlarge](https://instances.vantage.sh/aws/ec2/i2.xlarge.html) can support up to 62,500 IOPS. If the number of Provisioned IOPS is even higher than this limit, it is a waste because the instance cannot use them all up.
 
 ## Optimal Provisioned IOPS
 
