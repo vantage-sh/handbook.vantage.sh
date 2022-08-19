@@ -66,7 +66,9 @@ nav:
     - 'S3': 'aws/services/s3-pricing.md'
     - 'VPC': 'aws/services/vpc-pricing.md'
     - 'WorkSpaces': 'aws/services/workspaces-pricing.md'
-    
+
+  - 'Snowflake':
+    - 'Cloud Services': 'snowflake/adjustments-for-included-cloud-services.md'
 
 extra:
   analytics:
