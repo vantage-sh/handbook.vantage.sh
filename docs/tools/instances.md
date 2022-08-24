@@ -6,7 +6,7 @@ Instances has a small number of tools for comparing cloud instance pricing and m
 
 ## Columns and Filters
 
-![Columns and Filters](/img/tools/instances/extra-columns.png)
+![Columns and Filters](/img/tools/instances/column_selector.png)
 
 Nearly every service attribute available for a specific instance is available, although most are hidden by default. You can add more attributes, for example GPUs, in by clicking the `Columns` dropdown. Other dropdowns allow for selecting the `Region`, changing the per-unit basis of calculation (e.g. for vCPUs), and changing the term of the `Reserved` instance purchase.
 
@@ -14,7 +14,7 @@ For each column that is shown, it can be further filtered using simple glob matc
 
 ## Comparing Instances
 
-![Compare instances](/img/tools/instances/instances-compare.png)
+![Compare instances](/img/tools/instances/compare_selected.gif)
 
 By clicking on an individual row in the table, you can select it to be compared with other rows. You can do this while filtering as well. Click `Compare Selected` and only the selected rows will be shown. The URL is also changed so this specific comparison can be shared with others.
 
