@@ -48,6 +48,7 @@ nav:
     - 'Tags': 'aws/concepts/tags.md'
 
   - 'AWS Services':
+    - 'Batch': 'aws/services/batch-pricing.md'
     - 'CloudFront': 'aws/services/cloudfront-pricing.md'
     - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
     - 'DynamoDB': 'aws/services/dynamodb-pricing.md'
