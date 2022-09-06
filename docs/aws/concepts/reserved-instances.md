@@ -1,3 +1,5 @@
+title: Reserved Instances 
+
 Reserved Instances (oftentimes referred to as their abbreviation of RIs) are one of the most popular and high-impact cost reduction methods you can leverage for cutting your bill. Reserved Instances give you the ability to pay upfront for certain AWS services to receive a discount. As a result, if you are able to profile usage across your AWS account and know that you'll hit certain usage levels, Reserved Instances can typically save you money. 
 
 Reserved Instances are availabile to a variety of AWS services such as [EC2](../services/ec2-pricing.md), [ElastiCache](../services/elasticache-pricing.md) and [RDS](../services/rds-pricing.md). AWS Billing automatically applies your Reserved Instance discounted rate when attributes of your instance usage match attributes of an active Reserved Instance. For general compute usage (EC2, Fargate, etc.), [Savings Plans](savings-plans.md) are _always_ preferred to Reserved Instances as they give you the same discount but are more flexible across all compute. 

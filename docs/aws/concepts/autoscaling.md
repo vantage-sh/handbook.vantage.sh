@@ -1,3 +1,5 @@
+title: Autoscaling 
+
 The best way to optimize costs in the cloud is to not spend it in the first place. Enter Autoscaling. Autoscaling leverages the elasticity of the cloud to dynamically provision and remove capacity based on demand. That means that as demands decrease autoscaling will automatically scale down resources and allow you to save on costs accordingly. 
 
 Autoscaling applies to a variety of different services, some of which are described in more detail below. If you're looking for EC2 autoscaling concepts, please see the AWS EC2 service page for the [autoscaling section](/aws/services/ec2-pricing/#autoscaling).

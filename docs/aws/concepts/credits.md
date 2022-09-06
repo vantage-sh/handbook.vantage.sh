@@ -1,3 +1,5 @@
+title: Credits on AWS 
+
 Most public cloud infastructure and service providers have a concept of credits. Credits are incentives typically given to customers opening up new accounts to attract them to build upon their platform. They allow you you to build, learn and get integrated into providers without have to spend money right from the beginning. 
 
 Credit allotments usually are around $5,000 or $10,000 depending on the provider but can be as high as $100,000.

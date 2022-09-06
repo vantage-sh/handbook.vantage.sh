@@ -1,3 +1,5 @@
+title: Rightsizing 
+
 Rightsizing is a term used for identifying and augmenting certain resources for greater utilization and potential cost savings. Typically rightsizing occures when you're over-provisioned and can apply to a variety of services with some examples below:
 
 * **EC2 Instances**: Oftentimes customers will choose one EC2 Instance that is over-allocated in terms the amount of vCPU and GB of RAM it is allocated. As a result, customers may be paying more on a per EC2-Instance basis. Customers who are able to identify opportunitites for rightsizing EC2 Instances can typically save significantly, especially if the EC2 Instance type chosen represents a large pool of instances. 
