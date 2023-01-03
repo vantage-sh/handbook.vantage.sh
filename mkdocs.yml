@@ -6,7 +6,7 @@ theme:
     - navigation.sections
   logo: https://www.vantage.sh/logo.svg
   icon:
-    repo: fontawesome/brands/github-square
+    repo: fontawesome/brands/square-github
   favicon: https://assets.vantage.sh/www/favicon-32x32.png
 
 extra:

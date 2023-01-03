@@ -12,6 +12,7 @@
 
 .md-typeset :is(.admonition) {
 	border-left: solid #5A0A76;
+	border-color: #5A0A76;
 }
 
 .md-typeset :is(.admonition-title,summary) {

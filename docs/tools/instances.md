@@ -12,6 +12,12 @@ Nearly every service attribute available for a specific instance is available, a
 
 For each column that is shown, it can be further filtered using simple glob matching, and the entire table can be searched using the top right search box.
 
+### Regex Support
+
+![Filter EC2 instances by Regex](/img/tools/instances/regex-filter.png)
+
+Each column and the top right search bar support regex expressions. So you can enter an expression like this: `[rt][3456].?.larg` and the resulting rows will be a mix of t and r instances as shown above.
+
 ## Comparing Instances
 
 ![Compare instances](/img/tools/instances/compare_selected.gif)
@@ -31,10 +37,6 @@ In the upper left, a pricing widget has selectors for calculating the estimated 
 ### Instance Attributes
 
 In the middle of each Detail Page are the major categories of attributes and their values. These attributes are all selectable as columns in the main Instances pages. To request more attributes, click "Open a ticket" in the bottom right.
-
-### Submitting a Link
-
-Each Detail Page is a static, but living page. Anyone can submit a link to be listed on the page by editing `community_contributions.yaml` and opening a PR on Github. This can be done entirely in the browser.
 
 ## Saving and Clearing Filters
 
