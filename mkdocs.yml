@@ -68,6 +68,9 @@ nav:
     - 'VPC': 'aws/services/vpc-pricing.md'
     - 'WorkSpaces': 'aws/services/workspaces-pricing.md'
 
+  - 'Datadog':
+    - 'Committed Use Discounts': 'datadog/committed-use-discounts.md'
+
   - 'Snowflake':
     - 'Cloud Services': 'snowflake/adjustments-for-included-cloud-services.md'
   
