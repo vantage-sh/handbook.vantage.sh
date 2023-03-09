@@ -3,6 +3,7 @@ name = "handbook-vantage-sh"
 version = "1.0.0"
 description = "This is the repository backing the site hosted at https://handbook.vantage.sh/"
 authors = ["Vantage Engineering <support@vantage.sh>"]
+license = "Attribution-NonCommercial-ShareAlike 4.0 International"
 readme = "README.md"
 
 [tool.poetry.dependencies]
