@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "handbook-vantage-sh"
+version = "1.0.0"
+description = "This is the repository backing the site hosted at https://handbook.vantage.sh/"
+authors = ["Vantage Engineering <support@vantage.sh>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.1"
+mkdocs-material-extensions = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
