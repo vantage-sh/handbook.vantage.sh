@@ -49,4 +49,4 @@ To reset the table, click `Clear Filters`.
 The table, with its filters applied, sorted, and with columns shown and hidden, can be exported exactly as a CSV. Data for EC2 is also available for free from the [Vantage API](https://vantage.readme.io/reference/general).
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).

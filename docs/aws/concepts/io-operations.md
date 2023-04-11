@@ -23,4 +23,4 @@ The most common cost waste with IOPS is having too many of them. It is commonly 
 AWS [suggests](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html) inspecting the `VolumeQueueLength` metric for [CloudWatch](/aws/services/cloudwatch-pricing/). This metric is reported as IOPS, which means the formula is simple: if `VolumeQueueLength` is greater than the number of provisioned IOPS and latency is an issue, then you should consider increasing the number of provisioned IOPS.
 
 !!! Contribute
-Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).
+Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).

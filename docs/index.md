@@ -26,4 +26,4 @@ Anyone is welcome to contribute to the Cloud Cost Handbook by issuing a pull req
 
 Generally interested in cloud concepts and associated costs? Join us in our public Slack community. We have a channel devoted to the handbook named "cloud-cost-handbook" where you're welcome to hang out, ask questions and/or spark conversation. 
 
-[:material-slack: Slack Community](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw){ .md-button }
+[:material-slack: Slack Community](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA){ .md-button }

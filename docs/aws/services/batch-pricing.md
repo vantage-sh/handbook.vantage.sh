@@ -38,4 +38,4 @@ One consideration is whether Batch is even the right tool for the job, and if so
 - Use multiple availability zones. All things considered, `BEST_FIT_PROGRESSIVE` will find the cheapest AZ to run the workload in, so do not artificially limit yourself here.
 
 !!! Contribute
-Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).
+Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).

@@ -44,5 +44,5 @@ DynamoDB Provisioned Capacity has [restrictions](https://docs.aws.amazon.com/ama
 Scaling cooldown can be the trickiest part of the process. It's generally best to aggressively scale up/out and conservatively scale down/in. A long cooldown process might be necessary when scaling out an application with a long startup process, but it can also block future scale out events, resulting in application instability. Scaling policies should be regularly evaluated and tuned.
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-oey52myv-gq4AWRKkX25kjp1UGziPTw).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
 
