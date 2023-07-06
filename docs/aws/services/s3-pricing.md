@@ -76,7 +76,7 @@ Price is not the only consideration that goes into making a decision about wheth
 
 #### Complexity
 
-AWS had made it exceedingly easy for customer to utilize other AWS service in tandem. There is a non-trivial cost for an organization to decide to split their infrastructure over multiple service providers. Developers will need to learn and understand both systems and when to choose one design pattern over the other. There will be two sets of documentation that will need to be addressed when designing or troubleshooting systems.
+AWS had made it exceedingly easy for customers to utilize other AWS service in tandem, but there is a non-trivial cost for an organization to decide to split their infrastructure over multiple service providers. Developers will need to learn and understand both systems and when to choose one design pattern over the other. There will be two sets of documentation that will need to be addressed when designing or troubleshooting systems.
 
 #### Use-cases
 
