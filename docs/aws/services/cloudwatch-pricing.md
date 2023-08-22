@@ -23,6 +23,10 @@ CloudWatch stores and process data from an umbrella of different AWS services wh
 | CloudWatch Contributor Insights | Contributor Insights are only available for CloudWatch Logs and DynamoDB. For CloudWatch Logs, Contributor Insights are priced per-rule per-month, and for every million log events per month that match your rule. For DynamoDB, Contributor Insights are priced per-rule per-month and for every million DynamoDB Events, which occur when items are read from or written to your DynamoDB table. |
 | CloudWatch Canaries | Canaries are priced based on the number of runs. Pricing is very specific to region. Be sure to check where you are running your CloudWatch Canaries to be aware of the price for that region. |
 
+## CloudWatch Cost Optimizations
+
+By default, CloudWatch Log Groups retain logs _indefinitely_. However, you can choose a retention period of anywhere from [1 day to 10 years](https://docs.aws.amazon.com/managedservices/latest/userguide/log-customize-retention.html). After logs expire, they will be deleted and reduce storage costs. To set a retention period, chose "Edit Retention" in the CloudWatch console by following [these instructions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#SettingLogRetention).
+
 <br />
 
 [^1]: Price is based on US East (Ohio) region as of July 28, 2021. See footnote below for comment about pricing per region.
