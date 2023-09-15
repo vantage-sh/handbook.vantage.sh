@@ -63,6 +63,7 @@ nav:
     - 'EMR': 'aws/services/emr-pricing.md'
     - 'Lambda': 'aws/services/lambda-pricing.md'
     - 'RDS': 'aws/services/rds-pricing.md'
+    - 'Redshift': 'aws/services/redshift-pricing.md'
     - 'Route 53': 'aws/services/route-53-pricing.md'
     - 'S3': 'aws/services/s3-pricing.md'
     - 'VPC': 'aws/services/vpc-pricing.md'
