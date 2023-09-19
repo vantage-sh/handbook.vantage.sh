@@ -21,7 +21,7 @@ With Redshift Serverless you can run analytics and scale without setting up and 
 You only pay for the capacity used and capacity is automatically scaled up and down depending on need, as well as shutting off during inactivity. Data wearhouse capacity is measured in Redshift Processing Units (RPUs). You are billed in RPU-hours on a per-second basis. Since Redshift Serverless automatically provisions the appropriate resources, you do not need to choose a node type. The features concurrency scaling and Redshift Spectrum are included in the cost.
 
 ### Redshift Spectrum 
-This feature enables you to execute SQL queries directly on exabytes of data stored in S3. The billing is based on the volume of data scanned by Redshift Spectrum, rounded up to the nearest megabyte, with a minimum charge of 10 MB per query.
+This feature enables you to execute SQL queries on data stored in [S3](/aws/services/s3-pricing). The billing is based on the volume of data scanned by Redshift Spectrum, rounded up to the nearest megabyte, with a minimum charge of 10 MB per query.
 
 ### Redshift Managed Storage
 Redshift Managed Storage is a feature that allows you to store and manage data within your Redshift cluster. It is exclusively available for RA3 node types. Billing is a fixed GB-month rate regardless of data size. Usage is calculated hourly based on the total data present.
@@ -34,3 +34,6 @@ This functionality enables you to create, train, and deploy machine learning (ML
 
 ## Reserved Instances
 [Reserved Instances](/aws/concepts/reserved-instances) are covered in depth under General Concepts and we encourage you to read up more on them there for the most up-to-date information.
+
+!!! Contribute
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
