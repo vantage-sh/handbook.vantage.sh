@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages 
+
+on: 
+    push:
+        branches:
+            - master
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set Up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install Dependencies
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
+
+      - name: Build and Deploy
+        run: |
+          mkdocs build 
+          mkdocs gh-deploy --clean
