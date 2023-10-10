@@ -6,24 +6,14 @@ on:
             - master
 
 jobs:
-  deploy:
-    name: Deploy to GitHub Pages
+  build:
+    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout master
         uses: actions/checkout@v2
 
-      - name: Set Up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-
-      - name: Install Dependencies
-        run: |
-          pip install mkdocs
-          pip install mkdocs-material
-
-      - name: Build and Deploy
-        run: |
-          mkdocs build 
-          mkdocs gh-deploy --clean
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
