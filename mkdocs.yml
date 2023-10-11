@@ -52,6 +52,7 @@ nav:
     - 'CloudFront': 'aws/services/cloudfront-pricing.md'
     - 'CloudTrail': 'aws/services/cloudtrail-pricing.md'
     - 'CloudWatch': 'aws/services/cloudwatch-pricing.md'
+    - 'Config': 'aws/services/config-pricing.md'
     - 'DynamoDB': 'aws/services/dynamodb-pricing.md'
     - 'EBS': 'aws/services/ebs-pricing.md'
     - 'EC2': 'aws/services/ec2-pricing.md'
