@@ -4,7 +4,7 @@ theme:
   name: material
   features:
     - navigation.sections
-  logo: https://www.vantage.sh/logo.svg
+  logo: 'assets/logo.svg'
   icon:
     repo: fontawesome/brands/square-github
   favicon: https://assets.vantage.sh/www/favicon-32x32.png
