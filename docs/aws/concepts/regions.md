@@ -5,4 +5,4 @@ Pricing for public cloud infrastructure providers typically varies by geographic
 The [Instances](https://instances.vantage.sh/) pricing tool has prices for popular AWS services in all regions. To see a list of AWS regions, consult this reference [list of AWS regions](/aws/reference/aws-regions).
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

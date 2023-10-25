@@ -12,7 +12,7 @@ Amazon Simple Storage Service (S3) is an object storage service that allows cust
 |----|----|
 |Object Storage Amount|Amazon S3 charges you for how much you store across all objects across all buckets. There is different pricing rates per region on a per-GB basis and as you store more data on S3, you get discounts on a per-GB basis.| 
 |Object Storage Class|Amazon S3 has many different Storage Classes which are discussed below. "Standard Storage" is the default storage class but you can get discounts for other tiers.|
-|Bandwidth|Amazon S3 charges you for the amount of egress you consume for accessing S3 objects. You should keep an eye on how much bandwidth is being consumed especially if files are left open to the public where you can potentially have runaway costs if signifcant usage occurs.| 
+|Bandwidth|Amazon S3 charges you for the amount of egress you consume for accessing S3 objects. You should keep an eye on how much bandwidth is being consumed especially if files are left open to the public where you can potentially have runaway costs if significant usage occurs.| 
 |Request Metrics|Amazon charges you for GET, SELECT, PUT, COPY, POST and LIST requests. Amazon also charges you different rates depending on which of these request types you're using. This is oftentimes an unknown cost that customers occur that you should keep an eye on.| 
 
 ## Intelligent Tiering
@@ -33,7 +33,7 @@ S3 currently supports 19 different object storage types within an S3 Bucket. Eac
 |Intelligent Tiering - Archive Access (IntelligentTieringAAStorage)|Upon activating the archive access tier for intelligent tiering, S3 will automatically move objects that haven't been accessed for 90 days to archive access where the pricing is the same as Glacier.| 
 |Intelligent Tiering - Deep Archive Access (IntelligentTieringDAAStorage)|Upon activating the deep archive access tier for intelligent tiering, S3 will automatically move objects that haven't been accessed for 180 days to deep archive access.| 
 |S3 Standard - Infrequent Access (StandardIAStorage)|S3 Standard Infrequent Access is for data that is accessed less frequently, but requires rapid access when needed. It offers the high durability, high throughput, and low latency of S3 Standard, with a low per GB storage price and per GB retrieval fee. This combination of low cost and high performance make S3 Standard-IA ideal for long-term storage, backups, and as a data store for disaster recovery files.|
-|Standard Infrequenty Access Overhead (StandardIASizeOverhead)|There is a minimum billable size of 128KB. For example if you stored an object at 28KB, the StandardIASizeOverhead rate would increase by 128KB-28KB or 100KB and represented by this metric.|
+|Standard Infrequently Access Overhead (StandardIASizeOverhead)|There is a minimum billable size of 128KB. For example if you stored an object at 28KB, the StandardIASizeOverhead rate would increase by 128KB-28KB or 100KB and represented by this metric.|
 |S3 Standard - Infrequent Access (One Zone)|S3 Infrequent Access One Zone is for data that is accessed less frequently, but requires rapid access when needed. Unlike other S3 Storage Classes which store data in a minimum of three Availability Zones, S3 Infrequent Access One Zone stores data in a single AZ and costs 20% less than S3 Standard Infrequent Access.|
 |One Zone Size Overhead (OneZoneIASizeOverhead)|There is a minimum billable size of 128KB. For example if you stored an object at 28KB, the StandardIASizeOverhead rate would increase by 128KB-28KB or 100KB and represented by this metric.|
 |S3 Glacier (GlacierStorage)|S3 Glacier is a secure, durable, and low-cost storage class for data archiving. You can reliably store any amount of data at costs that are competitive with or cheaper than on-premises solutions. To keep costs low yet suitable for varying needs, S3 Glacier provides three retrieval options that range from a few minutes to hours.|
@@ -88,4 +88,4 @@ The primary use-case in favor of utilizing this cost efficiency architecture str
 <br/>
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

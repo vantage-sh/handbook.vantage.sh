@@ -4,13 +4,13 @@ title: Cloudfront Pricing | Cloud Cost Handbook
 
 ## Summary
 
-Amazon CloudFront is a content delivery network (CDN) service used to distribute and cache traffic from one region to multiple geographic endpoints globally. Every CloudFront distribution includes an origin which is used to pull the original data from. An origin will typically be an S3 bucket or Load Balancer Endpoint. The traffic is distributed globally to speed up the access to an application which recieves visitors from across the globe. CloudFront Distributions are billed based on the amount of traffic they request from the origin, distribute out to the internet as well as per request processed. Distribution out to the internet is priced differently depending on the region which it is accessed. Regions are grouped into geographic regions. When creating a distribution it is possible to select which regions CloudFront will serve traffic from.
+Amazon CloudFront is a content delivery network (CDN) service used to distribute and cache traffic from one region to multiple geographic endpoints globally. Every CloudFront distribution includes an origin which is used to pull the original data from. An origin will typically be an S3 bucket or Load Balancer Endpoint. The traffic is distributed globally to speed up the access to an application which receives visitors from across the globe. CloudFront Distributions are billed based on the amount of traffic they request from the origin, distribute out to the internet as well as per request processed. Distribution out to the internet is priced differently depending on the region which it is accessed. Regions are grouped into geographic regions. When creating a distribution it is possible to select which regions CloudFront will serve traffic from.
 
 ## Pricing Dimensions
 
 | Dimension | Description |
 | -- | -- |
-| Transfer Out to Internet | Distributions are billed per GB of data transfered out of a geographic area to the internet. The prices are tiered and are lower the more traffic is transferred. |
+| Transfer Out to Internet | Distributions are billed per GB of data transferred out of a geographic area to the internet. The prices are tiered and are lower the more traffic is transferred. |
 | Regional Data Transfer Out to Origin | Distributions are billed per GB of data transfer from the distribution back to the origin. The prices are a flat-rate and dependent on their geographic area. |
 | Per Request | Distributions are billed per 10,000 requests and are different rates based on whether the request is HTTP or HTTPS. If origin shield is configured there is an additional charge per 10,000 requests and are a standard rate regardless of protocol. Both are priced differently depending on geographic area. |
 
@@ -20,7 +20,7 @@ Origin Shield can be enabled in order to reduce the amount of traffic being serv
 
 ## CloudFront Security Savings Bundle
 
-The CloudFront Security Savings Bundle is a simple way to save up to 30% on the CloudFront charges on your AWS bill when you make a 1-year upfront commitment with no service-level configuration changes needed. You're billed in equal installments over the 12 months, starting from the time you purcahse the security savings bundle. Once you purchase the CloudFront Security Savings Bundle, the savings are automatically applied to your bill. If you're familiar with [Savings Plans](/aws/concepts/savings-plans) or [Reserved Instances](/aws/concepts/reserved-instances), this is essentially the CloudFront equivalent to those conceptually speaking. 
+The CloudFront Security Savings Bundle is a simple way to save up to 30% on the CloudFront charges on your AWS bill when you make a 1-year upfront commitment with no service-level configuration changes needed. You're billed in equal installments over the 12 months, starting from the time you purchase the security savings bundle. Once you purchase the CloudFront Security Savings Bundle, the savings are automatically applied to your bill. If you're familiar with [Savings Plans](/aws/concepts/savings-plans) or [Reserved Instances](/aws/concepts/reserved-instances), this is essentially the CloudFront equivalent to those conceptually speaking. 
 
 The reason for this being named a "bundle" is that by making this purchase you also get credits towards the AWS Web Application Firewall (WAF) service. Ten percent of the amount you pay in committed use for a CloudFront Security Savings Bundle will be granted toward AWS WAF. So for example if you pay $500 for a CloudFront Security Savings Bundle, $50 will also be applied towards AWS WAF. 
 
@@ -31,7 +31,7 @@ For customers who are willing to make certain minimum traffic commits (typically
 
 ## CloudFront Versus Cloudflare
 
-Cloudflare[^whynoothervendors] is an edge network that offers a number of different performance, availability and security services. One of those services is an edge caching service that offer effectively the same service as Amazon CloudFront. The most important distinction between CloudFront and Cloudflare is not a technical differentiation but a business model differentiation. CloudFront utilizes a metered pricing model whereby you pay based on the amount of traffic that is served via the CloudFront service.[^cloudfrontpricing] Cloudflare, on the otherhand, offers flat-rate pricing for its service without any bandwidth caps.[^cloudflaretos] 
+Cloudflare[^whynoothervendors] is an edge network that offers a number of different performance, availability and security services. One of those services is an edge caching service that offer effectively the same service as Amazon CloudFront. The most important distinction between CloudFront and Cloudflare is not a technical differentiation but a business model differentiation. CloudFront utilizes a metered pricing model whereby you pay based on the amount of traffic that is served via the CloudFront service.[^cloudfrontpricing] Cloudflare, on the other hand, offers flat-rate pricing for its service without any bandwidth caps.[^cloudflaretos] 
 
 What this means is that as a customer of [Cloudflare's Business plan](https://www.cloudflare.com/plans/business/), you can pay $200 per month and delivery unlimited traffic via the Cloudflare CDN. Seems too good to be true? Feel free to browse the official Cloudflare community where this question is [asked](https://community.cloudflare.com/t/to-support-about-cdn-plan/166219) and [answered](https://community.cloudflare.com/t/cloudflare-doesnt-mention-in-plans-that-how-much-monthly-bandwidth-will-provides/161097) multiple times.
 
@@ -41,9 +41,9 @@ Price is not the only consideration that goes into making a decision about wheth
 
 #### Availability
 
-In order to offer customers unlimited bandwidth, Cloudflare utilizes service degradation based on their plan levels to prioritize higher tier customers in the event of a service degredation. The two most common service degradations for Cloudflare are either a DDoS attack that is overwhelming one or more points-of-presence (PoP) in the network or a legitimate surge in traffic due to any number of events. 
+In order to offer customers unlimited bandwidth, Cloudflare utilizes service degradation based on their plan levels to prioritize higher tier customers in the event of a service degradation. The two most common service degradations for Cloudflare are either a DDoS attack that is overwhelming one or more points-of-presence (PoP) in the network or a legitimate surge in traffic due to any number of events. 
 
-When the resources for a PoP are being depleted and service is being degraded, Cloudflare will choose to route traffic for customers out of that location based on the plan level they are subscribed to. Free traffic will be routed away from the PoP first, then Pro, Business, etc. The effect of having traffic routed out of a specific PoP is that users that are closest to the PoP will have some level of service degredation since they will instead have their traffic served from a PoP that is farther away than their most ideal PoP. In locations where the next nearest available PoP is close this degredation will be practically unnoticable. In locations where the next available PoP is topologically distant service degredation can potentially be significant.
+When the resources for a PoP are being depleted and service is being degraded, Cloudflare will choose to route traffic for customers out of that location based on the plan level they are subscribed to. Free traffic will be routed away from the PoP first, then Pro, Business, etc. The effect of having traffic routed out of a specific PoP is that users that are closest to the PoP will have some level of service degradation since they will instead have their traffic served from a PoP that is farther away than their most ideal PoP. In locations where the next nearest available PoP is close this degradation will be practically unnoticeable. In locations where the next available PoP is topologically distant service degradation can potentially be significant.
 
 #### Technical
 
@@ -73,4 +73,4 @@ The important thing to remember is that, as long as you aren't breaking the Clou
 <br/>
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

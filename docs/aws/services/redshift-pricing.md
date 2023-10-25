@@ -18,7 +18,7 @@ Redshift is a cloud data warehouse that enables organizations to analyze large v
 ### Redshift Serverless
 With Redshift Serverless you can run analytics and scale without setting up and managing warehouse infrastructure. It is ideal for difficult to predict compute needs, immediately needed ad-hoc analytics, and test and development environments. 
 
-You only pay for the capacity used and capacity is automatically scaled up and down depending on need, as well as shutting off during inactivity. Data wearhouse capacity is measured in Redshift Processing Units (RPUs). You are billed in RPU-hours on a per-second basis. Since Redshift Serverless automatically provisions the appropriate resources, you do not need to choose a node type. The features concurrency scaling and Redshift Spectrum are included in the cost.
+You only pay for the capacity used and capacity is automatically scaled up and down depending on need, as well as shutting off during inactivity. Data warehouse capacity is measured in Redshift Processing Units (RPUs). You are billed in RPU-hours on a per-second basis. Since Redshift Serverless automatically provisions the appropriate resources, you do not need to choose a node type. The features concurrency scaling and Redshift Spectrum are included in the cost.
 
 ### Redshift Spectrum 
 This feature enables you to execute SQL queries on data stored in [S3](/aws/services/s3-pricing). The billing is based on the volume of data scanned by Redshift Spectrum, which will be rounded up to the nearest megabyte, with a minimum fee of 10 MB per query.
@@ -36,4 +36,4 @@ This functionality enables you to create, train, and deploy machine learning (ML
 [Reserved Instances](/aws/concepts/reserved-instances) are covered in depth under General Concepts and we encourage you to read up more on them there for the most up-to-date information.
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

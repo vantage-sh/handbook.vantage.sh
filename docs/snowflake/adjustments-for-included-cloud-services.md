@@ -25,7 +25,9 @@ The following common data operations consume cloud services on Snowflake and the
 * **Very complex queries.** The query optimization software snowflake runs is broken out into cloud services. So if you write SQL queries that are thousands of lines long, or contain many JOINs or excessive recursion you may find yourself with higher cloud services costs.
 * **Excessively frequent queries.** Lastly, the SQL API handles the ingestion of each SQL query internally. Requesting this API (running queries) tens of thousands of times per day would start to result in charges.
 
-It's possible that these issues may be caused by third party services running on Snowflake and not your team itself. You can monitor explictly the queries that your company is running by adding [query tagging](https://www.vantage.sh/blog/snowflake-costs-per-query-using-query-tags). For more scenarios like the ones above, please contribute to this page or review more [Snowflake resources](https://community.snowflake.com/s/article/Cloud-Services-Billing-Update-Understanding-and-Adjusting-Usage) on optimizing Cloud Services costs.
+It's possible that these issues may be caused by third party services running on Snowflake and not your team itself. You can monitor explicitly the queries that your company is running by adding [query tagging](https://www.vantage.sh/blog/snowflake-costs-per-query-using-query-tags). For more scenarios like the ones above, please contribute to this page or review more [Snowflake resources](https://community.snowflake.com/s/article/Cloud-Services-Billing-Update-Understanding-and-Adjusting-Usage) on optimizing Cloud Services costs.
+
+</br>
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

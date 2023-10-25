@@ -26,7 +26,7 @@ Application Load Balancers (ALB) are useful for distributing layer 7 (HTTP, HTTP
 Whichever of these dimensions produces the highest LCU for an hour is what is used to create the charge for LCU-hour.
 
 ## Network Load Balancer
-Network Load Balacers (NLB) are used for forwarding layer 4 traffic (TCP, UDP, TLS) to any other resoruce with an IP address. NLBs have a standard hourly rate per region and a formula for calculating "NLCU"-hours depending on the type of network traffic. The dimensions for calculating NCLU are:
+Network Load Balancers (NLB) are used for forwarding layer 4 traffic (TCP, UDP, TLS) to any other resource with an IP address. NLBs have a standard hourly rate per region and a formula for calculating "NLCU"-hours depending on the type of network traffic. The dimensions for calculating NCLU are:
 
 | Dimension   | TCP         | UDP | TLS |
 | ----------- | ----------- |-----|-----|
@@ -45,9 +45,9 @@ Gateway Load Balancers are used to proxy traffic through third-party virtual app
 | Processed bytes | A single LCU is 1 GB per hour for EC2 instances, containers and IP addresses as targets and 0.4 GB per hour for Lambda functions as targets. |
 
 ## Classic Load Balancer
-Classic load balancers are the original type of load balancer which has since been superceded by ALB and NLB. CLBs support both layer 7 and layer 4 traffic. CLBs have a standard hourly rate per region and a standard per GB rate per region for traffic processed. 
+Classic load balancers are the original type of load balancer which has since been superseded by ALB and NLB. CLBs support both layer 7 and layer 4 traffic. CLBs have a standard hourly rate per region and a standard per GB rate per region for traffic processed. 
 
 <br/>
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

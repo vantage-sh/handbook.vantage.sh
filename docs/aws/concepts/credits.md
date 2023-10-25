@@ -1,6 +1,6 @@
 title: Credits on AWS 
 
-Most public cloud infastructure and service providers have a concept of credits. Credits are incentives typically given to customers opening up new accounts to attract them to build upon their platform. They allow you you to build, learn and get integrated into providers without have to spend money right from the beginning. 
+Most public cloud infrastructure and service providers have a concept of credits. Credits are incentives typically given to customers opening up new accounts to attract them to build upon their platform. They allow you you to build, learn and get integrated into providers without have to spend money right from the beginning. 
 
 Credit allotments usually are around $5,000 or $10,000 depending on the provider but can be as high as $100,000.
 
@@ -16,4 +16,4 @@ It's important to note that credits typically have a lifecycle tied to them that
 
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
