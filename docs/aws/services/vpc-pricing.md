@@ -11,7 +11,7 @@ Amazon Virtual Private Cloud (VPC) is a service which allows customers to logica
 |Dimension|Description|
 |----|----|
 |NAT Gateway Usage|NAT Gateways are billed per hour at a standard rate per region. Each partial hour is billed as a full hour.|
-|NAT Gateway Transfer|NAT Gateways are billed per GB which is processed by the gateway regaurdless of where the data is being transferred to or from.|
+|NAT Gateway Transfer|NAT Gateways are billed per GB which is processed by the gateway regardless of where the data is being transferred to or from.|
 
 ## NAT Gateway
 NAT (Network Address Translation) Gateways enable resources running inside of VPCs to connect to services outside of the VPC without needing to have those resources exposed to the public internet. Besides the standard usage and transfer charges on NAT Gateways you will also be charged standard bandwidth transfer charges on top of that depending on where the traffic is going.
@@ -22,4 +22,4 @@ VPC Endpoints allow resources to connect to other AWS services outside of a VPC,
 <br/>
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

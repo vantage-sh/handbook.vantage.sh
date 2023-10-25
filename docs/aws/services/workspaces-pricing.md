@@ -12,7 +12,7 @@ Amazon WorkSpaces is a fully managed, persistent desktop virtualization service.
 |----|----|
 |Compute Type| WorkSpaces offers seven different types of compute types. They are `Value`, `Standard`, `Performance`, `Power` and `PowerPro`, `Graphics`, `GraphicsPro`. Each of these classes has a different set of underlying resources that contribute to costs differently. The order that these classes are listed in are from cheapest to most expensive. |
 |Platform Type| Linux or Windows. You are charged an additional amount of money for running on Windows vs Linux. You may also bring your own license for Windows WorkSpaces to reduce Windows licensing costs if you have that available. |
-|Running Mode| `AUTO_STOP` or `ALWAYS_ON`. When you choose `AUTO_STOP` you are choosing to create a WorkSpace that has a pre-deteremined expiration time in which that WorkSpace will terminate and is billed per hour. When you choose `ALWAYS_ON` you are charged on a monthly rate basis and the WorkSpace will persist being on until you take action to terminate it.  |
+|Running Mode| `AUTO_STOP` or `ALWAYS_ON`. When you choose `AUTO_STOP` you are choosing to create a WorkSpace that has a pre-determined expiration time in which that WorkSpace will terminate and is billed per hour. When you choose `ALWAYS_ON` you are charged on a monthly rate basis and the WorkSpace will persist being on until you take action to terminate it.  |
 |WorkSpace Size| Each Compute Type offers four different configurations with different amounts of vCPU and GB of Memory. `Graphic` and `GraphicsPro` only offer one size. Depending on the size you choose, you will pay a more expensive rate. |
 
 ## Monitoring Unused WorkSpaces
@@ -22,4 +22,4 @@ WorkSpaces have an attribute named `last_known_user_connection_timestamp` that m
 <br />
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

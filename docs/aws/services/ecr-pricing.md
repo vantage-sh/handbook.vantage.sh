@@ -4,7 +4,7 @@ title: ECR Pricing | Cloud Cost Handbook
 
 ## Summary
 
-Amazon Elastic Container Registry (ECR) is a fully managed container registry that allows you to store container images. You can create as many "Repositories" as you'd like that are free. As you push container "Images" to your repository, you're charged for the storage of these images which can acrue over time. Additionally, ECR charges different data transfer rates for private versus public repositories. 
+Amazon Elastic Container Registry (ECR) is a fully managed container registry that allows you to store container images. You can create as many "Repositories" as you'd like that are free. As you push container "Images" to your repository, you're charged for the storage of these images which can accrue over time. Additionally, ECR charges different data transfer rates for private versus public repositories. 
 
 ## Pricing Dimensions
 
@@ -25,18 +25,18 @@ If you prefer not to do this manually yourself, [Vantage](https://www.vantage.sh
 
 ## Lifecycle Policies
 
-ECR stores every container image you push to a registry by default. Over time, the storage of all of these images can add up. Amazon offers a primitive called a "Lifecycle Policy" that allows you to set conditions for having Amazon clean up images on your behalf. There are two types of lifeycle policies:
+ECR stores every container image you push to a registry by default. Over time, the storage of all of these images can add up. Amazon offers a primitive called a "Lifecycle Policy" that allows you to set conditions for having Amazon clean up images on your behalf. There are two types of lifecycle policies:
 
 |Lifecycle Policy|Description|
 |--|--|
 |imageCountMoreThan|ECR allows you to define a certain number of images to retain and anything over that count will be cleaned up. For example if you set a Lifecycle Policy with a imageCountMoreThan value of 10, your most recent 10 images will always be kept.|
 |sinceImagePushed|ECR allows you to set lifecycle policies with a value of sinceImagePushed which has a value of a certain number of days. So for example if you have a Lifecycle Policy applied with a sinceImagePushed value of 7, ECR will delete images as often as they are older than 7 days.|
 
-__Note__: that when you apply a Lifecycle Policy, it is evaluated immediately. So if you have 500 images in a repositority and impose a lifeycle policy of 10 as soon as that policy is applied ECR will delete the 490 oldest images. 
+__Note__: that when you apply a Lifecycle Policy, it is evaluated immediately. So if you have 500 images in a repository and impose a lifecycle policy of 10 as soon as that policy is applied ECR will delete the 490 oldest images. 
 
-### Example `imageCountMoreThan` Lifeycle Policy
+### Example `imageCountMoreThan` Lifecycle Policy
 
-Here's an example of how to impose a Lifeycle Policy via the AWS CLI using the value of imageCountMoreThan: 
+Here's an example of how to impose a Lifecycle Policy via the AWS CLI using the value of imageCountMoreThan: 
 
 ```
 aws ecr put-lifecycle-policy \
@@ -68,10 +68,10 @@ Where the content of the file for policy.json is the following:
 ```
 
 
-### Example `sinceImagePushed` Lifeycle Policy
+### Example `sinceImagePushed` Lifecycle Policy
 
 
-Here's an example of how to impose a Lifeycle Policy via the AWS CLI using the value of sinceImagePushed: 
+Here's an example of how to impose a Lifecycle Policy via the AWS CLI using the value of sinceImagePushed: 
 
 ```
 aws ecr put-lifecycle-policy \
@@ -106,4 +106,4 @@ Where the content of the file for policy.json is the following:
 <br/>
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

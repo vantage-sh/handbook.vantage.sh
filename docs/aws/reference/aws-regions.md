@@ -1,6 +1,6 @@
 title: All AWS Regions | Cloud Cost Handbook
 
-This is a list of AWS Regions and their API names from [the Instances codebase](https://github.com/vantage-sh/ec2instances.info). Ideally a boto3 script could generate these.
+This is a list of AWS Regions and their API names from [the Instances codebase](https://github.com/vantage-sh/ec2instances.info). Ideally, a `boto3` script could generate these.
 
 | Region API Name | Region |
 | - | - |
@@ -30,6 +30,7 @@ This is a list of AWS Regions and their API names from [the Instances codebase](
 | us-gov-west-1 | AWS GovCloud (US-West) |
 | us-gov-east-1 | AWS GovCloud (US-East) |
 
+</br>
 
 !!! Contribute
-Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

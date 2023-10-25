@@ -13,7 +13,7 @@ There is no additional charge to you when using ECS on self-managed EC2 as you'r
 
 |Dimension|Description|
 |---|---|
-|vCPU Hours|When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charged a corresponding per-hour VCPU rate.|
+|vCPU Hours|When configuring a Fargate Task or EKS Pod you assign a certain amount vCPU and are charged a corresponding per-hour vCPU rate.|
 |GB Memory Hours|When configuring a Fargate Task or EKS Pod you assign a certain amount GB of Memory and are charged a corresponding per-hour GB of Memory rate.|
 
 ### Fargate Spot
@@ -24,11 +24,11 @@ When the capacity for Fargate Spot is available, you will be able to launch task
 
 ### Fargate vs self-managed EC2 on ECS or EKS
 
-Fargate charges a significant premium for managing the underlying nodes. Additionally, Fargate has varying degress of vCPU performance that differ depending on the Task. As a result, Fargate can have pitfalls relative to self-managed ECS or EKS on EC2 beyond just the additional costs. 
+Fargate charges a significant premium for managing the underlying nodes. Additionally, Fargate has varying degrees of vCPU performance that differ depending on the Task. As a result, Fargate can have pitfalls relative to self-managed ECS or EKS on EC2 beyond just the additional costs. 
 
 For a more in-depth article for seeing how Fargate is priced relative to self-managed EC2, please read the following blog post for [understanding Fargate pricing](https://www.vantage.sh/blog/fargate-pricing).
 
 <br/>
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

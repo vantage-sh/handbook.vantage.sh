@@ -129,4 +129,4 @@ Dynamo exposes the time-ordered sequence of item-level changes on a given table 
 [^2]: If a query to an index with projection requests attribute values not in the projected values, it will incur twice the normal read cost, as the remaining attribute values must be fetched from the base table
 
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

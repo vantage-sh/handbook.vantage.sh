@@ -47,3 +47,8 @@ For more detailed information about matching CUDA compute capability, CUDA genco
 | [g4ad.4xlarge](https://instances.vantage.sh/aws/ec2/g4ad.4xlarge) | AMD Radeon Pro V520 | 0 | 1 | - | 8 |
 | [g4ad.8xlarge](https://instances.vantage.sh/aws/ec2/g4ad.8xlarge) | AMD Radeon Pro V520 | 0 | 2 | - | 16 |
 | [g4ad.16xlarge](https://instances.vantage.sh/aws/ec2/g4ad.16xlarge) | AMD Radeon Pro V520 | 0 | 4 | - | 32 |
+
+</br>
+
+!!! Contribute
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

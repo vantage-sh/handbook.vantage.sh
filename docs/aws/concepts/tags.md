@@ -2,7 +2,7 @@ title: Tagging Resources
 
 Tags are one of the most powerful (though often overlooked) tools that can assist with your ability to observe and allocate cloud costs as it relates to public cloud infrastructure providers like AWS, Azure and GCP. While different accounts can be useful for separating resources and costs across different environments (production, staging, qa, test, etc) or teams/business-units, tags are helpful for segmenting costs as it relates to your application. We encourage customers to adopt tagging strategies as early on at their organizations as possible. Similar to an effective unit testing suite, over time tags can give you confidence in understanding where your costs are coming from.
 
-Tags on AWS consist of two different parts: a `key` and a `value`. As a basic example you can imagine an example `key` with the value of "service" and a `value` which could be "front-end", "back-end", "search" or "cache". Upon assigning tags to resources, you can get greater visibility into where your costs are coming from. Instead of seeing how your costs are trending in aggregate, you can see how each part of your application is growing assuming you've leveraged tags correctly. Additionally, tags can be part of your existing workflows and are typically very easy to accomodate in infrastructure-as-code configuration files such as CloudFormation or Terraform.
+Tags on AWS consist of two different parts: a `key` and a `value`. As a basic example you can imagine an example `key` with the value of "service" and a `value` which could be "front-end", "back-end", "search" or "cache". Upon assigning tags to resources, you can get greater visibility into where your costs are coming from. Instead of seeing how your costs are trending in aggregate, you can see how each part of your application is growing assuming you've leveraged tags correctly. Additionally, tags can be part of your existing workflows and are typically very easy to accommodate in infrastructure-as-code configuration files such as CloudFormation or Terraform.
 
 Tags, at their core, are metadata attached to cloud resources. They serve as markers, providing context and categorization. Beyond just identification, tags play a pivotal role in:
 
@@ -57,7 +57,7 @@ A multi-cloud or hybrid cloud environment might require a more nuanced approach 
 
 Utilize tools and scripts to automate tagging for consistency and efficiency. Several types of reports can be built in cloud cost management tools which will show you which resources are not tagged so you can make progress.
 
-To harness the full potential of tags, maintain consistency with a clear naming convention and stick to it. Tools like AWS Tag Editor or infrastructure-as-code solutions like Terraform, Pulumi, or Clouformation can help enforce tagging. After the initial setup, make sure to review regularly. As the organization evolves, so will its tagging needs. Periodic reviews ensure relevance. To ensure stickiness of the strategy, educate and train team members so they understand the importance of tagging and how to do it correctly.
+To harness the full potential of tags, maintain consistency with a clear naming convention and stick to it. Tools like AWS Tag Editor or infrastructure-as-code solutions like Terraform, Pulumi, or CloudFormation can help enforce tagging. After the initial setup, make sure to review regularly. As the organization evolves, so will its tagging needs. Periodic reviews ensure relevance. To ensure stickiness of the strategy, educate and train team members so they understand the importance of tagging and how to do it correctly.
 
 ## Implementing Tagging
 
@@ -66,4 +66,4 @@ It’s rare to plan and launch a tagging strategy from scratch. More likely than
 Firstly, there should be an audit of existing tags. Decide what tags to keep, which to ignore, and measure the accuracy of what tags exist. Then, identify untagged resources. Measure how much of your infrastructure is untagged, and use that to track progress as the program progresses. In the process you will want to partner with engineering. Clearly communicate new tagging guidelines, and support engineers owning the work to tag infrastructure. Finally, gamify the process. Find ways to recognize or reward teams as tagging work is completed.
 
 !!! Contribute
-Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://join.slack.com/t/vantagecommunity/shared_invite/zt-1szz6puz7-zRuJ8J4OJIiBFlcTobYZXA).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
