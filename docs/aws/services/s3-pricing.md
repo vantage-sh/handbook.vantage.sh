@@ -12,7 +12,7 @@ Amazon Simple Storage Service (S3) is an object storage service that allows cust
 |----|----|
 |Object Storage Amount|AWS charges you for how much you store across all objects and across all buckets. Each region has a different pricing rate on a per-GB basis, and as you store more data on S3, you get discounts on a per-GB basis.| 
 |Object Storage Class|Amazon S3 has many different storage classes, further discussed below. S3 Standard is the default storage class, but you can get discounts for other tiers.|
-|Bandwidth|AWS charges you for the amount of egress you consume for accessing S3 objects. You should keep an eye on how much bandwidth is being consumed—, where you can potentially have runaway costs with significant use.| 
+|Bandwidth|AWS charges you for the amount of egress you consume for accessing S3 objects. You should keep an eye on how much bandwidth is being consumed—where you can potentially have runaway costs with significant use.| 
 |Request Metrics|AWS charges you for GET, SELECT, PUT, COPY, POST, and LIST requests. S3 also charges you different rates depending on which of these request types you're using. This is oftentimes an unknown cost that occurs and that you should keep an eye on.| 
 
 ## Intelligent-Tiering
