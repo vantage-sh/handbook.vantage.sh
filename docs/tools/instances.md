@@ -1,8 +1,12 @@
 title: Instances Pricing Documentation | Cloud Cost Handbook
 
-The [Instances](https://instances.vantage.sh) pricing tool shows current pricing for AWS EC2, RDS, and ElastiCache instances. The tool is completely [open source](https://github.com/vantage-sh/ec2instances.info) and uses the same Amazon APIs available to everyone. Development for Instances is coordinated through [Slack](https://instances.vantage.sh/) as well as on Github.
+[AWS Instance Types Comparison](https:/instances.vantage.sh/){ .md-button }
 
-Instances has a small number of tools for comparing cloud instance pricing and making the best choice for your workload.
+[EC2Instances.info](https://instances.vantage.sh) shows current pricing for AWS EC2, RDS, and ElastiCache instances. The tool is completely [open source](https://github.com/vantage-sh/ec2instances.info) and uses the same Amazon APIs available to everyone. Development for Instances is coordinated through the [Vantage Slack](https://vantage.sh/slack/) as well as on [Github](https://github.com/vantage-sh/ec2instances.info).
+
+## Why?
+
+Because it's frustrating to compare instances using Amazon's own [instance type](http://aws.amazon.com/ec2/instance-types/), [pricing](http://aws.amazon.com/ec2/pricing/), and other pages.
 
 ## Columns and Filters
 
@@ -48,5 +52,17 @@ To reset the table, click `Clear Filters`.
 
 The table, with its filters applied, sorted, and with columns shown and hidden, can be exported exactly as a CSV. Data for EC2 is also available for free from the [Vantage API](https://vantage.readme.io/reference/general).
 
+## Azure Support (Beta)
+
+[Azure VM types pricing and comparison](https://instances.vantage.sh/azure) is also available (Beta). Switch to Azure in the bottom left corner of the page.
+
+## Contributors
+
+EC2Instances.info was started by [@powdahound](http://twitter.com/powdahound), contributed to by [many](https://github.com/vantage-sh/ec2instances.info/contributors), is now managed and maintained by [Vantage](https://vantage.sh/) and awaits your improvements on [GitHub](https://github.com/vantage-sh/ec2instances.info). In the development of Detail Pages, we used components of designs from [cloudhw.info](https://cloudhw.info/) with permission from [Joshua Powers](https://powersj.io/).
+
+## Warning
+
+EC2Instances.info is not maintained by or affiliated with Amazon. The data shown is not guaranteed to be accurate or current. Please [report issues](http://github.com/vantage-sh/ec2instances.info/issues) you see.
+
 !!! Contribute
-    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
+Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
