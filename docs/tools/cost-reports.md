@@ -10,13 +10,13 @@ These use cases have come up repeatedly in the cloud costs community. Contributo
 
 ![Untagged](https://assets.vantage.sh/blog/governance/untagged-resources.png)
 
-Many organizations use [tags](/aws/concepts/tags) to keep track of all their cloud resources. For practitioners, keeping the percentage of untagged resources low means greater visibility inside cost tools. [Tags must be enabled](https://www.vantage.sh/blog/aws-cost-explorer#cost-by-tagged-resources) to be used in Cost Reports.
+Many organizations use [tags](/aws/concepts/tags) to keep track of all their cloud resources. For practioners, keeping the percentage of untagged resources low means greater visibility inside cost tools. [Tags must be enabled](https://www.vantage.sh/blog/aws-cost-explorer#cost-by-tagged-resources) to be used in Cost Reports.
 
 ### Showback Report
 
 ![Showback](https://assets.vantage.sh/blog/showback-cost-allocation/showback-cost-allocation-2.png)
 
-Shared resources like support or a database cluster make divvying up costs among teams difficult. Use the Cost Allocation tool to create a Showback or Chargeback report for transparent reporting.
+Shared resources like support or a database cluster make divyying up costs among teams difficult. Use the Cost Allocation tool to create a Showback or Chargeback report for transparent reporting.
 
 ### Compute Costs without Data
 

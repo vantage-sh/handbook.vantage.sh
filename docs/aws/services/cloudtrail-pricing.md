@@ -11,23 +11,23 @@ AWS CloudTrail maintains logs and records of actions and events that occur in yo
 
 | Dimension  | Description |
 | ------------- |-------------|
-|Ingestion and Storage| For CloudTrail Lakes, you pay for both ingesting and storing of logs/events from AWS sources and non-AWS sources. Pricing does not differ between source. This pricing includes seven years of storage. |
+|Ingestion and storage| For CloudTrail Lakes, you pay for both ingesting and storing of logs/events from AWS sources and non-AWS sources. Pricing does not differ between source. This pricing includes 7 years of storage. |
 |Analysis| Analysis charges for CloudTrail Lakes are based on the volume of logs you analyze. You are charged per GB of scanned data. CloudTrail Insights analysis charges are based on the Insight type.|
-| Events Delivered| For CloudTrail trails, pricing is based on the number of data events and management events delivered to S3. Your first management event delivery to S3 is free. |
+| Events delivered| For CloudTrail Trails, pricing is based on the number of data events and management events delivered to S3. Your first management event delivery to S3 is free. |
 
 ## Event History 
 
-Use the Event history feature directly in the CloudTrail console to view and search historical event and log data. The Event history captures only management events (e.g. if you create or delete S3 buckets). The Event history does not include data events (e.g. if you read or write an S3 object). Event history shows only a 90-day history of the account's activity. You can query across only one [Region](/aws/concepts/regions/) and a single attribute. Event history has no additional charge. 
+Use the event history feature directly in the CloudTrail console to view and search historical event and log data. The event history captures only management events (for example, if you create or delete S3 buckets). The event history does not include data events (for example, if you read or write an S3 object). Event history shows only a 90-day history of the account's activity. You can query across only one [Region](/aws/concepts/regions/){target="_blank"} and a single attribute. Event history has no additional charge. 
 
 
 ## CloudTrail Trails
 
-Trails collect and store AWS account activity. Trails support the delivery of both management and data events. Unlike the basic Event history, trails contain an event record history that can be greater than 90 days. Additionally, you can specify where to send this activity to in S3 buckets, CloudWatch Logs, or Amazon EventBridge. You have the option to [set up Amazon SNS notifications](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/configure-sns-notifications-for-cloudtrail.html) to alert you when CloudTrail adds a new log file to an S3 bucket.  
+Trails collect and store AWS account activity. Trails support the delivery of both management and data events. Unlike the basic event history, Trails contain an event record history that can be greater than 90 days. Additionally, you can specify where to send this activity to in S3 buckets, CloudWatch Logs, or Amazon EventBridge. You have the option to [set up Amazon SNS notifications](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/configure-sns-notifications-for-cloudtrail.html){target="_blank"} to alert you when CloudTrail adds a new log file to an S3 bucket.  
 
 
 ## CloudTrail Lake
 
-A CloudTrail Lake allows you to store and analyze API activity and data logs for up to seven years. You have the ability to view log data from multiple sources and query on numerous records. Compared to the Event history, you can create more customized views and run queries for multiple Regions and attributes. You pay for both ingestion and storage based on "uncompressed data ingested during the month." AWS offers [a few suggestions for reducing usage costs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-manage-costs.html#cloudtrail-lake-manage-costs-tools), including configuring your options to not ingest future events. 
+A CloudTrail Lake allows you to store and analyze API activity and data logs for up to 7 years. You have the ability to view log data from multiple sources and query on numerous records. Compared to the event history, you can create more customized views and run queries for multiple Regions and attributes. You pay for both ingestion and storage based on "uncompressed data ingested during the month." AWS offers [a few suggestions for reducing usage costs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-manage-costs.html#cloudtrail-lake-manage-costs-tools){target="_blank"}, including configuring your options to not ingest future events. 
 
 
 ## CloudTrail Insights
@@ -38,5 +38,3 @@ CloudTrail Insights analyzes management events and reports on unusual or suspici
 
 !!! Contribute
     Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
-
-_Last updated Oct 4, 2023_

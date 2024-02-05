@@ -20,10 +20,10 @@ Snowflake starts billing for cloud services only after they exceed 10% of your w
 
 The following common data operations consume cloud services on Snowflake. You can follow recommended patterns to avoid them.
 
-* **Full clones:** Consider selectively cloning your databases for development, ETL, or backup purposes. Cloning consumes only cloud services credits, so if you run a large clone operation on the same day when fewer queries are run, you will pay. Instead, you can clone only the tables you need to stay under the 10% threshold.
-* **Fragmented schemas:** Snowflake does not recommend using schema design techniques from Hadoop, OLTP, or NoSQL databases where you may have denormalized data spread out across multiple schemas. Instead, use one schema to minimize metadata lookups.
-* **Very complex queries:** The query optimization software Snowflake runs is broken out into cloud services. So if you write SQL queries that are thousands of lines long, or contain many joins or excessive recursion, you may find yourself with higher cloud services costs.
-* **Excessively frequent queries:** Lastly, the SQL API handles the ingestion of each SQL query internally. Requesting this API (running queries) tens of thousands of times per day will start to result in charges.
+* **Full clones.** Consider selectively cloning your databases for development, ETL, or backup purposes. Cloning consumes only cloud services credits, so if you run a large clone operation on the same day when fewer queries are run, you will pay. Instead, you can clone only the tables you need to stay under the 10% threshold.
+* **Fragmented schemas.** Snowflake does not recommend using schema design techniques from Hadoop, OLTP, or NoSQL databases where you may have denormalized data spread out across multiple schemas. Instead, use one schema to minimize metadata lookups.
+* **Very complex queries.** The query optimization software Snowflake runs is broken out into cloud services. So if you write SQL queries that are thousands of lines long, or contain many joins or excessive recursion, you may find yourself with higher cloud services costs.
+* **Excessively frequent queries.** Lastly, the SQL API handles the ingestion of each SQL query internally. Requesting this API (running queries) tens of thousands of times per day will start to result in charges.
 
 It's possible that these issues may be caused by third-party services running on Snowflake and not your team itself. You can explicitly monitor the queries your company is running by adding [query tagging](https://www.vantage.sh/blog/snowflake-costs-per-query-using-query-tags). You can also [review additional tips](https://www.vantage.sh/blog/snowflake-compute-costs) for saving on your Snowflake compute bills.
 

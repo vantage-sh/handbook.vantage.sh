@@ -1,6 +1,6 @@
 title: Regions Pricing 
 
-Pricing for public cloud infrastructure providers typically varies by geographic region. Depending on the nature of your applications, you may not have a choice but to be located as close to your users as possible for latency purposes. That being said, it is worth looking at pricing on a per region basis, as there can be significant discounts on a per region basis. 
+Pricing for public cloud infrastructure providers typically varies by geographic region. Depending on the nature of your applications, you may not have a choice but to be located as close to your users as possible for latency purposes. That being said, it is worth looking at pricing on a per region basis as there can be significant discounts on a per-region basis. 
 
 The [Instances](https://instances.vantage.sh/) pricing tool has prices for popular AWS services in all regions. To see a list of AWS regions, consult this reference [list of AWS regions](/aws/reference/aws-regions).
 
