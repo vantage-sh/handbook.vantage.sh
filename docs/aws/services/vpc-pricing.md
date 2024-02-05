@@ -1,10 +1,10 @@
 title: VPC Pricing | Cloud Cost Handbook
 
-[Amazon VPC Pricing Page](https://aws.amazon.com/vpc/pricing/){ .md-button }
+[Amazon VPC Pricing Page](https://aws.amazon.com/vpc/pricing/){ .md-button target="_blank"}
 
 ## Summary
 
-Amazon Virtual Private Cloud (VPC) is a service which allows customers to logically isolate their resources into different networks. Unless explicitly configured every VPC is completely isolated from every other VPC. There is no charge for a VPC in itself, however some optional sub-components of a VPC can incur charges.
+Amazon Virtual Private Cloud (VPC) is a service that allows customers to logically isolate their resources into different networks. Unless explicitly configured, every VPC is completely isolated from every other VPC. There is no charge for a VPC in itself, however some optional sub-components of a VPC can incur charges.
 
 ## Pricing Dimensions
 
@@ -14,7 +14,7 @@ Amazon Virtual Private Cloud (VPC) is a service which allows customers to logica
 |NAT Gateway Transfer|NAT Gateways are billed per GB which is processed by the gateway regardless of where the data is being transferred to or from.|
 
 ## NAT Gateway
-NAT (Network Address Translation) Gateways enable resources running inside of VPCs to connect to services outside of the VPC without needing to have those resources exposed to the public internet. Besides the standard usage and transfer charges on NAT Gateways you will also be charged standard bandwidth transfer charges on top of that depending on where the traffic is going.
+NAT (Network Address Translation) Gateways enable resources running inside of VPCs to connect to services outside of the VPC without needing to expose those resources to the public internet. Besides the standard usage and transfer charges on NAT Gateways, you will also be charged standard bandwidth transfer charges on top of that depending on where the traffic is going.
 
 ## Amazon VPC Endpoints
 VPC Endpoints allow resources to connect to other AWS services outside of a VPC, such as S3, without the need for a NAT Gateway. This is a good way to prevent NAT Gateway usage and transfer charges.
@@ -23,3 +23,5 @@ VPC Endpoints allow resources to connect to other AWS services outside of a VPC,
 
 !!! Contribute
     Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
+
+_Last updated Jul 19, 2021_

@@ -12,11 +12,11 @@ These are general concepts that don't necessarily map directly to a particular s
 
 ### Provider Services
 
-Provider services are meant to be the source of truth for explaining not only the pricing mechanics of the service but also to explain potentially nuanced concepts related to costs for that service. The focus of these pages is meant to be for the _pricing_ of these services and not related to the actual management or orchestration of the service itself.
+Provider services are meant to be the source of truth for explaining not only the pricing mechanics of the service but also to explain potentially nuanced concepts related to costs for that service. The focus of these pages is meant to be on the _pricing_ of these services and not related to the actual management or orchestration of the service itself.
 
 !!! contribute "A Note About Currency"
 
-    Any listed prices are provided in US Dollars (USD). This is also the [default currency](https://repost.aws/knowledge-center/supported-aws-currencies){ target="_blank"} AWS uses for billing.
+    Any listed prices are provided in US Dollars (USD). This is also the [default currency](https://repost.aws/knowledge-center/supported-aws-currencies) AWS uses for billing.
 
 
 ## Contributing
