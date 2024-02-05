@@ -2,7 +2,7 @@ title: Instances Pricing Documentation | Cloud Cost Handbook
 
 [AWS Instance Types Comparison](https:/instances.vantage.sh/){ .md-button }
 
-[EC2Instances.info](https://instances.vantage.sh) shows current pricing for AWS EC2, RDS, and ElastiCache instances. The tool is completely [open source](https://github.com/vantage-sh/ec2instances.info) and uses the same Amazon APIs available to everyone. Development for Instances is coordinated through the [Vantage Slack](https://vantage.sh/slack/) as well as on [Github](https://github.com/vantage-sh/ec2instances.info).
+[EC2Instances.info](https://instances.vantage.sh) shows current pricing for AWS EC2, RDS, and ElastiCache instances. The tool is completely [open source](https://github.com/vantage-sh/ec2instances.info) and uses the same Amazon APIs available to everyone. Development for Instances is coordinated through the [Vantage Slack](https://vantage.sh/slack) as well as on [Github](https://github.com/vantage-sh/ec2instances.info).
 
 ## Why?
 
@@ -12,7 +12,7 @@ Because it's frustrating to compare instances using Amazon's own [instance type]
 
 ![Columns and Filters](/img/tools/instances/column_selector.png)
 
-Nearly every service attribute available for a specific instance is available, although most are hidden by default. You can add more attributes, for example GPUs, in by clicking the `Columns` dropdown. Other dropdowns allow for selecting the `Region`, changing the per-unit basis of calculation (e.g. for vCPUs), and changing the term of the `Reserved` instance purchase.
+Nearly every service attribute available for a specific instance is available, although most are hidden by default. You can add more attributes, for example, GPUs, by clicking the `Columns` dropdown. Other dropdowns allow for selecting the `Region`, changing the per-unit basis of calculation (e.g. vCPUs), and changing the term of the `Reserved` instance purchase.
 
 For each column that is shown, it can be further filtered using simple glob matching, and the entire table can be searched using the top right search box.
 
@@ -32,7 +32,7 @@ By clicking on an individual row in the table, you can select it to be compared 
 
 ![Detail Pages](/img/tools/instances/detail-pages.png)
 
-For EC2 and RDS, the "API Name" column contains clickable links to each instance type. The Detail Page for the instance is essentially a pivot of the main table, with some additional tools to make the information more digestible.
+For EC2 and RDS, the `API Name` column contains clickable links to each instance type. The Detail Page for the instance is essentially a pivot of the main table, with some additional tools to make the information more digestible.
 
 ### Pricing Widget
 
@@ -40,11 +40,11 @@ In the upper left, a pricing widget has selectors for calculating the estimated 
 
 ### Instance Attributes
 
-In the middle of each Detail Page are the major categories of attributes and their values. These attributes are all selectable as columns in the main Instances pages. To request more attributes, click "Open a ticket" in the bottom right.
+In the middle of each Detail Page are the major categories of attributes and their values. These attributes are all selectable as columns in the main Instances pages. To request more attributes, click `Open a ticket` in the bottom right.
 
 ## Saving and Clearing Filters
 
-Instances automatically saves the filters and selections that are applied to local storage. This means that when you open a new session you will be greeted with the most recent set of filters and columns. This can be helpful for working on services which mostly use the same types of instances.
+Instances automatically saves the filters and selections that are applied to local storage. This means that when you open a new session you will be shown the most recent set of filters and columns. This can be helpful for working on services that mostly use the same types of instances.
 
 To reset the table, click `Clear Filters`.
 
@@ -58,11 +58,11 @@ The table, with its filters applied, sorted, and with columns shown and hidden, 
 
 ## Contributors
 
-EC2Instances.info was started by [@powdahound](http://twitter.com/powdahound), contributed to by [many](https://github.com/vantage-sh/ec2instances.info/contributors), is now managed and maintained by [Vantage](https://vantage.sh/) and awaits your improvements on [GitHub](https://github.com/vantage-sh/ec2instances.info). In the development of Detail Pages, we used components of designs from [cloudhw.info](https://cloudhw.info/) with permission from [Joshua Powers](https://powersj.io/).
+EC2Instances.info was started by [@powdahound](http://twitter.com/powdahound), contributed to by [many](https://github.com/vantage-sh/ec2instances.info/contributors), is now managed and maintained by [Vantage](https://vantage.sh/), and awaits your improvements on [GitHub](https://github.com/vantage-sh/ec2instances.info). In the development of Detail Pages, we used components of designs from [cloudhw.info](https://cloudhw.info/) with permission from [Joshua Powers](https://powersj.io/).
 
 ## Warning
 
 EC2Instances.info is not maintained by or affiliated with Amazon. The data shown is not guaranteed to be accurate or current. Please [report issues](http://github.com/vantage-sh/ec2instances.info/issues) you see.
 
 !!! Contribute
-Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
+    Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).

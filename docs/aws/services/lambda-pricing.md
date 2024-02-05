@@ -1,10 +1,10 @@
 title: Lambda Pricing | Cloud Cost Handbook
 
-[Lambda Pricing Page](https://aws.amazon.com/lambda/pricing/){ .md-button }
+[Lambda Pricing Page](https://aws.amazon.com/lambda/pricing/){ .md-button target="_blank"}
 
 ## Summary
 
-AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. You are charged based on the number of requests for your functions and the duration, the time it takes for your code to execute.
+AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. You are charged based on the number of requests for your functions and the duration (the time it takes for your code to execute).
 
 ## Pricing Dimensions
 
@@ -25,3 +25,5 @@ If you have existing saving plans in use on Lambda and are looking to make the s
 
 !!! Contribute
     Contribute to this page on [GitHub](https://github.com/vantage-sh/handbook) or join the `#cloud-costs-handbook` channel in the [Vantage Community Slack](https://vantage.sh/slack).
+
+_Last updated Sep 26, 2022_
