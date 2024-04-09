@@ -47,8 +47,6 @@ Kubernetes rightsizing is a continuous process to monitor your infrastructure, c
 - **Monitor Infrastructure:** You can use Kubernetes monitoring tools, like [Prometheus](https://prometheus.io/), to gather insights about resource usage patterns. You can also use other tools, like the [Vantage Kubernetes agent](https://docs.vantage.sh/kubernetes_agent) integration and [rightsizing recommendations](https://docs.vantage.sh/cost_recommendations#kubernetes-rightsizing), to keep an eye on your costs and resource usage over time.
 - **Collect Metrics:** Review metrics, like average or maximum usage, for each container. Be sure to review current and historical workload data to make decisions on resource allocation. Rightsizing recommendations in Vantage provide a view of your current configuration, average, and maximum usage for CPU and memory. The chart includes a per-day average usage. The table provides a 30-day average and 30-day average max usage. An estimate of potential monthly savings is also provided based on the recommended configuration.
 
-![The Kubernetes Rightsizing UI in the Vantage console with a sample recommendation](/img/kubernetes/vantage-rightsize-k8s.png)
-
 - **Adjust Resources:** There are several tools and methods you can use to adjust Kubernetes resources. You can manually adjust resources or consider automated alternatives. Some suggestions are provided below:
     - **Horizontal Pod Autoscaler (HPA):** This [Kubernetes tool](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically scales workloads based on demands. Horizontal scaling indicates that more pods will be deployed. As each load decreases, the HPA will also scale down the pods within the workload.
     - **Vertical Pod Autoscaler (VPA):** You can also vertically scale workloads using the VPA. Vertical scaling means you adjust the existing infrastructure to meet demands rather than adding new pods. [This project](https://github.com/kubernetes/autoscaler/tree/9f87b78df0f1d6e142234bb32e8acbd71295585a/vertical-pod-autoscaler) automatically sets requests for containers based on usage.
@@ -84,7 +82,7 @@ Over time, the actual resource utilization is _significantly lower_ than the cur
 
 In the example below, this container is monitored via the Vantage Kubernetes Rightsizing Recommendations feature. Average and maximum usage are provided along with the recommended suggestion to rightsize and potential monthly savings.
 
-<!-- Add sample image -->
+![The Kubernetes Rightsizing UI in the Vantage console with a sample recommendation](/img/kubernetes/k8s-rightsizing-ui.png)
 
 To address this overprovisioning, you can rightsize the workload by adjusting the resource `requests` based on the observed resource utilization. Rightsizing recommendations in Vantage aim for an efficiency target of 80%. This ensures more efficient resource utilization and cost optimization within the Kubernetes cluster and that resources have a reasonable buffer to handle small spikes in usage.
 

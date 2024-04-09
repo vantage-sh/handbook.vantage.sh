@@ -72,7 +72,7 @@ nav:
     - 'WorkSpaces': 'aws/services/workspaces-pricing.md'
 
   - 'Kubernetes':
-    - 'Kubernetes Rightsizing': 'kubernetes/kubernetes-rightsizing'
+    - 'Kubernetes Rightsizing': 'kubernetes/kubernetes-rightsizing.md'
 
   - 'Datadog':
     - 'Committed Use Discounts': 'datadog/committed-use-discounts.md'
