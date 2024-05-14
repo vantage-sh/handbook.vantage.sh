@@ -2,7 +2,7 @@ title: I/O Operations (IOPS) on AWS | Cloud Cost Handbook
 
 ## Input/Output Operations
 
-Input/output operations per second (IOPS) are a relatively low-level unit in AWS for measuring disk performance. The maximum size of an IOP is 256 KiB for SSD volumes and 1 GiB for HDD volumes. 1 GiB of storage is worth 3 IOPS, so a 1,000 GiB EBS Volume has 3,000 IOPS available. When using these volume types you are charged for the amount of provisioned IOPS even if you don't fully utilize them.
+Input/output operations per second (IOPS) are a relatively low-level unit in AWS for measuring disk performance. The maximum size of an IOP is 256 KiB for SSD volumes and 1 MiB for HDD volumes. 1 GiB of storage is worth 3 IOPS, so a 1,000 GiB EBS Volume has 3,000 IOPS available. When using these volume types you are charged for the amount of provisioned IOPS even if you don't fully utilize them.
 
 As indicated on the [EBS](/aws/services/ebs-pricing) page:
 
