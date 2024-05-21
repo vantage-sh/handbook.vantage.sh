@@ -39,16 +39,17 @@ EC2 Instance Types are organized into families and each family can have multiple
 
 | Family      | Description |
 | ----------- | ----------- |
-| a   | ARM Processors        |
+| a   | AMD(x86) Processor       |
 | c   | Compute-optimized        |
 | d   | Locally attached spinning HDD        |
 | f   | Customizable hardware acceleration with FPGAs        |
-| g   | Graphics GPU Instances        |
+| g   | Arm-based AWS Graviton2 processors        |
 | h   | Large spinning HDD        |
-| i   | NVMe SSD-backed storage optimized        |
+| i   | Intel(x86) processor with NVMe SSD-backed storage optimized        |
 | inf | Machine-learning inference |
 | mac | Apple Mac mini computers |
 | m   | General purpose with balanced CPU, memory and storage        |
+| n   | Network performance optimzied |
 | p   | General Purpose GPU |
 | r   | Memory-optimized        |
 | t   | Burstable instances        |
