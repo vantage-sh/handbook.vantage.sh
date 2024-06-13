@@ -69,6 +69,7 @@ nav:
     - 'Route 53': 'aws/services/route-53-pricing.md'
     - 'S3': 'aws/services/s3-pricing.md'
     - 'VPC': 'aws/services/vpc-pricing.md'
+    - 'VPC Flow Logs': 'aws/services/vpc-flow-logs-pricing.md'
     - 'WorkSpaces': 'aws/services/workspaces-pricing.md'
 
   - 'Kubernetes':
