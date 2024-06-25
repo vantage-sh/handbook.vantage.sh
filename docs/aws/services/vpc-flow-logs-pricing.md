@@ -1,6 +1,6 @@
 title: VPC Flow Logs Pricing | Cloud Cost Handbook
 
-[Amazon VPC Flow Logs Pricing Page](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html#flow-logs-pricing){ .md-button target="\_blank"}
+[Amazon VPC Flow Logs Pricing Page](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-pricing.html){ .md-button target="\_blank"}
 
 ## Summary
 
