@@ -1,0 +1,1910 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://handbook.vantage.sh/aws/services/s3-pricing/">
+      
+      
+        <link rel="prev" href="../route-53-pricing/">
+      
+      
+        <link rel="next" href="../vpc-pricing/">
+      
+      
+      <link rel="icon" href="https://assets.vantage.sh/www/favicon-32x32.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>S3 Pricing | Cloud Cost Handbook - Cloud Cost Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-1PNRCKS3S4"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-1PNRCKS3S4",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-1PNRCKS3S4",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#summary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Cloud Cost Handbook" class="md-header__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud Cost Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              S3 Pricing | Cloud Cost Handbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/vantage-sh/handbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6.1-11.4.1-28.8.1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7.1 30.6 0 4.8.1 8.6.1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3-1.9.4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1-.9 1.1-2.8.9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9.6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5-.9.9-2.4.4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6-.4.9-1.7 1.1-2.8.4z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vantage-sh/handbook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Cloud Cost Handbook" class="md-nav__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    Cloud Cost Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/vantage-sh/handbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6.1-11.4.1-28.8.1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7.1 30.6 0 4.8.1 8.6.1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3-1.9.4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1-.9 1.1-2.8.9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9.6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5-.9.9-2.4.4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6-.4.9-1.7 1.1-2.8.4z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vantage-sh/handbook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/cost-reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/instances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    General Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            General Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/autoscaling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Scaling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/io-operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IOPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/regions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/reserved-instances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reserved Instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/rightsizing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rightsizing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/savings-plans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Savings Plans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    AWS Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            AWS Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../batch-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Batch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloudfront-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CloudFront
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloudtrail-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CloudTrail
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloudwatch-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CloudWatch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dynamodb-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DynamoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ebs-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EBS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ec2-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EC2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ec2-other-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EC2-Other
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ecr-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ECR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ecs-and-fargate-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ECS & Fargate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../efs-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EFS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elasticache-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ElastiCache
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elb-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ELB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emr-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EMR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lambda-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rds-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redshift-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Redshift
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../route-53-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Route 53
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    S3
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    S3
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pricing-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing Dimensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intelligent-tiering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intelligent-Tiering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-storage-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Storage Classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-bucket-request-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Bucket Request Metrics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-vs-cloudflare-bandwidth-alliance-partner" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Vs Cloudflare Bandwidth Alliance Partner
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S3 Vs Cloudflare Bandwidth Alliance Partner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Considerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vpc-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vpc-flow-logs-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPC Flow Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workspaces-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorkSpaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Kubernetes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Kubernetes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kubernetes/kubernetes-rightsizing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kubernetes Rightsizing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Datadog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Datadog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datadog/committed-use-discounts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Committed Use Discounts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Snowflake
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Snowflake
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../snowflake/adjustments-for-included-cloud-services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reference Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/aws-product-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Product Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/aws-regions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Regions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/aws-gpu-instances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS GPU Instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pricing-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pricing Dimensions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intelligent-tiering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intelligent-Tiering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-storage-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Storage Classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-bucket-request-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Bucket Request Metrics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-vs-cloudflare-bandwidth-alliance-partner" class="md-nav__link">
+    <span class="md-ellipsis">
+      S3 Vs Cloudflare Bandwidth Alliance Partner
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="S3 Vs Cloudflare Bandwidth Alliance Partner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Considerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>S3</h1>
+
+<p><a class="md-button" href="https://aws.amazon.com/s3/pricing/" target="_blank">Amazon S3 Pricing Page</a></p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">#</a></h2>
+<p>Amazon Simple Storage Service (S3) is an object storage service that allows customers to store files called objects. Objects are organized into namespaces called buckets at no additional cost. Ultimately, you are charged on the dimensions below, which are a mix of how much you store with specific storage types, the bandwidth for accessing those files, and the requests you make to the S3 service. </p>
+<h2 id="pricing-dimensions">Pricing Dimensions<a class="headerlink" href="#pricing-dimensions" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Object Storage Amount</td>
+<td>AWS charges you for how much you store across all objects and across all buckets. Each region has a different pricing rate on a per GB basis, and as you store more data on S3, you may get discounts on a per GB basis.</td>
+</tr>
+<tr>
+<td>Object Storage Class</td>
+<td>Amazon S3 has many different storage classes, further discussed below. Standard is the default storage class, but you can get lower rates for some other tiers.</td>
+</tr>
+<tr>
+<td>Bandwidth</td>
+<td>AWS charges you for the amount of egress you consume for accessing S3 objects. You should keep an eye on how much bandwidth is being consumed—that's where you can potentially have runaway costs with significant use.</td>
+</tr>
+<tr>
+<td>Request Metrics</td>
+<td>AWS charges you for <code>GET</code>, <code>SELECT</code>, <code>PUT</code>, <code>COPY</code>, <code>POST</code>, and <code>LIST</code> requests. S3 also charges you different rates depending on which of these request types you're using. This is oftentimes an unknown cost that occurs and that you should keep an eye on.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="intelligent-tiering">Intelligent-Tiering<a class="headerlink" href="#intelligent-tiering" title="Permanent link">#</a></h2>
+<p>S3 Intelligent-Tiering is an Amazon S3 storage class that will automatically optimize storage costs on your behalf. S3 Intelligent-Tiering will monitor access patterns of S3 objects and shift them between five different storage classes to deliver you automatic savings. </p>
+<p>Typically, customers have files stored in S3 Standard storage, but they may not think to ever optimize these costs and overpay for the number of files they're storing in S3. By using Intelligent-Tiering, you can focus on your application development and allow S3 Intelligent-Tiering to manage shifting their objects' storage classes on your behalf. </p>
+<h2 id="understanding-storage-classes">Understanding Storage Classes<a class="headerlink" href="#understanding-storage-classes" title="Permanent link">#</a></h2>
+<p>S3 currently supports 28 different object storage types within an S3 bucket. Each bucket is capable of holding objects from a single class or multiple classes. A light overview of these storage types is included below:</p>
+<table>
+<thead>
+<tr>
+<th>Storage Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard Storage (StandardStorage)</td>
+<td>Standard Storage is for general purpose storage of any type of data, typically used for frequently accessed data. Standard Storage is priced on a tiered basis where it gets incrementally cheaper to store data as you store more.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Frequent Access (IntelligentTieringFAStorage)</td>
+<td>Objects uploaded to Intelligent-Tiering are automatically stored in the Frequent Access tier which has the same rates as Standard Storage.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Infrequent Access (IntelligentTieringIAStorage)</td>
+<td>Objects in Frequent Access that haven't been accessed in 30 consecutive days are moved to this tier in which prices drop significantly.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Archive Instant Access (IntelligentTieringAIAStorage)</td>
+<td>Objects that haven’t been accessed in 90 consecutive days are moved to this tier in which prices drop even more.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Archive Access (IntelligentTieringAAStorage)</td>
+<td>Upon activating the Archive Access tier for Intelligent-Tiering, S3 will automatically move objects that haven’t been accessed for 90 days (or more depending on your configuration) to Archive Access where the pricing is the same as Glacier.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Deep Archive Access (IntelligentTieringDAAStorage)</td>
+<td>Upon activating the Deep Archive Access tier for Intelligent-Tiering, S3 will automatically move objects that haven’t been accessed for 180 days (or more depending on your configuration) to Deep Archive Access.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Archive Access Object Overhead (IntAAObjectOverhead)</td>
+<td>For each object that is stored in the Intelligent-Tiering - Archive Access tier, 32KB of chargeable overhead is added for index and related metadata, charged at Glacier Flexible Retrieval rates.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Archive Access S3 Object Overhead (IntAAS3ObjectOverhead)</td>
+<td>Intelligent-Tiering - Archive Access also requires an additional 8KB of data per object for the name of the object and other metadata, charged at Standard Storage rates</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Deep Archive Access Object Overhead (IntDAAObjectOverhead)</td>
+<td>For each object that is stored in the Intelligent-Tiering - Deep Archive Access tier, 32KB of chargeable overhead is added for index and related metadata, charged at Glacier Flexible Retrieval rates.</td>
+</tr>
+<tr>
+<td>Intelligent-Tiering - Deep Archive Access S3 Object Overhead (IntDAAS3ObjectOverhead)</td>
+<td>Intelligent-Tiering - Deep Archive Access also requires an additional 8KB of data per object for the name of the object and other metadata, charged at Standard Storage rates.</td>
+</tr>
+<tr>
+<td>Standard - Infrequent Access (StandardIAStorage)</td>
+<td>Standard - Infrequent Access is for data that is accessed less frequently but requires rapid access when needed. It offers the high durability, high throughput, and low latency of Standard Storage, with a low per GB storage price and per GB retrieval fee. This combination of low cost and high performance makes Standard - Infrequent Access ideal for long-term storage, backups, and as a data store for disaster recovery files.</td>
+</tr>
+<tr>
+<td>Standard - Infrequent Access Size Overhead (StandardIASizeOverhead)</td>
+<td>There is a minimum billable object size of 128KB. For example, if you stored an object at 28KB, the rate would increase by 100KB, (128KB - 28KB) and is represented by this metric.</td>
+</tr>
+<tr>
+<td>Standard - Infrequent Access Object Overhead (StandardIAObjectOverhead)</td>
+<td>For each object stored in Standard - Infrequent Access 32KB of chargeable overhead is added for metadata.</td>
+</tr>
+<tr>
+<td>Standard - Infrequent Access (One Zone) (OneZoneIAStorage)</td>
+<td>Standard - Infrequent Access (One Zone) is for data that is accessed less frequently but requires rapid access when needed. Unlike other S3 storage classes which store data in a minimum of three Availability Zones (AZ), Standard - Infrequent Access (One Zone) stores data in a single AZ and costs much less than Standard - Infrequent Access.</td>
+</tr>
+<tr>
+<td>One Zone Size Overhead (OneZoneIASizeOverhead)</td>
+<td>There is a minimum billable object size of 128KB. For example, if you stored an object at 28KB, the rate would increase by 100KB, (128KB - 28KB) and is represented by this metric.</td>
+</tr>
+<tr>
+<td>Glacier Instant Retrieval (GlacierInstantRetrievalStorage)</td>
+<td>Glacier Instant Retrieval (GlacierInstantRetrievalStorage) is a high-latency, low-cost, durable archive storage class. The use case is ideal for data that requires long-term storage and is only accessed once per quarter.</td>
+</tr>
+<tr>
+<td>Glacier Instant Retrieval Size Overhead (GlacierInstantRetrievalSizeOverhead)</td>
+<td>There is a minimum billable object size of 128KB. For example, if you stored an object at 28KB, the rate would increase by 100KB, (128KB - 28KB) and is represented by this metric.</td>
+</tr>
+<tr>
+<td>Glacier Flexible Retrieval (GlacierStorage)</td>
+<td>Glacier Flexible Retrieval (formerly called Glacier) is a secure, durable, and low-cost storage class for data archiving. You can reliably store any amount of data at costs that are competitive with or cheaper than on-premises solutions. To keep costs low yet suitable for varying needs, Glacier provides three retrieval options that range from a few minutes to hours.</td>
+</tr>
+<tr>
+<td>Glacier Overhead (GlacierObjectOverhead)</td>
+<td>For each object that is stored in Glacier, 32KB of chargeable overhead is added for index and related metadata, charged at Glacier Flexible Retrieval rates.</td>
+</tr>
+<tr>
+<td>Glacier S3 Object Overhead (GlacierS3ObjectOverhead)</td>
+<td>Glacier also requires an additional 8KB of data per object for the name of the object and other metadata, charged at Standard Storage rates.</td>
+</tr>
+<tr>
+<td>Glacier Staging Storage (GlacierStagingStorage)</td>
+<td>Staging storage serves as the temporary holding space for the components of a Multipart Upload until the CompleteMultipart request is initiated. These parts are temporarily stored in Standard Storage, and chargers based on Standard Storage pricing.</td>
+</tr>
+<tr>
+<td>Glacier Deep Archive (DeepArchiveStorage)</td>
+<td>Glacier Deep Archive (DeepArchiveStorage) is tied with Intelligent-Tiering - Deep Archive Access as Amazon S3’s lowest-cost storage class. It supports long-term retention and digital preservation of data that may be accessed once or twice a year. It is designed for customers‚ particularly those in highly-regulated industries, such as the Financial Services, Healthcare, and Public Sectors, that retain data sets for 7-10 years or longer to meet regulatory compliance requirements. Glacier Deep Archive can also be used for backup and disaster recovery use cases, and is a cost-effective and easy-to-manage alternative to magnetic tape systems, whether they are on-premises libraries or off-premises services.</td>
+</tr>
+<tr>
+<td>Deep Archive Object Overhead (DeepArchiveObjectOverhead)</td>
+<td>For each object that is stored in Glacier Deep Archive, 32KB of chargeable overhead is added for index and related metadata, charged at Glacier Deep Archive rates.</td>
+</tr>
+<tr>
+<td>Deep Archive S3 Object Overhead (DeepArchiveS3ObjectOverhead)</td>
+<td>Glacier Deep Archive also requires an additional 8KB of data per object for the name of the object and other metadata, charged at Standard Storage rates.</td>
+</tr>
+<tr>
+<td>Deep Archive Staging Storage (DeepArchiveStagingStorage)</td>
+<td>Staging storage is where the parts of Multipart Upload are staged until the CompleteMultipart request is issued. The parts are staged in Standard Storage, and storage is charged at the Standard Storage price.</td>
+</tr>
+<tr>
+<td>S3 Reduced Redundancy Storage</td>
+<td>is an Amazon S3 storage option that enables customers to store noncritical, reproducible data at lower levels of redundancy than Standard Storage. It provides a highly available solution for distributing or sharing content that is durably stored elsewhere, or for storing thumbnails, transcoded media, or other processed data that can be easily reproduced. The Reduced Redundancy Storage option stores objects on multiple devices across multiple facilities, providing 400 times the durability of a typical disk drive, but does not replicate objects as many times as Standard Storage.</td>
+</tr>
+<tr>
+<td>Express One Zone (ExpressOneZone)</td>
+<td>Express One Zone, like Standard - Infrequent Access (One Zone) is a single AZ storage class. It can provide extremely quick, single-digit millisecond access to your data at a lower price than Standard Storage. Some examples of use cases are Machine Learning and Financial Modeling.</td>
+</tr>
+<tr>
+<td>Outposts (Outposts)</td>
+<td>AWS Outposts extend AWS services, tools, etc to your on-premises AWS Outposts environment. Ideal for locally required data, with S3 on Outposts you can reliably store and access data on your Outpost.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="s3-bucket-request-metrics">S3 Bucket Request Metrics<a class="headerlink" href="#s3-bucket-request-metrics" title="Permanent link">#</a></h2>
+<p>S3 does not have ingress, egress, or request metrics turned on by default, leaving many users unsure of what their costs will be until they receive their monthly AWS bill. That being said, it's relatively easy to enable these metrics. </p>
+<p>Below is an example of how to enable these metrics for a S3 bucket via the AWS CLI. Just be sure to replace <code>YOUR_BUCKET_NAME</code> with your actual bucket name and <code>YOUR_BUCKET_REGION</code> with the appropriate bucket region.</p>
+<div class="highlight"><pre><span></span><code>aws s3api put-bucket-metrics-configuration 
+  --bucket YOUR_BUCKET_NAME
+  --metrics-configuration Id=EntireBucket 
+  --id EntireBucket 
+  --region YOUR_BUCKET_REGION
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It takes roughly 15 minutes for AWS to begin delivering these metrics after being enabled.</p>
+</div>
+<h2 id="s3-vs-cloudflare-bandwidth-alliance-partner">S3 Vs Cloudflare Bandwidth Alliance Partner<a class="headerlink" href="#s3-vs-cloudflare-bandwidth-alliance-partner" title="Permanent link">#</a></h2>
+<p>The <a href="https://www.cloudflare.com/bandwidth-alliance/">Cloudflare Bandwidth Alliance</a> is a group of infrastructure providers that have decided to either completely waive or massively discount egress fees for shared customers. This can be a huge source of savings for customers who have an AWS bill where S3 egress costs make up a large portion of the aforementioned bill.</p>
+<p>By moving S3 content to Cloudflare's content delivery network (CDN) service in tandem with a Bandwidth Alliance provider, you can get no-cost content transit from their Cloudflare origin server to Cloudflare servers distributed around the world. This effectively reproduces the cost benefit that users get for pairing CloudFront with an AWS service, like S3.<sup id="fnref:noegressfees"><a class="footnote-ref" href="#fn:noegressfees">1</a></sup> Utilizing one of Cloudflare's self-serve plans, you can also cap their cost to deliver content via flat-rate pricing. Further details can be found in the <a href="/aws/services/cloudfront-pricing/">CloudFront section</a> of the Cloud Cost Handbook.</p>
+<h3 id="considerations">Considerations<a class="headerlink" href="#considerations" title="Permanent link">#</a></h3>
+<p>Price is not the only consideration that goes into making a decision about whether to utilize S3 or a competing storage service. Performance, availability, user experience, support, and legal compliance are other factors that will factor into the decision to utilize one service over another.</p>
+<h4 id="complexity">Complexity<a class="headerlink" href="#complexity" title="Permanent link">#</a></h4>
+<p>AWS has made it exceedingly easy for customers to utilize other AWS services in tandem, but there is a non-trivial cost for an organization to decide to split their infrastructure over multiple service providers. Developers will need to learn and understand both systems and when to choose one design pattern over the other. There will be two sets of documentation that will need to be addressed when designing or troubleshooting systems.</p>
+<h4 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">#</a></h4>
+<p>The primary use case in favor of utilizing this cost-efficiency architecture strategy is if a user has a large amount of static content that is stored on S3 and being served to end-users via the internet.</p>
+<p><br/></p>
+<div class="admonition contribute">
+<p class="admonition-title">Contribute</p>
+<p>Contribute to this page on <a href="https://github.com/vantage-sh/handbook">GitHub</a> or join the <code>#cloud-costs-handbook</code> channel in the <a href="https://vantage.sh/slack">Vantage Community Slack</a>.</p>
+</div>
+<p><em>Last updated Feb 2, 2024</em></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:noegressfees">
+<p>"If you are using an AWS origin, effective December 1, 2014, data transferred from origin to edge locations (Amazon CloudFront origin fetches) will be free of charge." https://aws.amazon.com/cloudfront/pricing/&#160;<a class="footnote-backref" href="#fnref:noegressfees" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
