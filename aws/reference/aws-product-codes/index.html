@@ -1,0 +1,2802 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://handbook.vantage.sh/aws/reference/aws-product-codes/">
+      
+      
+        <link rel="prev" href="../../../snowflake/adjustments-for-included-cloud-services/">
+      
+      
+        <link rel="next" href="../aws-regions/">
+      
+      
+      <link rel="icon" href="https://assets.vantage.sh/www/favicon-32x32.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>All AWS Product Codes | Cloud Cost Handbook - Cloud Cost Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-1PNRCKS3S4"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-1PNRCKS3S4",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-1PNRCKS3S4",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Cloud Cost Handbook" class="md-header__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cloud Cost Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              All AWS Product Codes | Cloud Cost Handbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/vantage-sh/handbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6.1-11.4.1-28.8.1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7.1 30.6 0 4.8.1 8.6.1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3-1.9.4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1-.9 1.1-2.8.9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9.6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5-.9.9-2.4.4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6-.4.9-1.7 1.1-2.8.4z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vantage-sh/handbook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Cloud Cost Handbook" class="md-nav__button md-logo" aria-label="Cloud Cost Handbook" data-md-component="logo">
+      
+  <img src="../../../assets/logo.svg" alt="logo">
+
+    </a>
+    Cloud Cost Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/vantage-sh/handbook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6.1-11.4.1-28.8.1-43.7 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 9 .1 21.7.1 30.6 0 4.8.1 8.6.1 10 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3-1.9.4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4 0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1-.9 1.1-2.8.9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9 1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1-.9.6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5-.9.9-2.4.4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6-.4.9-1.7 1.1-2.8.4z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vantage-sh/handbook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/cost-reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/instances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    General Concepts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            General Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/autoscaling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Scaling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/io-operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IOPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/regions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/reserved-instances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reserved Instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/rightsizing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rightsizing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/savings-plans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Savings Plans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    AWS Services
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            AWS Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/batch-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Batch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/cloudfront-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CloudFront
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/cloudtrail-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CloudTrail
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/cloudwatch-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CloudWatch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/config-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Config
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/dynamodb-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DynamoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/ebs-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EBS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/ec2-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EC2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/ec2-other-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EC2-Other
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/ecr-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ECR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/ecs-and-fargate-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ECS & Fargate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/efs-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EFS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/elasticache-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ElastiCache
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/elb-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ELB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/emr-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EMR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/lambda-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/rds-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RDS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/redshift-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Redshift
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/route-53-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Route 53
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/s3-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    S3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/vpc-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/vpc-flow-logs-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VPC Flow Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../services/workspaces-pricing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorkSpaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Kubernetes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Kubernetes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kubernetes/kubernetes-rightsizing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kubernetes Rightsizing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Datadog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Datadog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datadog/committed-use-discounts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Committed Use Discounts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Snowflake
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Snowflake
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../snowflake/adjustments-for-included-cloud-services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reference Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    AWS Product Codes
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-regions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS Regions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-gpu-instances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AWS GPU Instances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>AWS Product Codes</h1>
+
+<p>This table is generated by <code>get_products.py</code> in <a href="https://github.com/vantage-sh/handbook">GitHub</a>. It requires SSM access to run.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Product Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>AWS Account Management</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AWS Amplify</td>
+</tr>
+<tr>
+<td>3</td>
+<td>AWS Amplify Admin</td>
+</tr>
+<tr>
+<td>4</td>
+<td>AWS App Mesh</td>
+</tr>
+<tr>
+<td>5</td>
+<td>AWS App Runner</td>
+</tr>
+<tr>
+<td>6</td>
+<td>AWS AppSync</td>
+</tr>
+<tr>
+<td>7</td>
+<td>AWS Application Cost Profiler</td>
+</tr>
+<tr>
+<td>8</td>
+<td>AWS Application Discovery Service</td>
+</tr>
+<tr>
+<td>9</td>
+<td>AWS Application Migration Service (MGN)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>AWS Artifact</td>
+</tr>
+<tr>
+<td>11</td>
+<td>AWS Audit Manager</td>
+</tr>
+<tr>
+<td>12</td>
+<td>AWS Auto Scaling</td>
+</tr>
+<tr>
+<td>13</td>
+<td>AWS Backup</td>
+</tr>
+<tr>
+<td>14</td>
+<td>AWS Backup Gateway</td>
+</tr>
+<tr>
+<td>15</td>
+<td>AWS Backup Storage</td>
+</tr>
+<tr>
+<td>16</td>
+<td>AWS Batch</td>
+</tr>
+<tr>
+<td>17</td>
+<td>AWS Billing Conductor</td>
+</tr>
+<tr>
+<td>18</td>
+<td>AWS Budgets</td>
+</tr>
+<tr>
+<td>19</td>
+<td>AWS Certificate Manager</td>
+</tr>
+<tr>
+<td>20</td>
+<td>AWS Certificate Manager Private Certificate Authority</td>
+</tr>
+<tr>
+<td>21</td>
+<td>AWS Chatbot</td>
+</tr>
+<tr>
+<td>22</td>
+<td>AWS Chime Meetings SDK</td>
+</tr>
+<tr>
+<td>23</td>
+<td>AWS Cloud Map</td>
+</tr>
+<tr>
+<td>24</td>
+<td>AWS Cloud9</td>
+</tr>
+<tr>
+<td>25</td>
+<td>AWS CloudFormation</td>
+</tr>
+<tr>
+<td>26</td>
+<td>AWS CloudHSM</td>
+</tr>
+<tr>
+<td>27</td>
+<td>AWS CloudHSM</td>
+</tr>
+<tr>
+<td>28</td>
+<td>AWS CloudShell</td>
+</tr>
+<tr>
+<td>29</td>
+<td>AWS CloudTrail</td>
+</tr>
+<tr>
+<td>30</td>
+<td>AWS CodeArtifact</td>
+</tr>
+<tr>
+<td>31</td>
+<td>AWS CodeBuild</td>
+</tr>
+<tr>
+<td>32</td>
+<td>AWS CodeCommit</td>
+</tr>
+<tr>
+<td>33</td>
+<td>AWS CodeDeploy</td>
+</tr>
+<tr>
+<td>34</td>
+<td>AWS CodePipeline</td>
+</tr>
+<tr>
+<td>35</td>
+<td>AWS CodeStar</td>
+</tr>
+<tr>
+<td>36</td>
+<td>AWS CodeStar Notifications</td>
+</tr>
+<tr>
+<td>37</td>
+<td>AWS Compute Optimizer</td>
+</tr>
+<tr>
+<td>38</td>
+<td>AWS Config</td>
+</tr>
+<tr>
+<td>39</td>
+<td>AWS Control Tower</td>
+</tr>
+<tr>
+<td>40</td>
+<td>AWS Cost Explorer</td>
+</tr>
+<tr>
+<td>41</td>
+<td>AWS Cost and Usage Report</td>
+</tr>
+<tr>
+<td>42</td>
+<td>AWS Data Exchange</td>
+</tr>
+<tr>
+<td>43</td>
+<td>AWS Data Pipeline</td>
+</tr>
+<tr>
+<td>44</td>
+<td>AWS DataSync</td>
+</tr>
+<tr>
+<td>45</td>
+<td>AWS Database Migration Service</td>
+</tr>
+<tr>
+<td>46</td>
+<td>AWS DeepComposer</td>
+</tr>
+<tr>
+<td>47</td>
+<td>AWS DeepLens</td>
+</tr>
+<tr>
+<td>48</td>
+<td>AWS DeepRacer</td>
+</tr>
+<tr>
+<td>49</td>
+<td>AWS Device Farm</td>
+</tr>
+<tr>
+<td>50</td>
+<td>AWS Direct Connect</td>
+</tr>
+<tr>
+<td>51</td>
+<td>AWS Directory Service</td>
+</tr>
+<tr>
+<td>52</td>
+<td>AWS Elastic Beanstalk</td>
+</tr>
+<tr>
+<td>53</td>
+<td>AWS Elastic Disaster Recovery (DRS)</td>
+</tr>
+<tr>
+<td>54</td>
+<td>AWS Elemental MediaConnect</td>
+</tr>
+<tr>
+<td>55</td>
+<td>AWS Elemental MediaConvert</td>
+</tr>
+<tr>
+<td>56</td>
+<td>AWS Elemental MediaLive</td>
+</tr>
+<tr>
+<td>57</td>
+<td>AWS Elemental MediaPackage</td>
+</tr>
+<tr>
+<td>58</td>
+<td>AWS Elemental MediaPackage VOD</td>
+</tr>
+<tr>
+<td>59</td>
+<td>AWS Elemental MediaStore</td>
+</tr>
+<tr>
+<td>60</td>
+<td>AWS Elemental MediaStore Data Plane</td>
+</tr>
+<tr>
+<td>61</td>
+<td>AWS Elemental MediaTailor</td>
+</tr>
+<tr>
+<td>62</td>
+<td>AWS EventBridge Schemas</td>
+</tr>
+<tr>
+<td>63</td>
+<td>AWS Fargate</td>
+</tr>
+<tr>
+<td>64</td>
+<td>AWS Fault Injection Simulator</td>
+</tr>
+<tr>
+<td>65</td>
+<td>AWS Firewall Manager</td>
+</tr>
+<tr>
+<td>66</td>
+<td>AWS Global Accelerator</td>
+</tr>
+<tr>
+<td>67</td>
+<td>AWS Glue</td>
+</tr>
+<tr>
+<td>68</td>
+<td>AWS Glue DataBrew</td>
+</tr>
+<tr>
+<td>69</td>
+<td>AWS Ground Station</td>
+</tr>
+<tr>
+<td>70</td>
+<td>AWS Health APIs And Notifications</td>
+</tr>
+<tr>
+<td>71</td>
+<td>AWS IAM Access Analyzer</td>
+</tr>
+<tr>
+<td>72</td>
+<td>AWS IQ</td>
+</tr>
+<tr>
+<td>73</td>
+<td>AWS Identity and Access Management (IAM)</td>
+</tr>
+<tr>
+<td>74</td>
+<td>AWS Identity and Access Management Roles Anywhere</td>
+</tr>
+<tr>
+<td>75</td>
+<td>AWS Import/Export</td>
+</tr>
+<tr>
+<td>76</td>
+<td>AWS IoT (data plane)</td>
+</tr>
+<tr>
+<td>77</td>
+<td>AWS IoT 1-Click</td>
+</tr>
+<tr>
+<td>78</td>
+<td>AWS IoT 1-Click Devices Service</td>
+</tr>
+<tr>
+<td>79</td>
+<td>AWS IoT Analytics</td>
+</tr>
+<tr>
+<td>80</td>
+<td>AWS IoT Core</td>
+</tr>
+<tr>
+<td>81</td>
+<td>AWS IoT Device Advisor</td>
+</tr>
+<tr>
+<td>82</td>
+<td>AWS IoT Device Defender</td>
+</tr>
+<tr>
+<td>83</td>
+<td>AWS IoT Device Management</td>
+</tr>
+<tr>
+<td>84</td>
+<td>AWS IoT Events</td>
+</tr>
+<tr>
+<td>85</td>
+<td>AWS IoT Events Data</td>
+</tr>
+<tr>
+<td>86</td>
+<td>AWS IoT Fleet Hub</td>
+</tr>
+<tr>
+<td>87</td>
+<td>AWS IoT Greengrass</td>
+</tr>
+<tr>
+<td>88</td>
+<td>AWS IoT Secured Tunneling</td>
+</tr>
+<tr>
+<td>89</td>
+<td>AWS IoT SiteWise</td>
+</tr>
+<tr>
+<td>90</td>
+<td>AWS IoT Things Graph</td>
+</tr>
+<tr>
+<td>91</td>
+<td>AWS IoT TwinMaker</td>
+</tr>
+<tr>
+<td>92</td>
+<td>AWS Key Management Service</td>
+</tr>
+<tr>
+<td>93</td>
+<td>AWS Lake Formation</td>
+</tr>
+<tr>
+<td>94</td>
+<td>AWS Lambda</td>
+</tr>
+<tr>
+<td>95</td>
+<td>AWS License Manager</td>
+</tr>
+<tr>
+<td>96</td>
+<td>AWS License Manager User Subscriptions</td>
+</tr>
+<tr>
+<td>97</td>
+<td>AWS Mainframe Modernization</td>
+</tr>
+<tr>
+<td>98</td>
+<td>AWS Managed Services</td>
+</tr>
+<tr>
+<td>99</td>
+<td>AWS Marketplace</td>
+</tr>
+<tr>
+<td>100</td>
+<td>AWS Marketplace Catalog API</td>
+</tr>
+<tr>
+<td>101</td>
+<td>AWS Marketplace Commerce Analytics</td>
+</tr>
+<tr>
+<td>102</td>
+<td>AWS Marketplace Entitlement Service</td>
+</tr>
+<tr>
+<td>103</td>
+<td>AWS Marketplace Metering Service</td>
+</tr>
+<tr>
+<td>104</td>
+<td>AWS Migration Hub</td>
+</tr>
+<tr>
+<td>105</td>
+<td>AWS Migration Hub Refactor Spaces</td>
+</tr>
+<tr>
+<td>106</td>
+<td>AWS Mobile Service</td>
+</tr>
+<tr>
+<td>107</td>
+<td>AWS Network Firewall</td>
+</tr>
+<tr>
+<td>108</td>
+<td>AWS OpsWorks Stacks</td>
+</tr>
+<tr>
+<td>109</td>
+<td>AWS OpsWorks for Chef Automate</td>
+</tr>
+<tr>
+<td>110</td>
+<td>AWS OpsWorks for Chef Automate</td>
+</tr>
+<tr>
+<td>111</td>
+<td>AWS OpsWorks for Puppet Enterprise</td>
+</tr>
+<tr>
+<td>112</td>
+<td>AWS Organizations</td>
+</tr>
+<tr>
+<td>113</td>
+<td>AWS Outposts</td>
+</tr>
+<tr>
+<td>114</td>
+<td>AWS Panorama</td>
+</tr>
+<tr>
+<td>115</td>
+<td>AWS Personal Health Dashboard</td>
+</tr>
+<tr>
+<td>116</td>
+<td>AWS Price List Service</td>
+</tr>
+<tr>
+<td>117</td>
+<td>AWS Private 5G</td>
+</tr>
+<tr>
+<td>118</td>
+<td>AWS PrivateLink</td>
+</tr>
+<tr>
+<td>119</td>
+<td>AWS Proton</td>
+</tr>
+<tr>
+<td>120</td>
+<td>AWS Recycle Bin</td>
+</tr>
+<tr>
+<td>121</td>
+<td>AWS Resilience Hub</td>
+</tr>
+<tr>
+<td>122</td>
+<td>AWS Resource Access Manager (RAM)</td>
+</tr>
+<tr>
+<td>123</td>
+<td>AWS Resource Groups</td>
+</tr>
+<tr>
+<td>124</td>
+<td>AWS Resource Groups Tagging API</td>
+</tr>
+<tr>
+<td>125</td>
+<td>AWS RoboMaker</td>
+</tr>
+<tr>
+<td>126</td>
+<td>AWS S3 Control</td>
+</tr>
+<tr>
+<td>127</td>
+<td>AWS S3 for Outposts</td>
+</tr>
+<tr>
+<td>128</td>
+<td>AWS Savings Plans</td>
+</tr>
+<tr>
+<td>129</td>
+<td>AWS Secrets Manager</td>
+</tr>
+<tr>
+<td>130</td>
+<td>AWS Security Hub</td>
+</tr>
+<tr>
+<td>131</td>
+<td>AWS Security Token Service</td>
+</tr>
+<tr>
+<td>132</td>
+<td>AWS Server Migration Service (SMS)</td>
+</tr>
+<tr>
+<td>133</td>
+<td>AWS Serverless Application Repository</td>
+</tr>
+<tr>
+<td>134</td>
+<td>AWS Service Catalog</td>
+</tr>
+<tr>
+<td>135</td>
+<td>AWS Service Catalog App Registry</td>
+</tr>
+<tr>
+<td>136</td>
+<td>AWS Shield</td>
+</tr>
+<tr>
+<td>137</td>
+<td>AWS Signer</td>
+</tr>
+<tr>
+<td>138</td>
+<td>AWS Single Sign-On</td>
+</tr>
+<tr>
+<td>139</td>
+<td>AWS Single Sign-On (SSO) OpenID Connect Service</td>
+</tr>
+<tr>
+<td>140</td>
+<td>AWS Snowball</td>
+</tr>
+<tr>
+<td>141</td>
+<td>AWS Snowcone</td>
+</tr>
+<tr>
+<td>142</td>
+<td>AWS Snowmobile</td>
+</tr>
+<tr>
+<td>143</td>
+<td>AWS Step Functions</td>
+</tr>
+<tr>
+<td>144</td>
+<td>AWS Storage Gateway</td>
+</tr>
+<tr>
+<td>145</td>
+<td>AWS Support</td>
+</tr>
+<tr>
+<td>146</td>
+<td>AWS Support App</td>
+</tr>
+<tr>
+<td>147</td>
+<td>AWS Systems Manager</td>
+</tr>
+<tr>
+<td>148</td>
+<td>AWS Systems Manager Incident Manager Contacts</td>
+</tr>
+<tr>
+<td>149</td>
+<td>AWS Transfer Family</td>
+</tr>
+<tr>
+<td>150</td>
+<td>AWS Transit Gateway</td>
+</tr>
+<tr>
+<td>151</td>
+<td>AWS Trusted Advisor</td>
+</tr>
+<tr>
+<td>152</td>
+<td>AWS VPN</td>
+</tr>
+<tr>
+<td>153</td>
+<td>AWS WAF</td>
+</tr>
+<tr>
+<td>154</td>
+<td>AWS WAF Regional</td>
+</tr>
+<tr>
+<td>155</td>
+<td>AWS Well-Architected Tool</td>
+</tr>
+<tr>
+<td>156</td>
+<td>AWS X-Ray</td>
+</tr>
+<tr>
+<td>157</td>
+<td>AWSIdentityStore</td>
+</tr>
+<tr>
+<td>158</td>
+<td>AWSdlm</td>
+</tr>
+<tr>
+<td>159</td>
+<td>Alexa for Business</td>
+</tr>
+<tr>
+<td>160</td>
+<td>Amazon API Gateway</td>
+</tr>
+<tr>
+<td>161</td>
+<td>Amazon API Gateway V2</td>
+</tr>
+<tr>
+<td>162</td>
+<td>Amazon AppConfig</td>
+</tr>
+<tr>
+<td>163</td>
+<td>Amazon AppFlow</td>
+</tr>
+<tr>
+<td>164</td>
+<td>Amazon AppStream 2.0</td>
+</tr>
+<tr>
+<td>165</td>
+<td>Amazon Athena</td>
+</tr>
+<tr>
+<td>166</td>
+<td>Amazon Augmented AI (A2I)</td>
+</tr>
+<tr>
+<td>167</td>
+<td>Amazon Aurora</td>
+</tr>
+<tr>
+<td>168</td>
+<td>Amazon Braket</td>
+</tr>
+<tr>
+<td>169</td>
+<td>Amazon Chime</td>
+</tr>
+<tr>
+<td>170</td>
+<td>Amazon Chime Messaging</td>
+</tr>
+<tr>
+<td>171</td>
+<td>Amazon Chime SDK Media Pipelines</td>
+</tr>
+<tr>
+<td>172</td>
+<td>Amazon Cloud Directory</td>
+</tr>
+<tr>
+<td>173</td>
+<td>Amazon CloudFront</td>
+</tr>
+<tr>
+<td>174</td>
+<td>Amazon CloudSearch</td>
+</tr>
+<tr>
+<td>175</td>
+<td>Amazon CloudWatch</td>
+</tr>
+<tr>
+<td>176</td>
+<td>Amazon CloudWatch Application Insights</td>
+</tr>
+<tr>
+<td>177</td>
+<td>Amazon CloudWatch Events</td>
+</tr>
+<tr>
+<td>178</td>
+<td>Amazon CloudWatch Evidently</td>
+</tr>
+<tr>
+<td>179</td>
+<td>Amazon CloudWatch Logs</td>
+</tr>
+<tr>
+<td>180</td>
+<td>Amazon CloudWatch Synthetics</td>
+</tr>
+<tr>
+<td>181</td>
+<td>Amazon CodeGuru</td>
+</tr>
+<tr>
+<td>182</td>
+<td>Amazon CodeGuru Reviewer</td>
+</tr>
+<tr>
+<td>183</td>
+<td>Amazon Cognito</td>
+</tr>
+<tr>
+<td>184</td>
+<td>Amazon Cognito Identity User Pools</td>
+</tr>
+<tr>
+<td>185</td>
+<td>Amazon Cognito Sync</td>
+</tr>
+<tr>
+<td>186</td>
+<td>Amazon Comprehend</td>
+</tr>
+<tr>
+<td>187</td>
+<td>Amazon Comprehend Medical</td>
+</tr>
+<tr>
+<td>188</td>
+<td>Amazon Connect</td>
+</tr>
+<tr>
+<td>189</td>
+<td>Amazon Connect Contact Lens</td>
+</tr>
+<tr>
+<td>190</td>
+<td>Amazon Connect Customer Profiles</td>
+</tr>
+<tr>
+<td>191</td>
+<td>Amazon Connect Participant Service</td>
+</tr>
+<tr>
+<td>192</td>
+<td>Amazon Connect Wisdom Service</td>
+</tr>
+<tr>
+<td>193</td>
+<td>Amazon Detective</td>
+</tr>
+<tr>
+<td>194</td>
+<td>Amazon DevOps Guru</td>
+</tr>
+<tr>
+<td>195</td>
+<td>Amazon DocumentDB (with MongoDB compatibility)</td>
+</tr>
+<tr>
+<td>196</td>
+<td>Amazon DynamoDB</td>
+</tr>
+<tr>
+<td>197</td>
+<td>Amazon DynamoDB Accelerator</td>
+</tr>
+<tr>
+<td>198</td>
+<td>Amazon DynamoDB Streams</td>
+</tr>
+<tr>
+<td>199</td>
+<td>Amazon EC2 Auto Scaling</td>
+</tr>
+<tr>
+<td>200</td>
+<td>Amazon EMR Containers</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Amazon EMR Serverless</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Amazon ElastiCache</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Amazon Elastic Block Store (EBS)</td>
+</tr>
+<tr>
+<td>204</td>
+<td>Amazon Elastic Compute Cloud (EC2)</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Amazon Elastic Container Registry (ECR)</td>
+</tr>
+<tr>
+<td>206</td>
+<td>Amazon Elastic Container Registry Public</td>
+</tr>
+<tr>
+<td>207</td>
+<td>Amazon Elastic Container Service (ECS)</td>
+</tr>
+<tr>
+<td>208</td>
+<td>Amazon Elastic File System (EFS)</td>
+</tr>
+<tr>
+<td>209</td>
+<td>Amazon Elastic Inference</td>
+</tr>
+<tr>
+<td>210</td>
+<td>Amazon Elastic Kubernetes Service (EKS)</td>
+</tr>
+<tr>
+<td>211</td>
+<td>Amazon Elastic MapReduce (EMR)</td>
+</tr>
+<tr>
+<td>212</td>
+<td>Amazon Elastic Transcoder</td>
+</tr>
+<tr>
+<td>213</td>
+<td>Amazon Elasticsearch Service</td>
+</tr>
+<tr>
+<td>214</td>
+<td>Amazon EventBridge</td>
+</tr>
+<tr>
+<td>215</td>
+<td>Amazon FSx</td>
+</tr>
+<tr>
+<td>216</td>
+<td>Amazon FSx for Lustre</td>
+</tr>
+<tr>
+<td>217</td>
+<td>Amazon FSx for NetApp ONTAP</td>
+</tr>
+<tr>
+<td>218</td>
+<td>Amazon FSx for OpenZFS</td>
+</tr>
+<tr>
+<td>219</td>
+<td>Amazon FSx for Windows File Server</td>
+</tr>
+<tr>
+<td>220</td>
+<td>Amazon FinSpace</td>
+</tr>
+<tr>
+<td>221</td>
+<td>Amazon FinSpace Beta API</td>
+</tr>
+<tr>
+<td>222</td>
+<td>Amazon Forecast</td>
+</tr>
+<tr>
+<td>223</td>
+<td>Amazon Forecast Query</td>
+</tr>
+<tr>
+<td>224</td>
+<td>Amazon Fraud Detector</td>
+</tr>
+<tr>
+<td>225</td>
+<td>Amazon GameLift</td>
+</tr>
+<tr>
+<td>226</td>
+<td>Amazon GameSparks</td>
+</tr>
+<tr>
+<td>227</td>
+<td>Amazon Glacier</td>
+</tr>
+<tr>
+<td>228</td>
+<td>Amazon GuardDuty</td>
+</tr>
+<tr>
+<td>229</td>
+<td>Amazon HealthLake</td>
+</tr>
+<tr>
+<td>230</td>
+<td>Amazon Honeycode</td>
+</tr>
+<tr>
+<td>231</td>
+<td>Amazon IVS</td>
+</tr>
+<tr>
+<td>232</td>
+<td>Amazon IVS Chat</td>
+</tr>
+<tr>
+<td>233</td>
+<td>Amazon Inspector</td>
+</tr>
+<tr>
+<td>234</td>
+<td>Amazon Inspector</td>
+</tr>
+<tr>
+<td>235</td>
+<td>Amazon Kendra</td>
+</tr>
+<tr>
+<td>236</td>
+<td>Amazon Keyspaces (for Apache Cassandra)</td>
+</tr>
+<tr>
+<td>237</td>
+<td>Amazon Kinesis Data Analytics</td>
+</tr>
+<tr>
+<td>238</td>
+<td>Amazon Kinesis Data Firehose</td>
+</tr>
+<tr>
+<td>239</td>
+<td>Amazon Kinesis Data Streams</td>
+</tr>
+<tr>
+<td>240</td>
+<td>Amazon Kinesis Video Streams</td>
+</tr>
+<tr>
+<td>241</td>
+<td>Amazon Lex</td>
+</tr>
+<tr>
+<td>242</td>
+<td>Amazon Lex Model Building Service</td>
+</tr>
+<tr>
+<td>243</td>
+<td>Amazon Lex Model Building V2</td>
+</tr>
+<tr>
+<td>244</td>
+<td>Amazon Lightsail</td>
+</tr>
+<tr>
+<td>245</td>
+<td>Amazon Location Service</td>
+</tr>
+<tr>
+<td>246</td>
+<td>Amazon Lookout for Equipment</td>
+</tr>
+<tr>
+<td>247</td>
+<td>Amazon Lookout for Metrics</td>
+</tr>
+<tr>
+<td>248</td>
+<td>Amazon Lookout for Vision</td>
+</tr>
+<tr>
+<td>249</td>
+<td>Amazon Lumberyard</td>
+</tr>
+<tr>
+<td>250</td>
+<td>Amazon MQ</td>
+</tr>
+<tr>
+<td>251</td>
+<td>Amazon Machine Learning</td>
+</tr>
+<tr>
+<td>252</td>
+<td>Amazon Macie</td>
+</tr>
+<tr>
+<td>253</td>
+<td>Amazon Managed Blockchain</td>
+</tr>
+<tr>
+<td>254</td>
+<td>Amazon Managed Grafana</td>
+</tr>
+<tr>
+<td>255</td>
+<td>Amazon Managed Service for Prometheus</td>
+</tr>
+<tr>
+<td>256</td>
+<td>Amazon Managed Streaming for Apache Kafka</td>
+</tr>
+<tr>
+<td>257</td>
+<td>Amazon Managed Workflows for Apache Airflow</td>
+</tr>
+<tr>
+<td>258</td>
+<td>Amazon Mechanical Turk</td>
+</tr>
+<tr>
+<td>259</td>
+<td>Amazon MemoryDB for Redis</td>
+</tr>
+<tr>
+<td>260</td>
+<td>Amazon Neptune</td>
+</tr>
+<tr>
+<td>261</td>
+<td>Amazon Nimble Studio</td>
+</tr>
+<tr>
+<td>262</td>
+<td>Amazon Personalize</td>
+</tr>
+<tr>
+<td>263</td>
+<td>Amazon Pinpoint</td>
+</tr>
+<tr>
+<td>264</td>
+<td>Amazon Pinpoint Email Service</td>
+</tr>
+<tr>
+<td>265</td>
+<td>Amazon Pinpoint SMS Voice</td>
+</tr>
+<tr>
+<td>266</td>
+<td>Amazon Pinpoint SMS Voice V2</td>
+</tr>
+<tr>
+<td>267</td>
+<td>Amazon Pinpoint SMS and Voice Service</td>
+</tr>
+<tr>
+<td>268</td>
+<td>Amazon Polly</td>
+</tr>
+<tr>
+<td>269</td>
+<td>Amazon QLDB Session</td>
+</tr>
+<tr>
+<td>270</td>
+<td>Amazon Quantum Ledger Database (QLDB)</td>
+</tr>
+<tr>
+<td>271</td>
+<td>Amazon QuickSight</td>
+</tr>
+<tr>
+<td>272</td>
+<td>Amazon RDS on VMware</td>
+</tr>
+<tr>
+<td>273</td>
+<td>Amazon Redshift</td>
+</tr>
+<tr>
+<td>274</td>
+<td>Amazon Rekognition</td>
+</tr>
+<tr>
+<td>275</td>
+<td>Amazon Relational Database Service (RDS)</td>
+</tr>
+<tr>
+<td>276</td>
+<td>Amazon Route 53</td>
+</tr>
+<tr>
+<td>277</td>
+<td>Amazon Route 53 Domains</td>
+</tr>
+<tr>
+<td>278</td>
+<td>Amazon Route 53 Resolver</td>
+</tr>
+<tr>
+<td>279</td>
+<td>Amazon SageMaker</td>
+</tr>
+<tr>
+<td>280</td>
+<td>Amazon SageMaker</td>
+</tr>
+<tr>
+<td>281</td>
+<td>Amazon SageMaker Feature Store Runtime</td>
+</tr>
+<tr>
+<td>282</td>
+<td>Amazon Simple Email Service (SES)</td>
+</tr>
+<tr>
+<td>283</td>
+<td>Amazon Simple Notification Service (SNS)</td>
+</tr>
+<tr>
+<td>284</td>
+<td>Amazon Simple Queue Service (SQS)</td>
+</tr>
+<tr>
+<td>285</td>
+<td>Amazon Simple Storage Service (S3)</td>
+</tr>
+<tr>
+<td>286</td>
+<td>Amazon Simple Workflow Service (SWF)</td>
+</tr>
+<tr>
+<td>287</td>
+<td>Amazon SimpleDB</td>
+</tr>
+<tr>
+<td>288</td>
+<td>Amazon Sumerian</td>
+</tr>
+<tr>
+<td>289</td>
+<td>Amazon Textract</td>
+</tr>
+<tr>
+<td>290</td>
+<td>Amazon Timestream</td>
+</tr>
+<tr>
+<td>291</td>
+<td>Amazon Transcribe</td>
+</tr>
+<tr>
+<td>292</td>
+<td>Amazon Transcribe Medical</td>
+</tr>
+<tr>
+<td>293</td>
+<td>Amazon Translate</td>
+</tr>
+<tr>
+<td>294</td>
+<td>Amazon Virtual Private Cloud (VPC)</td>
+</tr>
+<tr>
+<td>295</td>
+<td>Amazon Voice ID</td>
+</tr>
+<tr>
+<td>296</td>
+<td>Amazon WorkDocs</td>
+</tr>
+<tr>
+<td>297</td>
+<td>Amazon WorkMail</td>
+</tr>
+<tr>
+<td>298</td>
+<td>Amazon WorkMail Message Flow</td>
+</tr>
+<tr>
+<td>299</td>
+<td>Amazon WorkSpaces</td>
+</tr>
+<tr>
+<td>300</td>
+<td>Amazon WorkSpaces Application Manager</td>
+</tr>
+<tr>
+<td>301</td>
+<td>Amazon WorkSpaces Web</td>
+</tr>
+<tr>
+<td>302</td>
+<td>AmazonApiGatewayManagementApi</td>
+</tr>
+<tr>
+<td>303</td>
+<td>AmazonAppIntegrationService</td>
+</tr>
+<tr>
+<td>304</td>
+<td>AmplifyUIBuilder</td>
+</tr>
+<tr>
+<td>305</td>
+<td>AppConfigData</td>
+</tr>
+<tr>
+<td>306</td>
+<td>ChimeSDK Identity</td>
+</tr>
+<tr>
+<td>307</td>
+<td>CloudEndure Disaster Recovery</td>
+</tr>
+<tr>
+<td>308</td>
+<td>CloudEndure Migration</td>
+</tr>
+<tr>
+<td>309</td>
+<td>CodeStar Connections</td>
+</tr>
+<tr>
+<td>310</td>
+<td>EC2 Image Builder</td>
+</tr>
+<tr>
+<td>311</td>
+<td>Elastic Load Balancing</td>
+</tr>
+<tr>
+<td>312</td>
+<td>FreeRTOS</td>
+</tr>
+<tr>
+<td>313</td>
+<td>IoTWirelessConnectivity</td>
+</tr>
+<tr>
+<td>314</td>
+<td>Managed Streaming for Kafka Connect Engine</td>
+</tr>
+<tr>
+<td>315</td>
+<td>Migration Hub Strategy Recommendations</td>
+</tr>
+<tr>
+<td>316</td>
+<td>NetworkManager</td>
+</tr>
+<tr>
+<td>317</td>
+<td>RDS Data</td>
+</tr>
+<tr>
+<td>318</td>
+<td>RUMControlPlaneLambda</td>
+</tr>
+<tr>
+<td>319</td>
+<td>Red Hat OpenShift Service on AWS (ROSA)</td>
+</tr>
+<tr>
+<td>320</td>
+<td>Redshift Data API Service</td>
+</tr>
+<tr>
+<td>321</td>
+<td>SSM Incidents</td>
+</tr>
+<tr>
+<td>322</td>
+<td>Service Quotas</td>
+</tr>
+<tr>
+<td>323</td>
+<td>SnowDeviceManagement</td>
+</tr>
+<tr>
+<td>324</td>
+<td>VMware Cloud on AWS</td>
+</tr>
+</tbody>
+</table>
+<p></br></p>
+<div class="admonition contribute">
+<p class="admonition-title">Contribute</p>
+<p>Contribute to this page on <a href="https://github.com/vantage-sh/handbook">GitHub</a> or join the <code>#cloud-costs-handbook</code> channel in the <a href="https://vantage.sh/slack">Vantage Community Slack</a>.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
