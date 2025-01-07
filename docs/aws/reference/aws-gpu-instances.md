@@ -26,14 +26,14 @@ For more detailed information about matching CUDA compute capability, CUDA genco
 | [p3.8xlarge](https://instances.vantage.sh/aws/ec2/p3.8xlarge) | NVIDIA Tesla V100 | 7.0 | 4 | 20480 | 64 |
 | [p3.16xlarge](https://instances.vantage.sh/aws/ec2/p3.16xlarge) | NVIDIA Tesla V100 | 7.0 | 8 | 40960 | 128 |
 | [p3dn.24xlarge](https://instances.vantage.sh/aws/ec2/p3dn.24xlarge) | NVIDIA Tesla V100 | 7.0 | 8 | 40960 | 256 |
-| [g5.xlarge](https://instances.vantage.sh/aws/ec2/g5.xlarge) | NVIDIA A10G | 7.5 | 1 | 9616 | 24 |
-| [g5.2xlarge](https://instances.vantage.sh/aws/ec2/g5.2xlarge) | NVIDIA A10G | 7.5 | 1 | 9616 | 24 |
-| [g5.4xlarge](https://instances.vantage.sh/aws/ec2/g5.4xlarge) | NVIDIA A10G | 7.5 | 1 | 9616 | 24 |
-| [g5.8xlarge](https://instances.vantage.sh/aws/ec2/g5.8xlarge) | NVIDIA A10G | 7.5 | 1 | 9616 | 24 |
-| [g5.16xlarge](https://instances.vantage.sh/aws/ec2/g5.16xlarge) | NVIDIA A10G | 7.5 | 1 | 9616 | 24 |
-| [g5.12xlarge](https://instances.vantage.sh/aws/ec2/g5.12xlarge) | NVIDIA A10G | 7.5 | 4 | 38464 | 96 |
-| [g5.24xlarge](https://instances.vantage.sh/aws/ec2/g5.24xlarge) | NVIDIA A10G | 7.5 | 4 | 38464 | 96 |
-| [g5.48xlarge](https://instances.vantage.sh/aws/ec2/g5.48xlarge) | NVIDIA A10G | 7.5 | 8 | 76928 | 192 |
+| [g5.xlarge](https://instances.vantage.sh/aws/ec2/g5.xlarge) | NVIDIA A10G | 8.6 | 1 | 9616 | 24 |
+| [g5.2xlarge](https://instances.vantage.sh/aws/ec2/g5.2xlarge) | NVIDIA A10G | 8.6 | 1 | 9616 | 24 |
+| [g5.4xlarge](https://instances.vantage.sh/aws/ec2/g5.4xlarge) | NVIDIA A10G | 8.6 | 1 | 9616 | 24 |
+| [g5.8xlarge](https://instances.vantage.sh/aws/ec2/g5.8xlarge) | NVIDIA A10G | 8.6 | 1 | 9616 | 24 |
+| [g5.16xlarge](https://instances.vantage.sh/aws/ec2/g5.16xlarge) | NVIDIA A10G | 8.6 | 1 | 9616 | 24 |
+| [g5.12xlarge](https://instances.vantage.sh/aws/ec2/g5.12xlarge) | NVIDIA A10G | 8.6 | 4 | 38464 | 96 |
+| [g5.24xlarge](https://instances.vantage.sh/aws/ec2/g5.24xlarge) | NVIDIA A10G | 8.6 | 4 | 38464 | 96 |
+| [g5.48xlarge](https://instances.vantage.sh/aws/ec2/g5.48xlarge) | NVIDIA A10G | 8.6 | 8 | 76928 | 192 |
 | [p4d.24xlarge](https://instances.vantage.sh/aws/ec2/p4d.24xlarge) | NVIDIA A100 | 8.0 | 8 | 55296 | 320 |
 | [p4de.24xlarge](https://instances.vantage.sh/aws/ec2/p4de.24xlarge) | NVIDIA A100 | 8.0 | 8 | 55296 | 640 |
 | [g5g.xlarge](https://instances.vantage.sh/aws/ec2/g5g.xlarge) | NVIDIA T4G Tensor Core | 7.5 | 1 | 2560 | 16 |
