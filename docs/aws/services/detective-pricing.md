@@ -16,7 +16,7 @@ CloudWatch Logs are not ingested directly, therefore Amazon Detective does not a
 
 |Dimension|Description|
 |----|----|
-|Data Ingestion|Amazon Detective pricing is based on the amount of data ingested and stored in the service. Data ingestion is measured in gigabytes (GB) per month and cost per GB varies by region.|
+|Data Ingestion|Amazon Detective pricing is based on the amount of data ingested into the service. Data ingestion is measured in gigabytes (GB) per month and cost per GB varies by region.|
 
 ## Organization Accounts
 
