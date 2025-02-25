@@ -16,9 +16,9 @@ It does not currently provide any mechanism to select the type of data to ingest
 |----|----|
 |Data Ingestion|Amazon Detective pricing is based on the amount of data ingested and stored in the service. Data ingestion is measured in gigabytes (GB) per month and cost per GB varies by region.|
 
-## Organization accounts
+## Organization Accounts
 
-When using [AWS Organizations](https://aws.amazon.com/organizations/) there is typically a centralised security or management account which is delegated as the "Administrator account" to perform the analysis and view the results of Detective. The Detective charges will still be associated with the individual organization account the ingested logs relate to, and not the centralised account which is performing the analysis.
+When using [AWS Organizations](https://aws.amazon.com/organizations/){ target="_blank"} there is typically a centralised security or management account which is delegated as the "Administrator account" to perform the analysis and view the results of Detective. The Detective charges will still be associated with the individual organization account the ingested logs relate to, and not the centralised account which is performing the analysis.
 
 Pricing varies by region and is dependent on the origin region of the log data being ingested.
 
