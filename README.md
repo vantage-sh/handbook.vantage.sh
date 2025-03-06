@@ -46,5 +46,7 @@ mkdocs gh-deploy --ignore-version
 Feel free to watch/star this repo as we're looking to update the site regularly with additional services and concepts. Vantage also works on the following relevant projects:
 
 - [EC2Instances.info](https://github.com/vantage-sh/ec2instances.info): An open-source tool for comparing EC2 instance prices and configurations.
+- [cur.vantage.sh](https://cur.vantage.sh/): A dictionary for AWS billing codes present in the AWS cost and usage report. 
 - [The AWS Cost Leaderboard](https://leaderboard.vantage.sh/): A hosted site of the top AWS cost centers.
 - [Vantage](https://vantage.sh/): A cloud cost transparency platform.
+
