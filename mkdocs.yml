@@ -65,6 +65,7 @@ nav:
     - 'ELB': 'aws/services/elb-pricing.md'
     - 'EMR': 'aws/services/emr-pricing.md'
     - 'Lambda': 'aws/services/lambda-pricing.md'
+    - 'Macie': 'aws/services/macie-pricing.md'
     - 'RDS': 'aws/services/rds-pricing.md'
     - 'Redshift': 'aws/services/redshift-pricing.md'
     - 'Route 53': 'aws/services/route-53-pricing.md'
