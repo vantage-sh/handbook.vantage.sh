@@ -1,27 +1,27 @@
 :root {
-	--md-primary-fg-color:        #9C25C7;
-	--md-primary-fg-color:        #9C25C7;
-	--md-primary-fg-color--light: #F9E6FF;
-	--md-primary-fg-color--dark:  #5A0A76;
-	--md-accent-fg-color: #9C25C7;
+	--md-primary-fg-color:        #6742D6;
+	--md-primary-fg-color:        #6742D6;
+	--md-primary-fg-color--light: #FFFFFF;
+	--md-primary-fg-color--dark:  #8F86F9;
+	--md-accent-fg-color: #6742D6;
 }
 
 .md-footer {
-	background-color: #5A0A76;
+	background-color: #8F86F9;
 }
 
 .md-typeset :is(.admonition) {
-	border-left: solid #5A0A76;
-	border-color: #5A0A76;
+	border-left: solid #8F86F9;
+	border-color: #8F86F9;
 }
 
 .md-typeset :is(.admonition-title,summary) {
-	background-color: #F9E6FF;
-	border-left: solid #5A0A76;
+	background-color: #E5E5FF;
+	border-left: solid #8F86F9;
 }
 
 .md-typeset :is(.admonition-title,details):before {
-	background-color: #5A0A76;
+	background-color: #8F86F9;
 }
 
 .md-typeset h1 {

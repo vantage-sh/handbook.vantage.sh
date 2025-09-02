@@ -7,7 +7,7 @@ theme:
   logo: 'assets/logo.svg'
   icon:
     repo: fontawesome/brands/square-github
-  favicon: https://assets.vantage.sh/www/favicon-32x32.png
+  favicon: 'assets/favicon.png'
 
 extra:
   generator: false
