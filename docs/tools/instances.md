@@ -2,7 +2,7 @@ title: Instances Pricing Documentation | Cloud Cost Handbook
 
 [AWS Instance Types Comparison](https:/instances.vantage.sh/){ .md-button }
 
-[EC2Instances.info](https://instances.vantage.sh) shows current pricing for AWS EC2, RDS, and ElastiCache instances. The tool is completely [open source](https://github.com/vantage-sh/ec2instances.info) and uses the same Amazon APIs available to everyone. Development for Instances is coordinated through the [Vantage Slack](https://vantage.sh/slack) as well as on [Github](https://github.com/vantage-sh/ec2instances.info).
+[EC2Instances.info](https://instances.vantage.sh) shows current pricing for AWS EC2, RDS, and ElastiCache instances. The tool is completely [open source](https://github.com/vantage-sh/ec2instances.info) and uses the same Amazon APIs available to everyone. Development for Instances is coordinated through the [Vantage Slack](https://vantage.sh/slack) as well as on [GitHub](https://github.com/vantage-sh/ec2instances.info).
 
 ## Why?
 
@@ -50,7 +50,7 @@ To reset the table, click `Clear Filters`.
 
 ## Export Data
 
-The table, with its filters applied, sorted, and with columns shown and hidden, can be exported exactly as a CSV. Data for EC2 is also available for free from the [Vantage API](https://vantage.readme.io/reference/general).
+The table, with its filters applied, sorted, and with columns shown and hidden, can be exported exactly as a CSV. Data for EC2 is also available for free from the [Vantage API](https://docs.vantage.sh/api).
 
 ## Azure Support (Beta)
 
