@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% include "partials/google-tag-manager-head.html" %}
+{% endblock %}
+
+{% block header %}
+  {% include "partials/google-tag-manager-body.html" %}
+  {{ super() }}
+{% endblock %}
