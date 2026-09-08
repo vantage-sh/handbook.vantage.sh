@@ -2,6 +2,7 @@ site_name: Cloud Cost Handbook
 site_url: http://handbook.vantage.sh
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.sections
   logo: 'assets/logo.svg'
@@ -10,7 +11,8 @@ theme:
   favicon: 'assets/favicon.png'
 
 extra:
-  generator: false
+  analytics:
+    provider: custom
 
 extra_css:
   - stylesheets/extra.css
@@ -87,8 +89,3 @@ nav:
     - 'AWS Product Codes': 'aws/reference/aws-product-codes.md' 
     - 'AWS Regions': 'aws/reference/aws-regions.md'
     - 'AWS GPU Instances': 'aws/reference/aws-gpu-instances.md' 
-
-extra:
-  analytics:
-    provider: google
-    property: G-1PNRCKS3S4

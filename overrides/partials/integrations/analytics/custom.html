@@ -1,0 +1,57 @@
+<script id="__analytics">
+  function __md_analytics() {
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+
+    function sendEvent(event, parameters) {
+      gtag("event", event, parameters);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      if (document.forms.search) {
+        document.forms.search.query.addEventListener("blur", function () {
+          if (this.value) {
+            sendEvent("search", { search_term: this.value });
+          }
+        });
+      }
+
+      document$.subscribe(function () {
+        var form = document.forms.feedback;
+        if (typeof form === "undefined") return;
+
+        for (var button of form.querySelectorAll("[type=submit]")) {
+          button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            var page = document.location.pathname;
+            var data = this.getAttribute("data-md-value");
+            sendEvent("feedback", { page: page, data: data });
+
+            form.firstElementChild.disabled = true;
+            var note = form.querySelector(
+              ".md-feedback__note [data-md-value='" + data + "']"
+            );
+            if (note) note.hidden = false;
+          });
+        }
+
+        form.hidden = false;
+      });
+
+      var currentPath = document.location.pathname;
+      location$.subscribe(function (location) {
+        if (location.pathname === currentPath) return;
+
+        currentPath = location.pathname;
+        sendEvent("page_view", {
+          page_location: location.href,
+          page_path: location.pathname
+        });
+      });
+    });
+  }
+</script>
